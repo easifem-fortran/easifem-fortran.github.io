@@ -14,9 +14,14 @@ Build the website
 yarn build
 ```
 
-
 Deploy 
 
 ```sh 
-GIT_USER=<Your GitHub username> USE_SSH=true yarn deploy
+USE_SSH=true yarn deploy
+```
+
+or by using
+
+```sh 
+GIT_USER=<Your GitHub username>  yarn deploy
 ```
