@@ -298,7 +298,7 @@ const config = {
       },
       algolia: {
         appId: 'VNHYRJ8XLW',
-        apiKey: '0348d12ff806afe9d3ebaf29149b02a0',
+        apiKey: 'e3deb013d45dd81a76a3667b76994b5f',
         indexName: 'easifem',
         contextualSearch: true,
         // Optional: Algolia search parameters
