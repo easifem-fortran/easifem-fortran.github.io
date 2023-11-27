@@ -1,0 +1,49 @@
+---
+title: IntVector example 4
+tags:
+    - IntVector/IntVector_Pointer
+    - IntVector/Display
+---
+
+# Intvector example 4
+
+!!! example ""
+    This example shows how to initiate an instance of [[IntVector_]] by using a function called [[IntVector_#IntVector_Pointer]]
+
+## Modules and classes
+
+- [[IntVector_]]
+
+## Usage
+
+!!! note ""
+    Initiate an instance of [[IntVector_]] by specifying size.
+
+``` fortran
+PROGRAM main
+USE easifemBase
+CLASS(IntVector_), POINTER :: obj1 => NULL()
+```
+
+!!! note ""
+    Let us first ALLOCATE the scalar instance of [[IntVector_]] obj1. We will set its size to 10. The lower bound is 1 and upper bound is 10.
+
+```fortran
+obj1 => IntVector_Pointer(tSize=10)
+CALL display(obj1, "obj1=")
+```
+
+!!! note ""
+    We can also initiate an instance of [[IntVector_]] by the vector of INTEGER.
+
+```fortran
+obj1 => IntVector_Pointer([2, 3])
+CALL display(obj1, "obj1=")
+```
+
+!!! settings ""
+    Cleanup
+
+```fortran
+END PROGRAM main
+```

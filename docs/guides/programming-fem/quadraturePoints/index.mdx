@@ -1,0 +1,115 @@
+# Quadrature Points
+
+Numerical quadrature (or, quadrature rules) are primary components of finite element methods. Numerical quadrature is used for evaluating integration, which is necessary for computing the finite element matrices and vectors.
+
+Numerical quadrature are evaluated on [reference elements](/guides/programming-fem/referenceElement). Every numerical quadrature rule has an order of accuracy.
+
+A quadrature rule is denoted by weights $w_{i}$ and quadrature points $\xi_{i}$.
+
+After getting $\{\xi, w\}$ we can compute an integration by using following expression:
+
+$$
+\int_{\Omega^{*}} f(\mathbf{x}) d\Omega = \sum_{i=1}^{n}{f(\mathbf{x}_{i})}w_{i}
+$$
+
+where, $\Omega^{*}$ denotes the reference element domain.
+
+<span class="badge badge--primary">easifemBase </span>
+
+defines a user-defined data type called [QuadraturePoint_](/docs-api/QuadraturePoint/) to handle the quadrature points.
+
+:::note
+Quadrature points $\xi$ are located in the reference element.
+:::
+
+## Creating an instance of `QuadraturePoint_`
+
+<span class="badge badge--secondary"> Initiate </span>
+
+- Use [Initiate](/docs-api/QuadraturePoint/Initiate) method for constructing an instance of QuadraturePoint.
+- To use this subroutine we need to create [ReferenceElement](/docs-api/ReferenceElement) first.
+
+The following example shows how to construct **GaussLegendre** quadrature points on line.
+
+```fortran title="Gauss Legendre points on line elements"
+PROGRAM main
+USE easifemBase
+IMPLICIT NONE
+TYPE(QuadraturePoint_) :: obj
+TYPE(ReferenceLine_) :: refelem
+INTEGER(I4B) :: order
+
+refelem = ReferenceLine(nsd=1_I4B)
+CALL display(refelem, "refelem: ")
+order = 4_I4B
+
+CALL initiate(obj=obj, &
+  & refelem=refelem, &
+  & order=order,  &
+  & quadratureType=GaussLegendre)
+CALL display(obj, "ans: ")
+END PROGRAM main
+```
+
+we can use following values for `quadratureType`, which are declared in easifemBase's [GlobalData](/docs-api/GlobalData):
+
+- GaussLegendre
+- GaussLegendreLobatto
+- GaussLegendreRadau, GaussLegendreRadauLeft
+- GaussLegendreRadauRight
+- GaussChebyshev
+- GaussChebyshevLobatto
+- GaussChebyshevRadau, GaussChebyshevRadauLeft
+- GaussChebyshevRadauRight
+- GaussJacobi
+- GaussJacobiLobatto
+- GaussJacobiRadau, GaussJacobiRadauLeft
+- GaussJacobiRadauRight
+- GaussUltraspherical
+- GaussUltrasphericalLobatto
+- GaussUltrasphericalRadau, GaussUltraspericalRadauLeft
+- GaussUltrasphericalRadauRight
+
+:::info
+In the case of `GaussJacobi***`, `alpha` and `beta` should be given, and in the case of `GaussUltraspherical**`, `lambda` should be given.
+:::
+
+:::caution
+In the case of triangle, tetrahedron, pyramid, and prism,  `quadratureType` is ineffective, that is, we do not use `quadratureType` for these elements.
+:::
+
+## Reference elements
+
+You can learn more about quadrature points from following pages.
+
+<CardSection id="quadraturePoints">
+
+  <Card
+    title="Line"
+    to="/guides/programming-fem/quadraturePoints/line"
+  />
+  <Card
+    title="Triangle"
+    to="/guides/programming-fem/quadraturePoints/triangle"
+  />
+  <Card
+    title="Quadrangle"
+    to="/guides/programming-fem/quadraturePoints/quadrangle"
+  />
+  <Card
+    title="Hexahedron"
+    to="/guides/programming-fem/quadraturePoints/hexahedron"
+  />
+  <Card
+    title="Tetrahedron"
+    to="/guides/programming-fem/quadraturePoints/tetrahedron"
+  />
+  <Card
+    title="Prism"
+    to="/guides/programming-fem/quadraturePoints/prism"
+  />
+  <Card
+    title="Pyramid"
+    to="/guides/programming-fem/quadraturePoints/pyramid"
+  />
+</CardSection>

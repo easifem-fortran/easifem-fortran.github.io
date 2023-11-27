@@ -1,0 +1,6 @@
+{
+  "position": 5,
+  "label": "IDE Integration",
+  "collapsible": true,
+  "className": "ide_sidebar_header"
+}

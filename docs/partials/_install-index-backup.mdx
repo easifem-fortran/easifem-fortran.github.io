@@ -1,0 +1,26 @@
+import { Code } from 'react-feather';
+
+<span>
+The details of each step can be found by clicking following links.
+</span>
+
+<CardSection id="client-setup-web" title="Installation steps of EASIFEM" hasSubSections>
+  <CardSection id="web-sdk" title="">
+    <Card title="Step 1: EASIFEM CLI" to="./install/install-easifem-cli" icon={<CodepenIcon />} />
+    <Card title="Step 2: Environment variables" to="./install/setup-environment" icon={<CommandIcon />} />
+    <Card title="Step 3: System requirements" to="./install/install-system-requirements" icon={<SystemInstallIcon />} />
+    <Card title="Step 4: External packages" to="./install/install-extpkgs" icon={<SystemInstallIcon />} />
+    <Card title="Step 6: easifemBase" to="./install/install-easifem-base" icon={<EasifemBaseIcon />} />
+    <Card title="Step 7: easifemClasses" to="./install/install-easifem-classes" icon={<EasifemClassesIcon />} />
+    <Card title="Step 8: easifemMaterials" to="./install/install-easifem-materials" icon={<EasifemMaterialsIcon />} />
+    <Card title="Step 9: easifemMaterials" to="./install/install-easifem-kernels" icon={<EasifemKernelsIcon />} />
+  </CardSection>
+</CardSection>
+
+<CardSection id="install-easifem-step-6" title="Step 6: Install easifemBase" hasSubSections>
+  <CardSection id="easifem-base-install" title="">
+    <Card title="Ubuntu" to="./install/setup-environment" icon={<UbuntuIcon />} />
+    <Card title="Arch Linux" to="./install/install-system-requirements" icon={<ArchLinuxIcon />} />
+    <Card title="macOS" to="./install/install-extpkgs" icon={<AppleIcon />} />
+  </CardSection>
+</CardSection>

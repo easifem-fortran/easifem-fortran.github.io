@@ -1,0 +1,347 @@
+#LyX 2.3 created this file. For more info see http://www.lyx.org/
+\lyxformat 544
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass article
+\use_default_options true
+\maintain_unincluded_children false
+\language english
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman "default" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\use_microtype false
+\use_dash_ligatures true
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 1
+\use_minted 0
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\is_math_indent 0
+\math_numbering_side default
+\quotes_style english
+\dynamic_quotes 0
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\int_{\Gamma_{e}}[[\frac{\partial\delta{\bf \bar{v}}}{\partial{\bf x}}\cdot{\bf n}]]\cdot[[\frac{\partial\delta{\bf \bar{v}}}{\partial{\bf x}}\cdot{\bf n}]]dS=\int_{\Gamma_{e}}[[{\bf G}_{1}^{i}]]\cdot[[{\bf G}_{1}^{j}]]^{T}dS
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\begin{aligned}\int_{\Gamma_{e}}\frac{\partial\delta{\bf \bar{v}}}{\partial{\bf x}}\cdot{\bf n}\cdot\frac{\partial\delta{\bf \bar{v}}}{\partial{\bf x}}\cdot{\bf n}dS & =\int_{\Gamma_{e}}\frac{\partial\delta v_{iI}N^{I}}{\partial x_{p}}n_{p}\frac{\partial\delta v_{iJ}N^{J}}{\partial x_{q}}n_{q}dS\\
+ & =\delta v_{iI}\left[\int_{\Gamma_{e}}\frac{\partial N^{I}}{\partial x_{p}}n_{p}\frac{\partial N^{J}}{\partial x_{q}}n_{q}dS\right]v_{iJ}
+\end{aligned}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\int_{\Gamma_{e}}\tau[[2\mu{\bf d}\left(\delta\bar{{\bf v}}\right)\cdot{\bf n}]]\cdot[[2\mu{\bf d}\left(\bar{{\bf v}}\right)\cdot{\bf n}]]dS=\int_{\Gamma_{e}}\tau_{E1}[[{\bf G}_{12}^{i}]]\cdot[[{\bf G}_{12}^{j}]]^{T}dS
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+FacetMatrix1
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+2\mu{\bf d}\left({\bf v}\right)\cdot{\bf n}=G_{12}(J,i,j)V(j,J)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+G_{12}(J,i,j)=\mu\frac{\partial N^{J}}{\partial x_{p}}n_{p}\delta_{ij}+\mu\frac{\partial N^{J}}{\partial x_{i}}n_{j}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\begin{aligned} & \int_{\Gamma_{e}}\tau\left[2\mu{\bf d}\left(\delta\bar{{\bf v}}\right)\cdot{\bf n}\right]\cdot\left[2\mu{\bf d}\left(\bar{{\bf v}}\right)\cdot{\bf n}\right]dS\\
+ & =\int_{\Gamma_{e}}\tau\left[2\mu{\bf d}\left(\delta\bar{{\bf v}}\right)\cdot{\bf n}\right]\cdot\left[2\mu{\bf d}\left(\bar{{\bf v}}\right)\cdot{\bf n}\right]dS\\
+ & =\delta V(i,I)\left(\int_{\Gamma_{e}}\tau\left[G_{12}(I,p,i)\right]\cdot\left[G_{12}(J,p,j)\right]dS\right)V(j,J)
+\end{aligned}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+FacetMatrix2
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\begin{aligned} & \int_{\Gamma_{e}}\tau\left(2\mu{\bf d}\left(\delta\bar{{\bf v}}\right)\cdot{\bf n}\right)\cdot\left(2\mu{\bf d}\left(\bar{{\bf v}}\right)\cdot{\bf n}\right)dS\\
+ & =\delta V(i,I)\left(\int_{\Gamma_{e}}\tau G_{12}(I,p,i)G_{12}(J,p,j)dS\right)V(j,J)
+\end{aligned}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+FacetMatrix3
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\int_{\Gamma_{e}}\tau\left\{ 2\mu{\bf d}\left(\delta\bar{{\bf v}}\right)\cdot{\bf n}\right\} \cdot\left(\bar{p}{\bf n}\right)dS=\delta v_{iI}\int_{\Gamma_{e}}\tau G_{12}(I,j,i)n_{j}N^{J}dSp_{J}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+FacetMatrix4
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\int_{\Gamma_{e}}\tau\left(\delta\bar{p}{\bf n}\right)\cdot\left(2\mu{\bf d}\left(\bar{{\bf v}}\right)\cdot{\bf n}\right)dS=\delta p_{I}\int_{\Gamma_{e}}\tau n_{j}N^{I}G_{12}(J,j,i)dSv_{iI}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+FacetMatrix5
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\begin{aligned}\int_{\Gamma_{e}}\left[2\mu{\bf d}\left({\bf v}\right)\cdot{\bf n}\right]\cdot\left\{ \tau\nabla\bar{p}\right\} dS & =\delta v_{iI}\int_{\Gamma_{e}}\left[G_{12}(I,p,i)\right]\cdot\left\{ \tau\frac{\partial\bar{p}}{\partial x_{p}}\right\} dS\\
+ & =\delta v_{iI}\left(\int_{\Gamma_{e}}\left[G_{12}(I,p,i)\right]\cdot\left\{ \tau\frac{\partial N^{J}}{\partial x_{p}}\right\} dS\right)\bar{p}_{J}
+\end{aligned}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $[]$
+\end_inset
+
+ and 
+\begin_inset Formula $\{\}$
+\end_inset
+
+ denotes the jump and average.
+\end_layout
+
+\begin_layout Section
+FacetMatrix11
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\begin{aligned}\int_{\Gamma_{e}}\tau\left[\mu\frac{\partial\delta{\bf \bar{v}}}{\partial{\bf x}}\cdot{\bf n}\right]\cdot\left[\mu\frac{\partial{\bf \bar{v}}}{\partial{\bf x}}\cdot{\bf n}\right]dS & =\int_{\Gamma_{e}}\tau\left[\mu\frac{\partial\delta v_{iI}N^{I}}{\partial x_{p}}n_{p}\right]\left[\mu\frac{\partial v_{iJ}N^{J}}{\partial x_{q}}n_{q}\right]dS\\
+ & =\delta v_{iI}\left[\int_{\Gamma_{e}}\tau\left[\mu\frac{\partial N^{I}}{\partial x_{p}}n_{p}\right]\left[\mu\frac{\partial N^{J}}{\partial x_{q}}n_{q}\right]dS\right]v_{iJ}
+\end{aligned}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+FacetMatrix12
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\begin{aligned}\int_{\Gamma_{e}}\tau\mu\frac{\partial\delta{\bf \bar{v}}}{\partial{\bf x}}\cdot{\bf n}\cdot\mu\frac{\partial{\bf \bar{v}}}{\partial{\bf x}}\cdot{\bf n}dS & =\int_{\Gamma_{e}}\tau\mu^{2}\frac{\partial\delta v_{iI}N^{I}}{\partial x_{p}}n_{p}\frac{\partial v_{iJ}N^{J}}{\partial x_{q}}n_{q}dS\\
+ & =\delta v_{iI}\left[\int_{\Gamma_{e}}\tau\mu^{2}\frac{\partial N^{I}}{\partial x_{p}}n_{p}\frac{\partial N^{J}}{\partial x_{q}}n_{q}dS\right]v_{iJ}
+\end{aligned}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+FacetMatrix13
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\begin{aligned}\int_{\Gamma_{e}}\tau\left(\mu\nabla\delta{\bf v}\cdot{\bf n}\right)\cdot\left(\bar{p}{\bf n}\right)dS & =\int_{\Gamma_{e}}\tau\mu\frac{\partial\delta v_{i}}{\partial x_{p}}n_{p}n_{i}\bar{p}dS\\
+ & =\int_{\Gamma_{e}}\tau\mu\frac{\partial\delta v_{iI}N^{I}}{\partial x_{p}}n_{p}n_{i}\bar{p}_{J}N^{J}dS\\
+ & =\delta v_{iI}\left[\int_{\Gamma_{e}}\tau\mu\frac{\partial N^{I}}{\partial x_{p}}n_{p}n_{i}N^{J}dS\right]\bar{p}_{J}
+\end{aligned}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+FacetMatrix14
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\begin{aligned}\int_{\Gamma_{e}}\tau\delta\bar{p}{\bf n}\left(\mu\nabla{\bf v}\cdot{\bf n}\right)dS & =\int_{\Gamma_{e}}\tau\delta\bar{p}n_{i}\mu\frac{\partial v_{i}}{\partial x_{p}}n_{p}dS\\
+ & =\int_{\Gamma_{e}}\tau\bar{p}_{I}N^{I}n_{i}\mu\frac{\partial\delta v_{iI}N^{J}}{\partial x_{p}}n_{p}dS\\
+ & =\delta p_{I}\left[\int_{\Gamma_{e}}\tau\mu N^{I}\frac{\partial N^{J}}{\partial x_{p}}n_{p}n_{i}dS\right]\delta v_{iJ}
+\end{aligned}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+FacetMatrix15
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\begin{aligned}\int_{\Gamma_{e}}\left[\mu\nabla\delta{\bf v}\cdot{\bf n}\right]\cdot\left\{ \tau\nabla\bar{p}\right\} dS & =\int_{\Gamma_{e}}\left[\mu\frac{\partial\delta v_{i}}{\partial x_{p}}n_{p}\right]\cdot\left\{ \tau\frac{\partial\bar{p}}{\partial x_{i}}\right\} dS\\
+ & =\int_{\Gamma_{e}}\left[\mu\frac{\partial\delta v_{iI}N^{I}}{\partial x_{p}}n_{p}\right]\cdot\left\{ \tau\frac{\partial\bar{p}_{J}N^{J}}{\partial x_{i}}\right\} dS\\
+ & =\delta v_{iI}\int_{\Gamma_{e}}\left[\mu\frac{\partial N^{I}}{\partial x_{p}}n_{p}\right]\cdot\left\{ \tau\frac{\partial N^{J}}{\partial x_{i}}\right\} dS\bar{p}_{J}
+\end{aligned}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+FacetMatrix21
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\begin{aligned}\int_{\Gamma_{e}}\tau\delta p{\bf n}\cdot\nabla pdS & =\delta p_{I}\left(\int_{\Gamma_{e}}\tau N^{I}{\bf n}\cdot\nabla N^{J}dS\right)p_{J}\end{aligned}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+FacetMatrix22
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\begin{aligned}\int_{\Gamma_{e}}{\bf n}\cdot\nabla\delta p\tau pdS & =\delta p_{I}\left(\int_{\Gamma_{e}}\tau{\bf n}\cdot\nabla N^{I}N^{J}dS\right)p_{J}\end{aligned}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\end_body
+\end_document

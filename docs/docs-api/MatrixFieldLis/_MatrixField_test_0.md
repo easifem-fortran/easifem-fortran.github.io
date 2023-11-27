@@ -1,0 +1,18 @@
+```fortran
+PROGRAM main
+  USE easifemBase
+  USE easifemClasses
+  IMPLICIT NONE
+  TYPE( MSHFile_) :: mshFile
+  TYPE( HDF5File_ ) :: hdf5File
+
+  CALL mshFile%Initiate( "./mesh.msh", ACTION="READ", STATUS="OLD" )
+  CALL mshFile%Open(); CALL mshFile%Read()
+  CALL hdf5File%Initiate( "./mesh.h5", "NEW" )
+  CALL hdf5File%Open()
+  CALL mshFile%Export( hdf5File, "" )
+  CALL mshFile%Deallocate()
+  CALL hdf5File%Deallocate()
+
+END PROGRAM main
+```

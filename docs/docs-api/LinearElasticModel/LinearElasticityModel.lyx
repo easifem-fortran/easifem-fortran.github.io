@@ -1,0 +1,235 @@
+#LyX 2.3 created this file. For more info see http://www.lyx.org/
+\lyxformat 544
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass article
+\use_default_options true
+\maintain_unincluded_children false
+\language english
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman "default" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\use_microtype false
+\use_dash_ligatures true
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 1
+\use_minted 0
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\is_math_indent 0
+\math_numbering_side default
+\quotes_style english
+\dynamic_quotes 0
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Section
+Theory of linear elasticity for isotropic material
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\left\{ \begin{array}{c}
+\sigma_{11}\\
+\sigma_{22}\\
+\sigma_{33}\\
+\sigma_{12}\\
+\sigma_{23}\\
+\sigma_{13}
+\end{array}\right\} =\frac{E}{(1+\nu)(1-2\nu)}\left[\begin{array}{cccccc}
+1-\nu & \nu & \nu\\
+\nu & 1-\nu & \nu\\
+\nu & \nu & 1-\nu\\
+ &  &  & \frac{1-2\nu}{2}\\
+ &  &  &  & \frac{1-2\nu}{2}\\
+ &  &  &  &  & \frac{1-2\nu}{2}
+\end{array}\right]\left\{ \begin{array}{c}
+\varepsilon_{11}\\
+\varepsilon_{22}\\
+\varepsilon_{33}\\
+2\varepsilon_{12}\\
+2\varepsilon_{23}\\
+2\varepsilon_{13}
+\end{array}\right\} 
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\left\{ \begin{array}{c}
+\varepsilon_{11}\\
+\varepsilon_{22}\\
+\varepsilon_{33}\\
+2\varepsilon_{12}\\
+2\varepsilon_{23}\\
+2\varepsilon_{13}
+\end{array}\right\} =\frac{1}{E}\left[\begin{array}{cccccc}
+1 & -\nu & -\nu\\
+-\nu & 1 & -\nu\\
+-\nu & -\nu & 1\\
+ &  &  & 2+2\nu\\
+ &  &  &  & 2+2\nu\\
+ &  &  &  &  & 2+2\nu
+\end{array}\right]\left\{ \begin{array}{c}
+\sigma_{11}\\
+\sigma_{22}\\
+\sigma_{33}\\
+\sigma_{12}\\
+\sigma_{23}\\
+\sigma_{13}
+\end{array}\right\} 
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Plane stress
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+{\displaystyle \begin{bmatrix}\sigma_{11}\\
+\sigma_{22}\\
+\sigma_{12}
+\end{bmatrix}=\frac{E}{1-\nu^{2}}\begin{bmatrix}1 & \nu & 0\\
+\nu & 1 & 0\\
+0 & 0 & \frac{1-\nu}{2}
+\end{bmatrix}\begin{bmatrix}\varepsilon_{11}\\
+\varepsilon_{22}\\
+2\varepsilon_{12}
+\end{bmatrix}}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+{\displaystyle \begin{bmatrix}\varepsilon_{11}\\
+\varepsilon_{22}\\
+2\varepsilon_{12}
+\end{bmatrix}=\frac{1}{E}\begin{bmatrix}1 & -\nu & 0\\
+-\nu & 1 & 0\\
+0 & 0 & 2+2\nu
+\end{bmatrix}\begin{bmatrix}\sigma_{11}\\
+\sigma_{22}\\
+\sigma_{12}
+\end{bmatrix}}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Plane strain
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+{\displaystyle \begin{bmatrix}\sigma_{11}\\
+\sigma_{22}\\
+\sigma_{12}
+\end{bmatrix}=\frac{E}{(1+\nu)(1-2\nu)}\begin{bmatrix}1-\nu & \nu & 0\\
+\nu & 1-\nu & 0\\
+0 & 0 & \frac{1-2\nu}{2}
+\end{bmatrix}\begin{bmatrix}\varepsilon_{11}\\
+\varepsilon_{22}\\
+2\varepsilon_{12}
+\end{bmatrix}}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+{\displaystyle \begin{bmatrix}\varepsilon_{11}\\
+\varepsilon_{22}\\
+2\varepsilon_{12}
+\end{bmatrix}=\frac{1+\nu}{E}\begin{bmatrix}1-\nu & -\nu & 0\\
+-\nu & 1-\nu & 0\\
+0 & 0 & 2
+\end{bmatrix}\begin{bmatrix}\sigma_{11}\\
+\sigma_{22}\\
+\sigma_{12}
+\end{bmatrix}}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\end_body
+\end_document

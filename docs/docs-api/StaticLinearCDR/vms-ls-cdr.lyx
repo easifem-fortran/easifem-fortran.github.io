@@ -1,0 +1,378 @@
+#LyX 2.3 created this file. For more info see http://www.lyx.org/
+\lyxformat 544
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass article
+\use_default_options true
+\maintain_unincluded_children false
+\language english
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman "default" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\use_microtype false
+\use_dash_ligatures true
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 1
+\use_minted 0
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\is_math_indent 0
+\math_numbering_side default
+\quotes_style english
+\dynamic_quotes 0
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Title
+Static Linear Convection Diffusion Reaction
+\end_layout
+
+\begin_layout Author
+Vikas Sharma, Ph.
+ D.
+\end_layout
+
+\begin_layout Section
+VMS-FEM for convective form
+\end_layout
+
+\begin_layout Subsection*
+Final result
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\begin{split}\int_{\Omega}\bar{w}\boldsymbol{u}\cdot\nabla\bar{\phi}d\Omega+\int_{\Omega}\nabla\bar{w}\cdot\nu\nabla\bar{\phi}d\Omega+\int_{\Omega}\bar{w}\sigma\bar{\phi}d\Omega\\
++\sum_{e}\int_{\Omega_{e}}\left(\frac{\partial\bar{w}u_{i}}{\partial x_{i}}+\frac{\partial}{\partial x_{i}}\left(\frac{\partial\bar{w}}{\partial x_{i}}\nu\right)-\bar{w}\sigma\right)\tau rd\Omega\\
+-\int_{\Omega}\bar{w}\cdot sd\Omega-\int_{\Gamma_{h}}\bar{w}hds & =0
+\end{split}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+Proof
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\boldsymbol{u}\cdot\nabla\phi-\nabla\cdot\left(\nu\nabla\phi\right)+\sigma\phi=s
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\phi=\bar{\phi}+\tilde{\phi}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+w=\bar{w}+\tilde{w}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Galerkin form
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\int_{\Omega}w\boldsymbol{u}\cdot\nabla\phi d\Omega+\int_{\Omega}\nabla w\cdot\nu\nabla\phi d\Omega+\int_{\Omega}w\sigma\phi d\Omega-\int_{\Omega}w\cdot sd\Omega-\int_{\Gamma_{h}}whds=0
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Now set
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+w=\bar{w}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\begin{split}\int_{\Omega}\bar{w}\boldsymbol{u}\cdot\nabla\bar{\phi}d\Omega+\int_{\Omega}\nabla\bar{w}\cdot\nu\nabla\bar{\phi}d\Omega+\int_{\Omega}\bar{w}\sigma\bar{\phi}d\Omega-\int_{\Omega}\bar{w}\cdot sd\Omega-\int_{\Gamma_{h}}\bar{w}hds\\
++\int_{\Omega}\bar{w}\boldsymbol{u}\cdot\nabla\tilde{\phi}d\Omega+\int_{\Omega}\nabla\bar{w}\cdot\nu\nabla\tilde{\phi}d\Omega+\int_{\Omega}\bar{w}\sigma\tilde{\phi}d\Omega & =0
+\end{split}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\int_{\Omega}\bar{w}\boldsymbol{u}\cdot\nabla\tilde{\phi}d\Omega=-\int_{\Omega}\frac{\partial\bar{w}u_{i}}{\partial x_{i}}\tilde{\phi}d\Omega
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\begin{aligned}\int_{\Omega}\frac{\partial\bar{w}}{\partial x_{i}}\nu\frac{\partial\tilde{\phi}}{\partial x_{i}}d\Omega & =\int\frac{\partial}{\partial x_{i}}\left(\frac{\partial\bar{w}}{\partial x_{i}}\nu\tilde{\phi}\right)d\Omega-\int_{\Omega}\frac{\partial}{\partial x_{i}}\left(\frac{\partial\bar{w}}{\partial x_{i}}\nu\right)\tilde{\phi}d\Omega\\
+ & =-\int_{\Omega}\frac{\partial}{\partial x_{i}}\left(\frac{\partial\bar{w}}{\partial x_{i}}\nu\right)\tilde{\phi}d\Omega+\int_{\partial\Omega}\frac{\partial\bar{w}}{\partial x_{i}}\nu\tilde{\phi}n_{i}ds
+\end{aligned}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\begin{split}\int_{\Omega}\bar{w}\boldsymbol{u}\cdot\nabla\bar{\phi}d\Omega+\int_{\Omega}\nabla\bar{w}\cdot\nu\nabla\bar{\phi}d\Omega+\int_{\Omega}\bar{w}\sigma\bar{\phi}d\Omega\\
++\int_{\Omega}\left(-\frac{\partial\bar{w}u_{i}}{\partial x_{i}}-\frac{\partial}{\partial x_{i}}\left(\frac{\partial\bar{w}}{\partial x_{i}}\nu\right)+\bar{w}\sigma\right)\tilde{\phi}d\Omega\\
+-\int_{\Omega}\bar{w}\cdot sd\Omega-\int_{\Gamma_{h}}\bar{w}hds & =0
+\end{split}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Now set
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+w=\tilde{w}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\begin{split}\int_{\Omega}\tilde{w}\boldsymbol{u}\cdot\nabla\bar{\phi}d\Omega+\int_{\Omega}\nabla\tilde{w}\cdot\nu\nabla\bar{\phi}d\Omega+\int_{\Omega}\tilde{w}\sigma\bar{\phi}d\Omega-\int_{\Omega}\tilde{w}\cdot sd\Omega-\int_{\Gamma_{h}}\tilde{w}hds\\
++\int_{\Omega}\tilde{w}\boldsymbol{u}\cdot\nabla\tilde{\phi}d\Omega+\int_{\Omega}\nabla\tilde{w}\cdot\nu\nabla\tilde{\phi}d\Omega+\int_{\Omega}\tilde{w}\sigma\tilde{\phi}d\Omega & =0
+\end{split}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\int_{\Omega}\frac{\partial\tilde{w}}{\partial x_{i}}\nu\frac{\partial\bar{\phi}}{\partial x_{i}}d\Omega=-\int_{\Omega}\tilde{w}\frac{\partial}{\partial x_{i}}\left(\nu\frac{\partial\bar{\phi}}{\partial x_{i}}\right)d\Omega
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\int_{\Omega}\frac{\partial\tilde{w}}{\partial x_{i}}\nu\frac{\partial\tilde{\phi}}{\partial x_{i}}d\Omega=-\int_{\Omega}\tilde{w}\frac{\partial}{\partial x_{i}}\left(\nu\frac{\partial\tilde{\phi}}{\partial x_{i}}\right)d\Omega
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\begin{split}\int_{\Omega}\tilde{w}\boldsymbol{u}\cdot\nabla\bar{\phi}d\Omega-\int_{\Omega}\tilde{w}\frac{\partial}{\partial x_{i}}\left(\nu\frac{\partial\bar{\phi}}{\partial x_{i}}\right)d\Omega+\int_{\Omega}\tilde{w}\sigma\bar{\phi}d\Omega-\int_{\Omega}\tilde{w}\cdot sd\Omega\\
++\int_{\Omega}\tilde{w}\boldsymbol{u}\cdot\nabla\tilde{\phi}d\Omega-\int_{\Omega}\tilde{w}\frac{\partial}{\partial x_{i}}\left(\nu\frac{\partial\tilde{\phi}}{\partial x_{i}}\right)d\Omega+\int_{\Omega}\tilde{w}\sigma\tilde{\phi}d\Omega & =0
+\end{split}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\begin{split}\int_{\Omega}\tilde{w}\left(\boldsymbol{u}\cdot\nabla\tilde{\phi}-\frac{\partial}{\partial x_{i}}\left(\nu\frac{\partial\tilde{\phi}}{\partial x_{i}}\right)+\sigma\tilde{\phi}\right)d\Omega\\
++\int_{\Omega}\tilde{w}\left(\boldsymbol{u}\cdot\nabla\bar{\phi}-\frac{\partial}{\partial x_{i}}\left(\nu\frac{\partial\bar{\phi}}{\partial x_{i}}\right)+\sigma\bar{\phi}-s\right)d\Omega & =0\\
+\\
+\end{split}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\int_{\Omega}\tilde{w}\left(\boldsymbol{u}\cdot\nabla\tilde{\phi}-\frac{\partial}{\partial x_{i}}\left(\nu\frac{\partial\tilde{\phi}}{\partial x_{i}}\right)+\sigma\tilde{\phi}\right)d\Omega=-\int_{\Omega}\tilde{w}rd\Omega
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+r:=\boldsymbol{u}\cdot\nabla\bar{\phi}-\frac{\partial}{\partial x_{i}}\left(\nu\frac{\partial\bar{\phi}}{\partial x_{i}}\right)+\sigma\bar{\phi}-s
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\tilde{\phi}=-\tau r
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\begin{split}\int_{\Omega}\bar{w}\boldsymbol{u}\cdot\nabla\bar{\phi}d\Omega+\int_{\Omega}\nabla\bar{w}\cdot\nu\nabla\bar{\phi}d\Omega+\int_{\Omega}\bar{w}\sigma\bar{\phi}d\Omega\\
+-\sum_{e}\int_{\Omega_{e}}\left(-\frac{\partial\bar{w}u_{i}}{\partial x_{i}}-\frac{\partial}{\partial x_{i}}\left(\frac{\partial\bar{w}}{\partial x_{i}}\nu\right)+\bar{w}\sigma\right)\tau rd\Omega\\
+-\int_{\Omega}\bar{w}\cdot sd\Omega-\int_{\Gamma_{h}}\bar{w}hds & =0
+\end{split}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+References
+\end_layout
+
+\begin_layout Itemize
+Hughes (1995)
+\end_layout
+
+\begin_layout Itemize
+Hughes et al.
+ (1998)
+\end_layout
+
+\begin_layout Itemize
+Codina (2000)
+\end_layout
+
+\begin_layout Itemize
+Hughes, Mazzei and Jansen (2000)
+\end_layout
+
+\begin_layout Itemize
+Hughes et al.
+ (2001)
+\end_layout
+
+\end_body
+\end_document

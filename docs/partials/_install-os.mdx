@@ -1,0 +1,78 @@
+import { Code } from 'react-feather';
+
+<span>
+
+Installtion of easifem is described in following steps.
+
+</span>
+<ol>
+<li>
+Step 1: Download the command line application for managing EASIFEM packages.
+</li>
+<li>
+Step 2: Setup the EASIFEM environment variables.
+</li>
+<li>
+Step 3: Install the system dependencies
+</li>
+<li>
+Step 4: Install external pacakges
+</li>
+<li>
+Step 5 onwards: Install EASIFEM components such as `easifemBase`, `easifemClasses`, `easifemMaterials`, and `easifemKernels`.
+</li>
+</ol>
+
+<span>
+  The details of each installation step can be found by clicking following
+  links.
+</span>
+
+<CardSection
+  id="client-setup-web"
+  title="Installation steps of EASIFEM"
+  hasSubSections
+>
+  <CardSection id="web-sdk" title="">
+    <Card
+      title="Step 1: EASIFEM CLI"
+      to={props.addParticipantPath + '/install-easifem-cli'}
+      icon={<CodepenIcon />}
+    />
+    <Card
+      title="Step 2: Environment variables"
+      to={props.addParticipantPath + '/setup-environment'}
+      icon={<CommandIcon />}
+    />
+    <Card
+      title="Step 3: System requirements"
+      to={props.addParticipantPath + '/install-system-requirements'}
+      icon={<SystemInstallIcon />}
+    />
+    <Card
+      title="Step 4: External packages"
+      to={props.addParticipantPath + '/install-extpkgs'}
+      icon={<SystemInstallIcon />}
+    />
+    <Card
+      title="Step 6: easifemBase"
+      to={props.addParticipantPath + '/install-easifem-base'}
+      icon={<EasifemBaseIcon />}
+    />
+    <Card
+      title="Step 7: easifemClasses"
+      to={props.addParticipantPath + '/install-easifem-classes'}
+      icon={<EasifemClassesIcon />}
+    />
+    <Card
+      title="Step 8: easifemMaterials"
+      to={props.addParticipantPath + '/install-easifem-materials'}
+      icon={<EasifemMaterialsIcon />}
+    />
+    <Card
+      title="Step 9: easifemMaterials"
+      to={props.addParticipantPath + '/install-easifem-kernels'}
+      icon={<EasifemKernelsIcon />}
+    />
+  </CardSection>
+</CardSection>

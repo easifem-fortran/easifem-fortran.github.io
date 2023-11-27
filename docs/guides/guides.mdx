@@ -1,0 +1,77 @@
+---
+slug: /
+sidebar_position: 1
+sidebar_class_name: guide_sidebar_index
+---
+
+import ProductSection from '/docs/partials/_product-section.mdx';
+
+# Guides
+
+<ProductSection></ProductSection>
+
+<CardSection
+  id="programming-basics"
+  title="Programming Basics"
+  description="Learn about the key features of EASIFEM and modern Fortran, such as intrinsic types, strings, vectors, matrix, arrays, sparse matrix, linear algebra, file input-output, GUI creation, hash-maps, user-defined data types, and more 🔥."
+>
+  <Card
+    title="Intrinsic data types"
+    to="/guides/programming-basics/intrinsic-data-types"
+    description="Learn about the intrinsic data types (real, integer, string, file) in Fortran."
+  />
+  <Card
+    title="Vector"
+    to="/guides/programming-basics/vector"
+    description="Learn about the various data-types available in EASIFEM to represent small, big and other types of vectors."
+  />
+  <Card
+    title="Matrix"
+    to="/guides/programming-basics/matrix"
+    description="Learn about various data-types available in EASIFEM to represent small, big and other types of matrices."
+  />
+  <Card
+    title="String"
+    to="/guides/programming-basics/string"
+    description="This section covers the string data type in EASIFEM."
+  />
+  <Card
+    title="IO"
+    to="/guides/programming-basics/input-output"
+    description="In this section you will learn about the input-output operation in EASIFEM. This section also highlights the usage of various type of file systems including HDF5, plain text, markdown, json, and toml."
+  />
+</CardSection>
+
+<CardSection
+  id="programming-fem"
+  title="Programming Finite Element Methods"
+  description="From this section you can learn about the high level objects (data-types) of EASIFEM to solve elliptic, parabolic, hyperbolic, partial differential equations by using FEM."
+>
+  <Card
+    title="Reference element"
+    to="/guides/programming-fem/referenceElement"
+    description="Learn about how reference elements are represented in EASIFEM."
+  />
+  <Card
+    title="Quadrature points"
+    to="/guides/programming-fem/quadraturePoints"
+    description="After learning about the reference element, you should learn how to generate the quadrature points in EASIFEM."
+  />
+  <Card
+    title="Finite element spaces"
+    to="/guides/programming-fem/finiteElementSpaces"
+    description="In this section you will learn how to generate shape function data in EASIFEM."
+  />
+</CardSection>
+
+<CardSection
+  id="re"
+  title="Learn by simple tasks"
+  description="Learn how to use EASIFEM by performing simple tasks. This section includes simple tasks which you may be doing while enjoying scientific programming. These activities includes things such  as reading from a plain text, creating mesh, reading mesh, creating a dense matrix, linear algebra on dense matrix, creating sparse matrix, assembly of sparse matrix, among others."
+></CardSection>
+
+<CardSection
+  id="re"
+  title="Learn by Engineering Simulations"
+  description="This section includes examples of solvers and applications which have been developed by using EASIFEM. Each program is developed to solve a problem from either solid, poromechanics, and soil mechanics."
+></CardSection>

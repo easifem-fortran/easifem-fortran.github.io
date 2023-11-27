@@ -1,0 +1,91 @@
+# Reference Element
+
+Reference elements play a crucial role in finite element methods. In finite element space domain is discretized by using simple elements such as line, triangle, quadrangle, tetrahedron, hexahedron, prism, pyramid, etc. The collection of these elements is called the mesh. The elements of mesh are called physical elements. The physical elements can have different size and orientation. Therefore, we usually do not construct basis functions on these elements. Instead, we map these elements to "nicer" element. These nicer looking elements will be called the reference elements or master elements.
+
+## Reference Line element
+
+The reference element for line element can be:
+
+- unit line
+- bi-unit line
+
+:::note
+The **unit line** is given by $[0, 1]$, and the **biunit line** is given by $[-1, 1]$. The reference line has two end points.
+:::
+
+## Reference Triangle element
+
+The reference element for triangle is given by a right triangle (i.e., a triangle in which one angle is a right angle).
+
+The reference triangle has
+
+- Three nodes (vertices)
+- Three edges
+
+The reference triangle can be **unit triangle** or **biunit triangle**.
+
+The coordinates of a **unit triangle** are given by:
+
+| vertex | x | y | z |
+| --- | --- | --- | --- |
+| 1 | 0 | 0 | 0 |
+| 2 | 1 | 0 | 0 |
+| 3 | 0 | 1 | 0 |
+
+:::note The area of a unit triangle is 0.5.
+:::
+
+The coordinates of a **biunit triangle** are given by:
+
+| vertex | x | y | z |
+| --- | --- | --- | --- |
+| 1 | -1 | -1 | 0 |
+| 2 | 1 | -1 | 0 |
+| 3 | -1 | 1 | 0 |
+
+:::note The area of a biunit triangle is 2.0.
+:::
+
+## Reference Quadrangle element
+
+## Reference Tetrahedron element
+
+## Reference Hexahedron element
+
+## Reference Prism element
+
+## Reference Pyramid element
+
+The reference element
+
+<CardSection id="referenceElement">
+
+  <Card
+    title="Line"
+    to="/guides/programming-fem/referenceElement/line"
+  />
+  <Card
+    title="Triangle"
+    to="/guides/programming-fem/referenceElement/triangle"
+  />
+  <Card
+    title="Quadrangle"
+    to="/guides/programming-fem/referenceElement/quadrangle"
+  />
+  <Card
+    title="Hexahedron"
+    to="/guides/programming-fem/referenceElement/hexahedron"
+  />
+  <Card
+    title="Tetrahedron"
+    to="/guides/programming-fem/referenceElement/tetrahedron"
+  />
+  <Card
+    title="Prism"
+    to="/guides/programming-fem/referenceElement/prism"
+  />
+  <Card
+    title="Pyramid"
+    to="/guides/programming-fem/referenceElement/pyramid"
+  />
+</CardSection>

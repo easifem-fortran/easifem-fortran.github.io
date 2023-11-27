@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<!-- Created with Vectornator (http://vectornator.io/) -->
+<svg height="100%" stroke-miterlimit="10" style="fill-rule:nonzero;clip-rule:evenodd;stroke-linecap:round;stroke-linejoin:round;" version="1.1" viewBox="0 0 512 512" width="100%" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:vectornator="http://vectornator.io" xmlns:xlink="http://www.w3.org/1999/xlink">
+<defs/>
+<g id="Untitled" vectornator:layerName="Untitled">
+<path d="M150 0L362 0C444.843 0 512 67.1573 512 150L512 362C512 444.843 444.843 512 362 512L150 512C67.1573 512 4.69349e-14 444.843 0 362L0 150C0 67.1573 67.1573 1.5218e-14 150 0Z" fill="#ffffff" fill-rule="nonzero" opacity="1" stroke="none" vectornator:layerName="rect"/>
+<path d="M32.0413 239.42C32.1219 115.82 132.3 15.6202 256 15.6202C379.7 15.6202 480 115.92 480 239.62C480 363.32 379.8 463.52 256.1 463.62L82.93 463.62C54.84 463.62 32.0832 440.92 32.0416 412.82L32 412.82L32 239.42L32.0413 239.42ZM374.6 176.32C374.6 136.62 339 107.82 301.4 107.82C266.5 107.82 235.6 134.12 231.3 167.72C231.1 171.52 230.9 172.72 230.9 176.22C230.8 197.32 230.9 219.02 230.1 240.62C231 266.72 231.1 292.72 230.1 317.22C230.1 344.32 210.7 362.72 185.4 362.72C160.1 362.72 139.6 342.52 139.6 317.22C140.1 289.52 162.2 271.92 188.1 271.12L188.3 271.12L214.6 270.92L214.6 233.62L188.3 233.82C141.2 233.42 103.72 270.32 102.36 317.22C102.36 362.82 139.9 400.12 185.4 400.12C228.4 400.12 264.1 366.52 268 324.52L268.2 271.02L300.8 270.72C326.1 270.92 325.8 232.92 300.6 233.42L268.2 233.72C268.2 227.32 268.3 220.92 268.3 214.52C268.4 201.82 268.4 189.12 268.2 176.32C268.3 159.82 284 145.12 301.4 145.12C318.9 145.12 337.3 153.82 337.3 176.32C337.3 179.52 337.2 181.42 337 182.62C335.1 193.12 342.2 203.02 352.7 204.52C363.3 206.02 372.9 198.42 373.9 187.92C374.5 183.72 374.6 180.02 374.6 176.32L374.6 176.32Z" fill="#000000" fill-rule="nonzero" opacity="1" stroke="none" vectornator:layerName="path"/>
+</g>
+</svg>
