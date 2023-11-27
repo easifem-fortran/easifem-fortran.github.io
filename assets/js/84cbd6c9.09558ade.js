@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkeasifem_docs=self.webpackChunkeasifem_docs||[]).push([[83336],{34793:e=>{e.exports=JSON.parse('[{"label":"easifemBase","permalink":"/guides/tags/easifem-base","count":12},{"label":"extpkgs","permalink":"/guides/tags/extpkgs","count":18},{"label":"easifemClasses","permalink":"/guides/tags/easifem-classes","count":6}]')}}]);

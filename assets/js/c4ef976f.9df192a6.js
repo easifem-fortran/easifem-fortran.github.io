@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkeasifem_docs=self.webpackChunkeasifem_docs||[]).push([[2650],{16265:s=>{s.exports=JSON.parse('{"label":"AbstractFile","permalink":"/docs-api/tags/abstract-file","allTagsPath":"/docs-api/tags","count":1,"items":[{"id":"AbstractFile/index","title":"AbstractFile","description":"","permalink":"/docs-api/AbstractFile/"}],"unlisted":false}')}}]);

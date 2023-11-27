@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<!-- Created with Vectornator (http://vectornator.io/) -->
+<svg height="102.0px" stroke-miterlimit="10" style="fill-rule:nonzero;clip-rule:evenodd;stroke-linecap:round;stroke-linejoin:round;" version="1.1" viewBox="0 0 500 102" width="500.0px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<defs/>
+<g id="Layer-1">
+<path d="M260.199 67.9939C260.199 63.1906 264.093 59.2967 268.896 59.2967L306.661 59.2967C311.464 59.2967 315.358 63.1906 315.358 67.9939L315.358 81.5533C315.358 86.3567 311.464 90.2506 306.661 90.2506L268.896 90.2506C264.093 90.2506 260.199 86.3567 260.199 81.5533L260.199 67.9939Z" fill="#eba0ac" fill-rule="nonzero" opacity="1" stroke="#f38ba8" stroke-linecap="butt" stroke-linejoin="miter" stroke-width="3.00025"/>
+<path d="M358.077 64.8912L368.701 83.2931C373.008 90.7525 369.516 96.7996 360.903 96.7996L339.654 96.7996C331.041 96.7996 327.55 90.7525 331.856 83.2931L342.481 64.8912C346.787 57.4318 353.77 57.4318 358.077 64.8912Z" fill="#fab387" fill-rule="nonzero" opacity="1" stroke="#f9e2af" stroke-linecap="butt" stroke-linejoin="miter" stroke-width="3.00025"/>
+<path d="M451.06 40.3104L479.893 40.2084L494.398 65.1275L480.07 90.1486L451.237 90.2506L436.732 65.3315L451.06 40.3104Z" fill="#a6e3a1" fill-rule="nonzero" opacity="1" stroke="#94e2d5" stroke-linecap="butt" stroke-linejoin="miter" stroke-width="3.00025"/>
+<path d="M411.096 38.6196L422.442 44.9233C426.536 47.1978 429.854 52.7294 429.854 57.2785L429.854 69.8858C429.854 74.4349 426.536 79.9665 422.442 82.241L411.096 88.5447C407.002 90.8192 400.364 90.8192 396.27 88.5447L384.924 82.241C380.83 79.9665 377.511 74.4349 377.511 69.8858L377.511 57.2785C377.511 52.7294 380.83 47.1978 384.924 44.9233L396.27 38.6196C400.364 36.3451 407.002 36.3451 411.096 38.6196Z" fill="#f5c2e7" fill-rule="nonzero" opacity="1" stroke="#f2cdcd" stroke-linecap="butt" stroke-linejoin="miter" stroke-width="3.00025"/>
+</g>
+</svg>

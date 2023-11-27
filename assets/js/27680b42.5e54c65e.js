@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkeasifem_docs=self.webpackChunkeasifem_docs||[]).push([[96280],{59717:s=>{s.exports=JSON.parse('{"label":"plot","permalink":"/docs-api/tags/plot","allTagsPath":"/docs-api/tags","count":1,"items":[{"id":"PLPlot/index","title":"PLPlot","description":"","permalink":"/docs-api/PLPlot/"}],"unlisted":false}')}}]);

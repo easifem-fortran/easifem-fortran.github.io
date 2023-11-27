@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkeasifem_docs=self.webpackChunkeasifem_docs||[]).push([[6054],{5116:s=>{s.exports=JSON.parse('{"label":"plots","permalink":"/docs-api/tags/plots","allTagsPath":"/docs-api/tags","count":1,"items":[{"id":"VTKPlot/index","title":"VTKPlot","description":"","permalink":"/docs-api/VTKPlot/"}],"unlisted":false}')}}]);
