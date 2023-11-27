@@ -13,8 +13,15 @@ const meta = {
   baseUrl: '/',
   favicon: '/favicon.ico',
   organizationName: 'vickysharma0812',
+  // The GitHub user or organization that owns the deployment repository.
   projectName: 'vickysharma0812.github.io',
+  // The name of the deployment repository.
   deploymentBranch: 'gh-pages',
+  // The name of the deployment branch. 
+  // It defaults to 'gh-pages' for non-organization GitHub Pages repos 
+  // (projectName not ending in .github.io). 
+  // Otherwise, it needs to be explicit as a 
+  // config field or environment variable.
   trailingSlash: false,
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'throw',
