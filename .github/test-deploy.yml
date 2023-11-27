@@ -1,3 +1,10 @@
+#
+# When a new pull request is made to main or master branch,
+# there's an action that ensures the site builds successfully,
+# without actually deploying.
+# This job will be called test-deploy.
+#
+#
 # name: Test deployment
 #
 # on:
