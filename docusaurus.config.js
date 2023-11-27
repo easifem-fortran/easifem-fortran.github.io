@@ -205,7 +205,7 @@ const config = {
           href: '/',
           src: '/logo/light.svg',
           srcDark: '/logo/dark.svg',
-          alt: 'Dyte Docs',
+          alt: 'EASIFEM Docs',
           height: '36px',
         },
         links: [
@@ -213,16 +213,41 @@ const config = {
             title: 'Product',
             items: [
               {
-                label: 'Demo',
-                href: 'https://app.dyte.io',
+                label: 'easifemBase',
+                href: 'https://www.easifem.com/guides/getting-started/easifemBase',
               },
               {
-                label: 'Developer Portal',
-                href: 'https://dev.dyte.io',
+                label: 'easifemClasses',
+                href: 'https://www.easifem.com/guides/getting-started/easifemClasses',
               },
               {
-                label: 'Pricing',
-                href: 'https://dyte.io/#pricing',
+                label: 'easifemMaterials',
+                href: 'https://www.easifem.com/guides/getting-started/easifemMaterials',
+              },
+              {
+                label: 'easifemKernels',
+                href: 'https://www.easifem.com/guides/getting-started/easifemKernels',
+              },
+            ],
+          },
+          {
+            title: 'Resources',
+            items: [
+              {
+                label: 'Installation',
+                href: 'https://www.easifem.com/guides/install',
+              },
+              {
+                label: 'Docs for dev',
+                href: 'https://www.easifem.com/docs-api',
+              },
+              {
+                label: 'Docs for users',
+                href: 'https://www.easifem.com/guides/programming-fem',
+              },
+              {
+                label: 'Examples',
+                href: 'https://www.easifem.com/guides/learn-by-examples',
               },
             ],
           },
@@ -231,36 +256,24 @@ const config = {
             items: [
               {
                 label: 'About Us',
-                href: 'https://dyte.io',
-              },
-              {
-                label: 'Join Us',
-                href: 'https://dyte.freshteam.com/jobs',
-              },
-              {
-                label: 'Privacy Policy',
-                href: 'https://dyte.io/privacy-policy',
+                href: 'https://www.easifem.com/about',
               },
               {
                 label: 'Contact Us',
-                href: 'https://dyte.io/contact',
+                href: 'https://www.easifem.com/contact',
               },
             ],
           },
           {
-            title: 'Resources',
+            title: 'EASIFEM Community',
             items: [
               {
-                label: 'Documentation',
-                href: '/',
+                label: 'GitHub',
+                href: 'https://github.com/vickysharma0812/easifem',
               },
               {
-                label: 'Blog',
-                href: 'https://dyte.io/blog',
-              },
-              {
-                label: 'Community',
-                href: 'https://community.dyte.io',
+                label: 'Join Slack Community',
+                href: 'https://join.slack.com/t/easifem/shared_invite/zt-27juumyaa-Cg0uty_UJDNp81Gq5HdFRA',
               },
             ],
           },
@@ -283,13 +296,16 @@ const config = {
           },
         ],
       },
-      // algolia: {
-      //   appId: 'HL0HSV62RK',
-      //   apiKey: '72ebf02146698733b7114c7b36da0945',
-      //   indexName: 'docs',
-      //   contextualSearch: true,
-      //   searchParameters: {},
-      // },
+      algolia: {
+        appId: 'VNHYRJ8XLW',
+        apiKey: '0348d12ff806afe9d3ebaf29149b02a0',
+        indexName: 'easifem',
+        contextualSearch: true,
+        // Optional: Algolia search parameters
+        searchParameters: {},
+        // Optional: path for search page that enabled by default (`false` to disable it)
+        searchPagePath: 'search',
+      },
     }),
 
   // webpack: {
