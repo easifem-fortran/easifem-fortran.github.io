@@ -296,13 +296,16 @@ const config = {
           },
         ],
       },
-      // algolia: {
-      //   appId: 'HL0HSV62RK',
-      //   apiKey: '72ebf02146698733b7114c7b36da0945',
-      //   indexName: 'docs',
-      //   contextualSearch: true,
-      //   searchParameters: {},
-      // },
+      algolia: {
+        appId: 'VNHYRJ8XLW',
+        apiKey: '0348d12ff806afe9d3ebaf29149b02a0',
+        indexName: 'easifem',
+        contextualSearch: true,
+        // Optional: Algolia search parameters
+        searchParameters: {},
+        // Optional: path for search page that enabled by default (`false` to disable it)
+        searchPagePath: 'search',
+      },
     }),
 
   // webpack: {
