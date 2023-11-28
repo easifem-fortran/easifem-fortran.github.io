@@ -298,15 +298,14 @@ const config = {
         // apiKey: "72ebf02146698733b7114c7b36da0945",
         // indexName: "docs",
         appId: "VNHYRJ8XLW",
-        apiKey: "13b757db568c6f27fd8399306e681bdc",
+        apiKey: "d52eed214e3a2099fe1026d1c2774466",
         indexName: "easifem",
         // Optional: Replace parts of the item URLs from Algolia.
         // Useful when using the same search index for multiple deployments
         // using a different baseUrl. You can use regexp or string in the `from` param.
         // For example: localhost:3000 vs myCompany.com/docs
         //
-        contextualSearch: true,
-        searchParameters: {},
+        contextualSearch: false,
       },
     }),
   // webpack: {
