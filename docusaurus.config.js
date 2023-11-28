@@ -298,13 +298,17 @@ const config = {
       },
       algolia: {
         appId: 'VNHYRJ8XLW',
-        apiKey: 'e3deb013d45dd81a76a3667b76994b5f',
+        apiKey: 'e99a82e9a18482a956a092f77a17fef1',
         indexName: 'easifem',
-        contextualSearch: true,
-        // Optional: Algolia search parameters
-        searchParameters: {},
-        // Optional: path for search page that enabled by default (`false` to disable it)
-        searchPagePath: 'search',
+        // Optional: Replace parts of the item URLs from Algolia. 
+        // Useful when using the same search index for multiple deployments 
+        // using a different baseUrl. You can use regexp or string in the `from` param. 
+        // For example: localhost:3000 vs myCompany.com/docs
+        //
+        replaceSearchResultPathname: {
+          from: '/docs/', // or as RegExp: /\/docs\//
+          to: '/',
+        },
       },
     }),
 
