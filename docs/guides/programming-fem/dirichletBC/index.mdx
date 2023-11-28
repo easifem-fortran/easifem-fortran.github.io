@@ -1,0 +1,217 @@
+---
+sidebar_position: 1
+date: 2023-11-28 
+update: 2023-11-28 
+status: stable
+docs: done
+extpkgs: none
+category:
+  - BoundaryCondition
+  - Guides
+tags:
+  - AbstractBC
+  - BoundaryCondition
+  - easifemClasses
+  - guides
+  - DirichletBC
+---
+
+# Dirichlet boundary condition
+
+To apply boundary condition in FEM computation, EASIFEM, provides a class called [DirichletBC_](/docs-api/DirichletBC).
+
+:::info
+`DirichletBC_` is a subclass of [AbstractBC](/docs-api/AbstractBC).
+:::
+
+To understand how `DirichletBC` works, lets consider an example of linear elasticity. Let's say we want to apply the following boundary condition.
+
+$$
+\mathbf{u} = \mathbf{U}_{0}, \text{ on } \Gamma
+$$
+
+Now, we may think that there is only one boundary condition. But in easifem this is not the case. Actually, $\mathbf{u}$, has three components in 3D (and two components in 2D). Therefore, the above boundary condition is actually boundary condition for $u_x$, $u_y$, and $u_z$. So, we have three boundary condition on a given boundary $\Gamma$.
+
+The second point, which is quite obvious, is that every boundary condition has two things:
+
+- The boundary
+- The value (condition)
+
+To define the boundary EASIFEM employs the [MeshSelection](/docs-api/MeshSelection) class. The value can be specified in several ways as mentioned below in this section.
+
+:::note
+Several instances of DirichletBC can have same boundary but different condition.
+:::
+
+## Learn from example:
+
+Let's consider the following example, in which we will specify the constant boundary condition.
+
+<details>
+<summary>Click here to see the example</summary>
+<div>
+
+```fortran
+PROGRAM main
+USE easifemBase
+USE easifemClasses
+IMPLICIT NONE
+
+TYPE(DirichletBC_) :: obj
+TYPE(MeshSelection_) :: boundary
+TYPE(ParameterList_) :: param
+TYPE(Domain_) :: dom
+TYPE(HDF5File_) :: domainfile
+CHARACTER(*), PARAMETER :: domainfilename = "./mesh3D.h5"
+INTEGER(I4B) :: bottom = 1, top = 2, left = 3, right = 4,  &
+  & front = 5, behind = 6, nsd
+INTEGER(I4B), ALLOCATABLE :: nodeNum(:)
+REAL(DFP), ALLOCATABLE :: nodalValue(:, :)
+
+CALL FPL_Init; CALL param%Initiate()
+CALL domainfile%Initiate(filename=domainfilename, mode="READ")
+CALL domainfile%OPEN()
+CALL dom%Initiate(domainfile, group="")
+
+nsd = dom%GetNSD()
+
+! We call Set SetAbstractBCParam to set the parameter for boundary condition
+CALL SetAbstractBCParam(param=param, prefix=obj%GetPrefix(),  &
+  & name="ZeroBC", idof=1, nodalValueType=Constant)
+
+! We call SetMeshSelectionParam to set the parameter for boundary condition
+CALL SetMeshSelectionParam(param=param, prefix=boundary%GetPrefix(),  &
+  & isSelectionByMeshID=.TRUE.)
+
+CALL boundary%Initiate(param)
+
+CALL boundary%Add(dom=dom, dim=nsd - 1, meshID=[top])
+CALL boundary%Set()
+
+CALL obj%Initiate(param=param, boundary=boundary, dom=dom)
+
+CALL obj%Set(constantNodalValue=0.0_DFP)
+
+CALL obj%Get(nodeNum=nodeNum, nodalValue=nodalValue)
+
+CALL Display(nodeNum, "nodeNum", advance="NO")
+CALL Display(nodalValue, "nodalValue", advance="YES")
+
+CALL domainfile%DEALLOCATE()
+CALL dom%DEALLOCATE()
+CALL param%DEALLOCATE(); CALL FPL_Finalize
+END PROGRAM main
+```
+
+</div>
+</details>
+
+In the above code, to define the boundary condition, we follow the steps given below.
+
+### Step 1: Set the properties of the DirichletBC
+
+We set the properties of `DirichletBC_` by using the method called [SetAbstractBCParam](/docs-api/AbstractBC/SetAbstractBCParam).
+
+```fortran
+CALL SetAbstractBCParam(param=param, prefix=obj%GetPrefix(),  &
+  & name="ZeroBC", idof=1, nodalValueType=Constant)
+```
+
+:::note
+Because we are setting constant boundary condition, we used `nodalValueType=Constant`.
+:::
+
+You can learn more about this method [here](docs-api/AbstractBC/SetAbstractBCParam).
+
+### Step 2: Define a boundary
+
+To define a boundary we will use the [MeshSelection](/docs-api/MeshSelection). In the above code, we select the boundary by specifing the `meshID`.
+
+```fortran
+CALL SetMeshSelectionParam(param=param, prefix=boundary%GetPrefix(),  &
+  & isSelectionByMeshID=.TRUE.)
+```
+
+After setting the boundary parameter we call [Initiate](/docs-api/MeshSelection/Initiate) method.
+
+```fortran
+CALL boundary%Initiate(param)
+```
+
+Subsequently, we call `Add` method to add the information of `meshID`.
+
+```fortran
+CALL boundary%Add(dom=dom, dim=nsd - 1, meshID=[top])
+CALL boundary%Set()
+```
+
+:::info
+After adding the information of meshID we should call [Set](/docs-api/MeshSelection/Set) method, which means that we are done adding information to the boundary.
+:::
+
+You can learn more about `SetMeshSelectionParam` [here](/docs-api/MeshSelection/SetMeshSelectionParam)
+
+### Step 3: Initiate instance of `DirichletBC`
+
+After initiating the boundary, call [Initiate](/docs-api/AbstractBC/Initiate). To initiate an instance of `DirichletBC_` we need to pass the boundary, paramters, and domain.
+
+```fortran
+CALL obj%Initiate(param=param, boundary=boundary, dom=dom)
+```
+
+### Step 4: Set the boundary condition
+
+After initiating an instance of `DirichletBC_`, next step is to set the boundary condition. To do so, we will use the method [Set](/docs-api/AbstractBC/Set).
+
+While setting the value we should respect the configuration used while calling `SetAbstractBCParam`. For example, in the above example we configure boundary condition for `nodalValueType=Constant`. Therefore, we should set the `constantNodalValue` while calling the set method.
+
+```fortran
+CALL obj%Set(constantNodalValue=0.0_DFP)
+```
+
+### Step 5: Get the value of boundary condition
+
+To get the boundary condition we will use the method [Get](/docs-api/AbstractBC/Get). The Get function can take two arguments `nodeNum(:)` and `nodalValue(:,:)`. The `nodeNum(:)` is compulsory, whereas `nodalValue` can be optional.
+
+```fortran
+CALL obj%Get(nodeNum=nodeNum, nodalValue=nodalValue)
+```
+
+:::note
+On return, the size of `nodeNum` and `SIZE(nodalValue, 1)` is same.
+:::
+
+The columns in `nodalValue` denotes the boundary condition at different times. You can read more about this subroutine [here](/docs-api/AbstractBC/Get).
+
+## Further reading
+
+There is more to `DirichletBC_`, and you can learn about them from following pages. (Here `DBC` stands for `DirichletBC_`)
+
+<CardSection id="quadraturePoints">
+
+  <Card
+    title="Constant user function"
+    to="/guides/programming-fem/dirichletBC/dbc_userfunc_const"
+    description="This example shows how to initiate DBC by using a constant UserFunction $u=\alpha$"
+  />
+  <Card
+    title="Spatial user function"
+    to="/guides/programming-fem/dirichletBC/dbc_userfunc_space"
+    description="This example shows how to initiate DBC by using a space dependent UserFunction, $u=g(x, y, z)$"
+  />
+  <Card
+    title="Toml file constant value"
+    to="/guides/programming-fem/dirichletBC/dbc_toml_const"
+    description="This example shows how to initiate DBC by reading a toml-file. Constant boundary condition, $u=\alpha$"
+  />
+  <Card
+    title="Toml file constant function"
+    to="/guides/programming-fem/dirichletBC/dbc_toml_userfunc_const"
+    description="This example shows how to initiate DBC by reading a toml-file. Constant boundary condition, $u=\alpha$"
+  />
+  <Card
+    title="Toml file space function"
+    to="/guides/programming-fem/dirichletBC/dbc_toml_userfunc_const"
+    description="This example shows how to initiate DBC by reading a toml-file. Space boundary condition, $u=g(x,y,z)$"
+  />
+</CardSection>

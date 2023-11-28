@@ -66,7 +66,7 @@ const defaultSettings = {
   showLastUpdateTime: true,
   sidebarPath: require.resolve("./sidebars-default.js"),
   remarkPlugins: [math],
-  rehypePlugins: [katex],
+  rehypePlugins: [katex, { strict: false }],
 };
 
 /**
@@ -278,7 +278,7 @@ const config = {
         copyright: "Copyright © Vikas Sharma since 2023. All rights reserved.",
       },
       prism: {
-        additionalLanguages: ["fortran", "bash", "python"],
+        additionalLanguages: ["fortran", "bash", "python", "toml"],
         theme: require("./src/plugins/prism_themes/github"),
         darkTheme: require("./src/plugins/prism_themes/tokyonight_night"),
         magicComments: [
@@ -298,15 +298,14 @@ const config = {
         // apiKey: "72ebf02146698733b7114c7b36da0945",
         // indexName: "docs",
         appId: "VNHYRJ8XLW",
-        apiKey: "e3deb013d45dd81a76a3667b76994b5f",
+        apiKey: "d52eed214e3a2099fe1026d1c2774466",
         indexName: "easifem",
         // Optional: Replace parts of the item URLs from Algolia.
         // Useful when using the same search index for multiple deployments
         // using a different baseUrl. You can use regexp or string in the `from` param.
         // For example: localhost:3000 vs myCompany.com/docs
         //
-        contextualSearch: true,
-        searchParameters: {},
+        contextualSearch: false,
       },
     }),
   // webpack: {

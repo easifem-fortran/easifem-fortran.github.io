@@ -1,18 +1,5 @@
 # GetDOFNo
 
-Get degree of freedom number.
+import EXAMPLE3 from "@site/docs/docs-api/AbstractBC/GetDOFNo.md";
 
-## Interface
-
-```fortran
-INTERFACE
-  MODULE PURE FUNCTION GetDOFNo(obj) RESULT(ans)
-    CLASS(AbstractBC_), INTENT(IN) :: obj
-    INTEGER(I4B) :: ans
-  END FUNCTION GetDOFNo
-END INTERFACE
-```
-
-
-
-This routine is inherited from [AbstractBC_](../AbstractBC/AbstractBC_.md).
+<EXAMPLE3 />

@@ -15,6 +15,12 @@ tags:
 
 # DirichletBC
 
+import EXAMPLE18 from "@site/docs/guides/programming-fem/dirichletBC/index.mdx";
+
+<EXAMPLE18 />
+
+## Methods
+
 import DocCardList from '@theme/DocCardList';
 
 <DocCardList />

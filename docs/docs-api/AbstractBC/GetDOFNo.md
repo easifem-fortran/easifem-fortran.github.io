@@ -2,6 +2,8 @@
 
 Get degree of freedom number.
 
+<span class="badge badge--secondary"> @GetMethods </span>
+
 ## Interface
 
 ```fortran

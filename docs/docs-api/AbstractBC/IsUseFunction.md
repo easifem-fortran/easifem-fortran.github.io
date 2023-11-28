@@ -2,6 +2,8 @@
 
 Returns true if use function option is set to true.
 
+<span class="badge badge--secondary"> @GetMethods </span>
+
 ## Interface
 
 ```fortran
