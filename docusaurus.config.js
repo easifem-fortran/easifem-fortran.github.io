@@ -278,7 +278,7 @@ const config = {
         copyright: "Copyright © Vikas Sharma since 2023. All rights reserved.",
       },
       prism: {
-        additionalLanguages: ["fortran", "bash", "python"],
+        additionalLanguages: ["fortran", "bash", "python", "toml"],
         theme: require("./src/plugins/prism_themes/github"),
         darkTheme: require("./src/plugins/prism_themes/tokyonight_night"),
         magicComments: [
@@ -298,7 +298,7 @@ const config = {
         // apiKey: "72ebf02146698733b7114c7b36da0945",
         // indexName: "docs",
         appId: "VNHYRJ8XLW",
-        apiKey: "e3deb013d45dd81a76a3667b76994b5f",
+        apiKey: "13b757db568c6f27fd8399306e681bdc",
         indexName: "easifem",
         // Optional: Replace parts of the item URLs from Algolia.
         // Useful when using the same search index for multiple deployments

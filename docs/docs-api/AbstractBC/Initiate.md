@@ -2,6 +2,8 @@
 
 Initiate the [AbstractBC](./AbstractBC_.md)
 
+<span class="badge badge--secondary"> @ConstructorMethods </span>
+
 ## Interface
 
 ```fortran

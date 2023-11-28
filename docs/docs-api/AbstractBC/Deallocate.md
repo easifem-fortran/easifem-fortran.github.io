@@ -2,6 +2,8 @@
 
 Deallocate the [AbstractBC_](AbstractBC_.md).
 
+<span class="badge badge--secondary"> @ConstructorMethods </span>
+
 ## Interface
 
 ```fortran

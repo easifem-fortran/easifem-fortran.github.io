@@ -2,6 +2,8 @@
 
 Import [AbstractBC_](AbstractBC_.md) by reading a [HDF5File_](../HDF5File/HDF5File_.md)
 
+<span class="badge badge--secondary"> @IOMethods </span>
+
 ## Interface
 
 ```fortran
