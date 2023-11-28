@@ -1,0 +1,50 @@
+[bc1]
+name = "DirichletBC"
+idof = 1
+nodalValueType = "Constant"
+value = 10.0
+
+[bc1.boundary]
+isSelectionByMeshID = true
+
+[bc1.boundary.meshID]
+surface = [1]
+
+[bc2]
+name = "DirichletBC"
+idof = 1
+nodalValueType = "Constant"
+isUserFunction = true
+
+[bc2.function]
+name = "func"
+returnType = "Scalar"
+argType = "Constant"
+value = 10.0
+
+# boundary
+[bc2.boundary]
+isSelectionByMeshID = true
+
+[bc2.boundary.meshID]
+surface = [1]
+
+[bc3]
+name = "DirichletBC"
+idof = 1
+nodalValueType = "Space"
+isUserFunction = true
+
+[bc3.function]
+name = "func"
+returnType = "Scalar"
+argType = "Space"
+luaScript = "DirichletBC.lua"
+luaFunctionName = "Func1"
+
+# boundary
+[bc3.boundary]
+isSelectionByMeshID = true
+
+[bc3.boundary.meshID]
+surface = [1]

@@ -19,3 +19,23 @@ INTERFACE Set
   END SUBROUTINE bc_Set
 END INTERFACE Set
 ```
+
+:::info `constantNodalValue`
+When the `AbstractBC_` is configured for `nodalValueType=Constant`, we must provide `constantNodalValue`.
+:::
+
+:::note `spaceNodalValue`
+When the `AbstractBC_` is configured for `nodalValueType=Space`, we must provide `spaceNodalValue`.
+:::
+
+:::note `timeNodalValue`
+When the `AbstractBC_` is configured for `nodalValueType=Time`, we must provide `timeNodalValue`.
+:::
+
+:::note `spaceTimeNodalValue`
+When the `AbstractBC_` is configured for `nodalValueType=SpaceTime`, we must provide `spaceTimeNodalValue`.
+:::
+
+:::note `userFunction`
+When the `AbstractBC_` is configured for `isUserFunction=True`, we must provide `userFunction`.
+:::

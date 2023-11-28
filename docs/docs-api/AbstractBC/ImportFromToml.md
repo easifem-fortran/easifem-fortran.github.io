@@ -14,6 +14,10 @@ INTERFACE AbstractBCImportFromToml
 END INTERFACE AbstractBCImportFromToml
 ```
 
+:::info
+This method is mainly for internal use.
+:::
+
 ## Interface 2
 
 ```fortran
@@ -31,6 +35,10 @@ END INTERFACE AbstractBCImportFromToml
 ```
 
 ## TOML configuration
+
+<details>
+<summary>Click here to see the toml-configuration file</summary>
+<div>
 
 ```toml
 [bc]
@@ -97,7 +105,7 @@ numArgs = 3
 # number of arguments should be 3, when argType is "Space"
 # number of arguments should be 4, when argType is "SpaceTime"
 
-scalarValue = 1.0
+value = 1.0
 # if lua script and luaFunctionName are absent then this
 # variable must be given.
 # When this is given, then argType must be Constant, and
@@ -181,3 +189,6 @@ line = [1, 2, 3]
 surface = [1, 2, 3]
 volume = [1, 2, 3]
 ```
+
+</div>
+</details>

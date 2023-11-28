@@ -1,0 +1,1849 @@
+
+=> Following properties of input file _ImportFromToml_test_3.F90 is used: 
+=> Absolute parent: /Users/easifem/Documents/vickysharma0812.github.io/docs/docs-api/DirichletBC/examples
+=> Absolute path  : /Users/easifem/Documents/vickysharma0812.github.io/docs/docs-api/DirichletBC/examples/_ImportFromToml_test_3
+=> File basename  : _ImportFromToml_test_3.F90
+=> File ext       : .F90
+
+╭─────────────────────────╮
+│  Fortran File Detected │
+╰─────────────────────────╯
+test ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━test ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━  Found /Users/easifem/temp/tests/build/, removing it
+test ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━=> Calling /opt/homebrew/bin/cmake with following args ...
+test ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━=> /opt/homebrew/bin/cmake -G Ninja -B /Users/easifem/temp/tests/build/ -DFILE=/Users/easifem/Documents/vickysharma0812.github.io/docs/docs-api/DirichletBC/examples/_ImportFromToml_test_3.F90
+test ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━test ━━━━━━━━━━━━━━━╸━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━test ━━━━━━━━━━━━━━━╸━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━test ━━━━━━━━━━━━━━━╸━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━test ━━━━━━━━━━━━━━━╸━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━test ━━━━━━━━━━━━━━━╸━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━test ━━━━━━━━━━━━━━━╸━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━test ━━━━━━━━━━━━━━━╸━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━test ━━━━━━━━━━━━━━━╸━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━test ━━━━━━━━━━━━━━━╸━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━test ━━━━━━━━━━━━━━━╸━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━test ━━━━━━━━━━━━━━━╸━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━test ━━━━━━━━━━━━━━━╸━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━test ━━━━━━━━━━━━━━━╸━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━test ━━━━━━━━━━━━━━━╸━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━test ━━━━━━━━━━━━━━━╸━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━test ━━━━━━━━━━━━━━━╸━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━test ━━━━━━━━━━━━━━━╸━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━test ━━━━━━━━━━━━━━━╸━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━test ━━━━━━━━━━━━━━━╸━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━test ━━━━━━━━━━━━━━━╸━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━test ━━━━━━━━━━━━━━━╸━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━test ━━━━━━━━━━━━━━━╸━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━test ━━━━━━━━━━━━━━━╸━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━test ━━━━━━━━━━━━━━━╸━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━test ━━━━━━━━━━━━━━━╸━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━test ━━━━━━━━━━━━━━━╸━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━test ━━━━━━━━━━━━━━━╸━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━test ━━━━━━━━━━━━━━━╸━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━test ━━━━━━━━━━━━━━━╸━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━test ━━━━━━━━━━━━━━━╸━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━test ━━━━━━━━━━━━━━━╸━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━test ━━━━━━━━━━━━━━━╸━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━test ━━━━━━━━━━━━━━━╸━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━test ━━━━━━━━━━━━━━━╸━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╭────────────╮
+│ ✔️R SUCCESS │
+╰────────────╯
+test ━━━━━━━━━━━━━━━╸━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━  Config App => command /opt/homebrew/bin/cmake was successful
+test ━━━━━━━━━━━━━━━╸━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+ Config App => Command output: 
+
+test ━━━━━━━━━━━━━━━╸━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━-- The C compiler identification is AppleClang 15.0.0.15000040
+-- The CXX compiler identification is AppleClang 15.0.0.15000040
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /Library/Developer/CommandLineTools/usr/bin/cc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /Library/Developer/CommandLineTools/usr/bin/c++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- The Fortran compiler identification is GNU 13.2.0
+-- Checking whether Fortran compiler has -isysroot
+-- Checking whether Fortran compiler has -isysroot - yes
+-- Checking whether Fortran compiler supports OSX deployment target flag
+-- Checking whether Fortran compiler supports OSX deployment target flag - yes
+-- Detecting Fortran compiler ABI info
+-- Detecting Fortran compiler ABI info - done
+-- Check for working Fortran compiler: /opt/homebrew/bin/gfortran - skipped
+-- Found OpenMP_C: -fopenmp=libomp -Wno-unused-command-line-argument  
+-- Found OpenMP_CXX: -fopenmp=libomp -Wno-unused-command-line-argument  
+-- Found OpenMP_Fortran: -fopenmp (found version "4.5") 
+-- Found OpenMP: TRUE (found version "4.5")  
+-- Configuring done (3.5s)
+-- Generating done (0.0s)
+-- Build files have been written to: /Users/easifem/temp/tests/build
+
+test ━━━━━━━━━━━━━━━╸━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━=> Calling /opt/homebrew/bin/cmake with following args ...
+test ━━━━━━━━━━━━━━━╸━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━=> /opt/homebrew/bin/cmake --build /Users/easifem/temp/tests/build/
+test ━━━━━━━━━━━━━━━╸━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━test ━━━━━━━━━━━━━━━╸━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━test ━━━━━━━━━━━━━━━╸━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━test ━━━━━━━━━━━━━━━╸━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━test ━━━━━━━━━━━━━━━╸━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━test ━━━━━━━━━━━━━━━╸━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━test ━━━━━━━━━━━━━━━╸━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━test ━━━━━━━━━━━━━━━╸━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━test ━━━━━━━━━━━━━━━╸━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━test ━━━━━━━━━━━━━━━╸━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━test ━━━━━━━━━━━━━━━╸━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━test ━━━━━━━━━━━━━━━╸━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━test ━━━━━━━━━━━━━━━╸━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━test ━━━━━━━━━━━━━━━╸━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━test ━━━━━━━━━━━━━━━╸━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━test ━━━━━━━━━━━━━━━╸━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━test ━━━━━━━━━━━━━━━╸━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━test ━━━━━━━━━━━━━━━╸━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━test ━━━━━━━━━━━━━━━╸━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╭────────────╮
+│ ✔️R SUCCESS │
+╰────────────╯
+test ━━━━━━━━━━━━━━━╸━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━  Building App => command /opt/homebrew/bin/cmake was successful
+test ━━━━━━━━━━━━━━━╸━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+ Building App => Command output: 
+
+test ━━━━━━━━━━━━━━━╸━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[1/4] Building Fortran preprocessed CMakeFiles/test.dir/_ImportFromToml_test_3.F90-pp.f90
+[2/4] Generating Fortran dyndep file CMakeFiles/test.dir/Fortran.dd
+[3/4] Building Fortran object CMakeFiles/test.dir/_ImportFromToml_test_3.F90.o
+[4/4] Linking Fortran executable test
+ld: warning: ignoring duplicate libraries: '-lemutls_w', '-lgcc'
+
+test ━━━━━━━━━━━━━━━╸━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━test ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╺━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━test ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╺━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━test ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╺━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━test ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╺━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━test ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╺━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━test ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╺━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━test ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╺━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━test ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╺━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╭────────────╮
+│ ✔️R SUCCESS │
+╰────────────╯
+test ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╺━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+ Running App => Command output: 
+
+test ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╺━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+[💚 INFORMATION ✅]
+  [🚀 Module ] Domain_Class
+  [🎇 Method ] Domain_Initiate
+  [🔊 Message] INITIATING DOMAIN BY IMPORTING FROM MESH-FILE
+
+
+[💚 INFORMATION ✅]
+  [🚀 Module ] Domain_Class
+  [🎇 Method ] Domain_Import
+  [🔊 Message] [START] Import()
+
+engine = GMSH 4.1 0 8
+majorVersion = 4
+minorVersion = 0
+version =  0.410000000000000E+001
+NSD = 2
+maxNptrs = 56
+minNptrs = 1
+tNodes = 56
+maxElemNum = 98
+minElemNum = 1
+tEntitiesForNodes = 26
+tEntitiesForElements = 26
+numVolumeEntites = 0
+numSurfaceEntites = 6
+numCurveEntites = 12
+numPointEntites = 8
+ALLOCATING obj%meshList
+Adding mesh entity xidim=0 entry number=1
+
+[💚 INFORMATION ✅]
+  [🚀 Module ] Mesh_Class
+  [🎇 Method ] mesh_initiate
+  [🔊 Message] [START] Importing mesh
+
+
+[💚 INFORMATION ✅]
+  [🚀 Module ] Mesh_Class
+  [🎇 Method ] mesh_Import
+  [🔊 Message] [START] Import()
+
+Making dsetname
+dsetname = /pointEntities_1
+uid = 1
+xidim = 0
+elemType = 15
+nsd = 15
+tIntNodes = 1
+tElements = 1
+minX =  0.000000000000000E+000
+minY =  0.000000000000000E+000
+minZ =  0.000000000000000E+000
+maxX =  0.000000000000000E+000
+maxY =  0.000000000000000E+000
+maxZ =  0.000000000000000E+000
+x =  0.000000000000000E+000
+y =  0.000000000000000E+000
+z =  0.000000000000000E+000
+reading physicalTag
+reading elemNumber
+maxElemNum = 1
+minElemNum = 1
+reading connectivity
+maxNptrs = 0
+minNptrs = 0
+tNodes = 1
+reading InternalNptrs
+reading boundingEntity
+Setting reference element
+Setting facetElements
+
+[💚 INFORMATION ✅]
+  [🚀 Module ] Mesh_Class
+  [🎇 Method ] mesh_Import
+  [🔊 Message] [END] Import()
+
+
+[💚 INFORMATION ✅]
+  [🚀 Module ] Mesh_Class
+  [🎇 Method ] mesh_initiate
+  [🔊 Message] Mesh imported
+
+
+[💚 INFORMATION ✅]
+  [🚀 Module ] Mesh_Class
+  [🎇 Method ] mesh_initiate
+  [🔊 Message] [END] Importing mesh [OK!]
+
+Adding mesh entity xidim=0 entry number=2
+
+[💚 INFORMATION ✅]
+  [🚀 Module ] Mesh_Class
+  [🎇 Method ] mesh_initiate
+  [🔊 Message] [START] Importing mesh
+
+
+[💚 INFORMATION ✅]
+  [🚀 Module ] Mesh_Class
+  [🎇 Method ] mesh_Import
+  [🔊 Message] [START] Import()
+
+Making dsetname
+dsetname = /pointEntities_2
+uid = 2
+xidim = 0
+elemType = 15
+nsd = 15
+tIntNodes = 1
+tElements = 1
+minX =  0.000000000000000E+000
+minY =  0.000000000000000E+000
+minZ =  0.000000000000000E+000
+maxX =  0.000000000000000E+000
+maxY =  0.000000000000000E+000
+maxZ =  0.000000000000000E+000
+x =  0.100000000000000E+001
+y =  0.000000000000000E+000
+z =  0.000000000000000E+000
+reading physicalTag
+reading elemNumber
+maxElemNum = 2
+minElemNum = 2
+reading connectivity
+maxNptrs = 0
+minNptrs = 0
+tNodes = 1
+reading InternalNptrs
+reading boundingEntity
+Setting reference element
+Setting facetElements
+
+[💚 INFORMATION ✅]
+  [🚀 Module ] Mesh_Class
+  [🎇 Method ] mesh_Import
+  [🔊 Message] [END] Import()
+
+
+[💚 INFORMATION ✅]
+  [🚀 Module ] Mesh_Class
+  [🎇 Method ] mesh_initiate
+  [🔊 Message] Mesh imported
+
+
+[💚 INFORMATION ✅]
+  [🚀 Module ] Mesh_Class
+  [🎇 Method ] mesh_initiate
+  [🔊 Message] [END] Importing mesh [OK!]
+
+Adding mesh entity xidim=0 entry number=3
+
+[💚 INFORMATION ✅]
+  [🚀 Module ] Mesh_Class
+  [🎇 Method ] mesh_initiate
+  [🔊 Message] [START] Importing mesh
+
+
+[💚 INFORMATION ✅]
+  [🚀 Module ] Mesh_Class
+  [🎇 Method ] mesh_Import
+  [🔊 Message] [START] Import()
+
+Making dsetname
+dsetname = /pointEntities_3
+uid = 3
+xidim = 0
+elemType = 15
+nsd = 15
+tIntNodes = 1
+tElements = 1
+minX =  0.000000000000000E+000
+minY =  0.000000000000000E+000
+minZ =  0.000000000000000E+000
+maxX =  0.000000000000000E+000
+maxY =  0.000000000000000E+000
+maxZ =  0.000000000000000E+000
+x =  0.000000000000000E+000
+y =  0.100000000000000E+001
+z =  0.000000000000000E+000
+reading physicalTag
+reading elemNumber
+maxElemNum = 3
+minElemNum = 3
+reading connectivity
+maxNptrs = 0
+minNptrs = 0
+tNodes = 1
+reading InternalNptrs
+reading boundingEntity
+Setting reference element
+Setting facetElements
+
+[💚 INFORMATION ✅]
+  [🚀 Module ] Mesh_Class
+  [🎇 Method ] mesh_Import
+  [🔊 Message] [END] Import()
+
+
+[💚 INFORMATION ✅]
+  [🚀 Module ] Mesh_Class
+  [🎇 Method ] mesh_initiate
+  [🔊 Message] Mesh imported
+
+
+[💚 INFORMATION ✅]
+  [🚀 Module ] Mesh_Class
+  [🎇 Method ] mesh_initiate
+  [🔊 Message] [END] Importing mesh [OK!]
+
+Adding mesh entity xidim=0 entry number=4
+
+[💚 INFORMATION ✅]
+  [🚀 Module ] Mesh_Class
+  [🎇 Method ] mesh_initiate
+  [🔊 Message] [START] Importing mesh
+
+
+[💚 INFORMATION ✅]
+  [🚀 Module ] Mesh_Class
+  [🎇 Method ] mesh_Import
+  [🔊 Message] [START] Import()
+
+Making dsetname
+dsetname = /pointEntities_4
+uid = 4
+xidim = 0
+elemType = 15
+nsd = 15
+tIntNodes = 1
+tElements = 1
+minX =  0.000000000000000E+000
+minY =  0.000000000000000E+000
+minZ =  0.000000000000000E+000
+maxX =  0.000000000000000E+000
+maxY =  0.000000000000000E+000
+maxZ =  0.000000000000000E+000
+x =  0.100000000000000E+001
+y =  0.100000000000000E+001
+z =  0.000000000000000E+000
+reading physicalTag
+reading elemNumber
+maxElemNum = 4
+minElemNum = 4
+reading connectivity
+maxNptrs = 0
+minNptrs = 0
+tNodes = 1
+reading InternalNptrs
+reading boundingEntity
+Setting reference element
+Setting facetElements
+
+[💚 INFORMATION ✅]
+  [🚀 Module ] Mesh_Class
+  [🎇 Method ] mesh_Import
+  [🔊 Message] [END] Import()
+
+
+[💚 INFORMATION ✅]
+  [🚀 Module ] Mesh_Class
+  [🎇 Method ] mesh_initiate
+  [🔊 Message] Mesh imported
+
+
+[💚 INFORMATION ✅]
+  [🚀 Module ] Mesh_Class
+  [🎇 Method ] mesh_initiate
+  [🔊 Message] [END] Importing mesh [OK!]
+
+Adding mesh entity xidim=0 entry number=5
+
+[💚 INFORMATION ✅]
+  [🚀 Module ] Mesh_Class
+  [🎇 Method ] mesh_initiate
+  [🔊 Message] [START] Importing mesh
+
+
+[💚 INFORMATION ✅]
+  [🚀 Module ] Mesh_Class
+  [🎇 Method ] mesh_Import
+  [🔊 Message] [START] Import()
+
+Making dsetname
+dsetname = /pointEntities_5
+uid = 5
+xidim = 0
+elemType = 15
+nsd = 15
+tIntNodes = 1
+tElements = 1
+minX =  0.000000000000000E+000
+minY =  0.000000000000000E+000
+minZ =  0.000000000000000E+000
+maxX =  0.000000000000000E+000
+maxY =  0.000000000000000E+000
+maxZ =  0.000000000000000E+000
+x =  0.000000000000000E+000
+y =  0.000000000000000E+000
+z =  0.100000000000000E+001
+reading physicalTag
+reading elemNumber
+maxElemNum = 5
+minElemNum = 5
+reading connectivity
+maxNptrs = 0
+minNptrs = 0
+tNodes = 1
+reading InternalNptrs
+reading boundingEntity
+Setting reference element
+Setting facetElements
+
+[💚 INFORMATION ✅]
+  [🚀 Module ] Mesh_Class
+  [🎇 Method ] mesh_Import
+  [🔊 Message] [END] Import()
+
+
+[💚 INFORMATION ✅]
+  [🚀 Module ] Mesh_Class
+  [🎇 Method ] mesh_initiate
+  [🔊 Message] Mesh imported
+
+
+[💚 INFORMATION ✅]
+  [🚀 Module ] Mesh_Class
+  [🎇 Method ] mesh_initiate
+  [🔊 Message] [END] Importing mesh [OK!]
+
+Adding mesh entity xidim=0 entry number=6
+
+[💚 INFORMATION ✅]
+  [🚀 Module ] Mesh_Class
+  [🎇 Method ] mesh_initiate
+  [🔊 Message] [START] Importing mesh
+
+
+[💚 INFORMATION ✅]
+  [🚀 Module ] Mesh_Class
+  [🎇 Method ] mesh_Import
+  [🔊 Message] [START] Import()
+
+Making dsetname
+dsetname = /pointEntities_6
+uid = 6
+xidim = 0
+elemType = 15
+nsd = 15
+tIntNodes = 1
+tElements = 1
+minX =  0.000000000000000E+000
+minY =  0.000000000000000E+000
+minZ =  0.000000000000000E+000
+maxX =  0.000000000000000E+000
+maxY =  0.000000000000000E+000
+maxZ =  0.000000000000000E+000
+x =  0.100000000000000E+001
+y =  0.000000000000000E+000
+z =  0.100000000000000E+001
+reading physicalTag
+reading elemNumber
+maxElemNum = 6
+minElemNum = 6
+reading connectivity
+maxNptrs = 0
+minNptrs = 0
+tNodes = 1
+reading InternalNptrs
+reading boundingEntity
+Setting reference element
+Setting facetElements
+
+[💚 INFORMATION ✅]
+  [🚀 Module ] Mesh_Class
+  [🎇 Method ] mesh_Import
+  [🔊 Message] [END] Import()
+
+
+[💚 INFORMATION ✅]
+  [🚀 Module ] Mesh_Class
+  [🎇 Method ] mesh_initiate
+  [🔊 Message] Mesh imported
+
+
+[💚 INFORMATION ✅]
+  [🚀 Module ] Mesh_Class
+  [🎇 Method ] mesh_initiate
+  [🔊 Message] [END] Importing mesh [OK!]
+
+Adding mesh entity xidim=0 entry number=7
+
+[💚 INFORMATION ✅]
+  [🚀 Module ] Mesh_Class
+  [🎇 Method ] mesh_initiate
+  [🔊 Message] [START] Importing mesh
+
+
+[💚 INFORMATION ✅]
+  [🚀 Module ] Mesh_Class
+  [🎇 Method ] mesh_Import
+  [🔊 Message] [START] Import()
+
+Making dsetname
+dsetname = /pointEntities_7
+uid = 7
+xidim = 0
+elemType = 15
+nsd = 15
+tIntNodes = 1
+tElements = 1
+minX =  0.000000000000000E+000
+minY =  0.000000000000000E+000
+minZ =  0.000000000000000E+000
+maxX =  0.000000000000000E+000
+maxY =  0.000000000000000E+000
+maxZ =  0.000000000000000E+000
+x =  0.000000000000000E+000
+y =  0.100000000000000E+001
+z =  0.100000000000000E+001
+reading physicalTag
+reading elemNumber
+maxElemNum = 7
+minElemNum = 7
+reading connectivity
+maxNptrs = 0
+minNptrs = 0
+tNodes = 1
+reading InternalNptrs
+reading boundingEntity
+Setting reference element
+Setting facetElements
+
+[💚 INFORMATION ✅]
+  [🚀 Module ] Mesh_Class
+  [🎇 Method ] mesh_Import
+  [🔊 Message] [END] Import()
+
+
+[💚 INFORMATION ✅]
+  [🚀 Module ] Mesh_Class
+  [🎇 Method ] mesh_initiate
+  [🔊 Message] Mesh imported
+
+
+[💚 INFORMATION ✅]
+  [🚀 Module ] Mesh_Class
+  [🎇 Method ] mesh_initiate
+  [🔊 Message] [END] Importing mesh [OK!]
+
+Adding mesh entity xidim=0 entry number=8
+
+[💚 INFORMATION ✅]
+  [🚀 Module ] Mesh_Class
+  [🎇 Method ] mesh_initiate
+  [🔊 Message] [START] Importing mesh
+
+
+[💚 INFORMATION ✅]
+  [🚀 Module ] Mesh_Class
+  [🎇 Method ] mesh_Import
+  [🔊 Message] [START] Import()
+
+Making dsetname
+dsetname = /pointEntities_8
+uid = 8
+xidim = 0
+elemType = 15
+nsd = 15
+tIntNodes = 1
+tElements = 1
+minX =  0.000000000000000E+000
+minY =  0.000000000000000E+000
+minZ =  0.000000000000000E+000
+maxX =  0.000000000000000E+000
+maxY =  0.000000000000000E+000
+maxZ =  0.000000000000000E+000
+x =  0.100000000000000E+001
+y =  0.100000000000000E+001
+z =  0.100000000000000E+001
+reading physicalTag
+reading elemNumber
+maxElemNum = 8
+minElemNum = 8
+reading connectivity
+maxNptrs = 0
+minNptrs = 0
+tNodes = 1
+reading InternalNptrs
+reading boundingEntity
+Setting reference element
+Setting facetElements
+
+[💚 INFORMATION ✅]
+  [🚀 Module ] Mesh_Class
+  [🎇 Method ] mesh_Import
+  [🔊 Message] [END] Import()
+
+
+[💚 INFORMATION ✅]
+  [🚀 Module ] Mesh_Class
+  [🎇 Method ] mesh_initiate
+  [🔊 Message] Mesh imported
+
+
+[💚 INFORMATION ✅]
+  [🚀 Module ] Mesh_Class
+  [🎇 Method ] mesh_initiate
+  [🔊 Message] [END] Importing mesh [OK!]
+
+Adding mesh entity xidim=1 entry number=1
+
+[💚 INFORMATION ✅]
+  [🚀 Module ] Mesh_Class
+  [🎇 Method ] mesh_initiate
+  [🔊 Message] [START] Importing mesh
+
+
+[💚 INFORMATION ✅]
+  [🚀 Module ] Mesh_Class
+  [🎇 Method ] mesh_Import
+  [🔊 Message] [START] Import()
+
+Making dsetname
+dsetname = /curveEntities_1
+uid = 1
+xidim = 1
+elemType = 1
+nsd = 1
+tIntNodes = 2
+tElements = 3
+minX =  0.000000000000000E+000
+minY =  0.000000000000000E+000
+minZ =  0.000000000000000E+000
+maxX =  0.100000000000000E+001
+maxY =  0.000000000000000E+000
+maxZ =  0.000000000000000E+000
+x =  0.000000000000000E+000
+y =  0.000000000000000E+000
+z =  0.000000000000000E+000
+reading physicalTag
+reading elemNumber
+maxElemNum = 11
+minElemNum = 9
+reading connectivity
+maxNptrs = 10
+minNptrs = 1
+tNodes = 4
+reading InternalNptrs
+reading boundingEntity
+Setting reference element
+Setting facetElements
+
+[💚 INFORMATION ✅]
+  [🚀 Module ] Mesh_Class
+  [🎇 Method ] mesh_Import
+  [🔊 Message] [END] Import()
+
+
+[💚 INFORMATION ✅]
+  [🚀 Module ] Mesh_Class
+  [🎇 Method ] mesh_initiate
+  [🔊 Message] Mesh imported
+
+
+[💚 INFORMATION ✅]
+  [🚀 Module ] Mesh_Class
+  [🎇 Method ] mesh_initiate
+  [🔊 Message] [END] Importing mesh [OK!]
+
+Adding mesh entity xidim=1 entry number=2
+
+[💚 INFORMATION ✅]
+  [🚀 Module ] Mesh_Class
+  [🎇 Method ] mesh_initiate
+  [🔊 Message] [START] Importing mesh
+
+
+[💚 INFORMATION ✅]
+  [🚀 Module ] Mesh_Class
+  [🎇 Method ] mesh_Import
+  [🔊 Message] [START] Import()
+
+Making dsetname
+dsetname = /curveEntities_2
+uid = 2
+xidim = 1
+elemType = 1
+nsd = 1
+tIntNodes = 2
+tElements = 3
+minX =  0.000000000000000E+000
+minY =  0.100000000000000E+001
+minZ =  0.000000000000000E+000
+maxX =  0.100000000000000E+001
+maxY =  0.100000000000000E+001
+maxZ =  0.000000000000000E+000
+x =  0.000000000000000E+000
+y =  0.000000000000000E+000
+z =  0.000000000000000E+000
+reading physicalTag
+reading elemNumber
+maxElemNum = 14
+minElemNum = 12
+reading connectivity
+maxNptrs = 12
+minNptrs = 3
+tNodes = 4
+reading InternalNptrs
+reading boundingEntity
+Setting reference element
+Setting facetElements
+
+[💚 INFORMATION ✅]
+  [🚀 Module ] Mesh_Class
+  [🎇 Method ] mesh_Import
+  [🔊 Message] [END] Import()
+
+
+[💚 INFORMATION ✅]
+  [🚀 Module ] Mesh_Class
+  [🎇 Method ] mesh_initiate
+  [🔊 Message] Mesh imported
+
+
+[💚 INFORMATION ✅]
+  [🚀 Module ] Mesh_Class
+  [🎇 Method ] mesh_initiate
+  [🔊 Message] [END] Importing mesh [OK!]
+
+Adding mesh entity xidim=1 entry number=3
+
+[💚 INFORMATION ✅]
+  [🚀 Module ] Mesh_Class
+  [🎇 Method ] mesh_initiate
+  [🔊 Message] [START] Importing mesh
+
+
+[💚 INFORMATION ✅]
+  [🚀 Module ] Mesh_Class
+  [🎇 Method ] mesh_Import
+  [🔊 Message] [START] Import()
+
+Making dsetname
+dsetname = /curveEntities_3
+uid = 3
+xidim = 1
+elemType = 1
+nsd = 1
+tIntNodes = 2
+tElements = 3
+minX =  0.000000000000000E+000
+minY =  0.000000000000000E+000
+minZ =  0.100000000000000E+001
+maxX =  0.100000000000000E+001
+maxY =  0.000000000000000E+000
+maxZ =  0.000000000000000E+000
+x =  0.000000000000000E+000
+y =  0.000000000000000E+000
+z =  0.000000000000000E+000
+reading physicalTag
+reading elemNumber
+maxElemNum = 17
+minElemNum = 15
+reading connectivity
+maxNptrs = 14
+minNptrs = 5
+tNodes = 4
+reading InternalNptrs
+reading boundingEntity
+Setting reference element
+Setting facetElements
+
+[💚 INFORMATION ✅]
+  [🚀 Module ] Mesh_Class
+  [🎇 Method ] mesh_Import
+  [🔊 Message] [END] Import()
+
+
+[💚 INFORMATION ✅]
+  [🚀 Module ] Mesh_Class
+  [🎇 Method ] mesh_initiate
+  [🔊 Message] Mesh imported
+
+
+[💚 INFORMATION ✅]
+  [🚀 Module ] Mesh_Class
+  [🎇 Method ] mesh_initiate
+  [🔊 Message] [END] Importing mesh [OK!]
+
+Adding mesh entity xidim=1 entry number=4
+
+[💚 INFORMATION ✅]
+  [🚀 Module ] Mesh_Class
+  [🎇 Method ] mesh_initiate
+  [🔊 Message] [START] Importing mesh
+
+
+[💚 INFORMATION ✅]
+  [🚀 Module ] Mesh_Class
+  [🎇 Method ] mesh_Import
+  [🔊 Message] [START] Import()
+
+Making dsetname
+dsetname = /curveEntities_4
+uid = 4
+xidim = 1
+elemType = 1
+nsd = 1
+tIntNodes = 2
+tElements = 3
+minX =  0.000000000000000E+000
+minY =  0.100000000000000E+001
+minZ =  0.100000000000000E+001
+maxX =  0.100000000000000E+001
+maxY =  0.100000000000000E+001
+maxZ =  0.000000000000000E+000
+x =  0.000000000000000E+000
+y =  0.000000000000000E+000
+z =  0.000000000000000E+000
+reading physicalTag
+reading elemNumber
+maxElemNum = 20
+minElemNum = 18
+reading connectivity
+maxNptrs = 16
+minNptrs = 7
+tNodes = 4
+reading InternalNptrs
+reading boundingEntity
+Setting reference element
+Setting facetElements
+
+[💚 INFORMATION ✅]
+  [🚀 Module ] Mesh_Class
+  [🎇 Method ] mesh_Import
+  [🔊 Message] [END] Import()
+
+
+[💚 INFORMATION ✅]
+  [🚀 Module ] Mesh_Class
+  [🎇 Method ] mesh_initiate
+  [🔊 Message] Mesh imported
+
+
+[💚 INFORMATION ✅]
+  [🚀 Module ] Mesh_Class
+  [🎇 Method ] mesh_initiate
+  [🔊 Message] [END] Importing mesh [OK!]
+
+Adding mesh entity xidim=1 entry number=5
+
+[💚 INFORMATION ✅]
+  [🚀 Module ] Mesh_Class
+  [🎇 Method ] mesh_initiate
+  [🔊 Message] [START] Importing mesh
+
+
+[💚 INFORMATION ✅]
+  [🚀 Module ] Mesh_Class
+  [🎇 Method ] mesh_Import
+  [🔊 Message] [START] Import()
+
+Making dsetname
+dsetname = /curveEntities_5
+uid = 5
+xidim = 1
+elemType = 1
+nsd = 1
+tIntNodes = 2
+tElements = 3
+minX =  0.000000000000000E+000
+minY =  0.000000000000000E+000
+minZ =  0.000000000000000E+000
+maxX =  0.000000000000000E+000
+maxY =  0.100000000000000E+001
+maxZ =  0.000000000000000E+000
+x =  0.000000000000000E+000
+y =  0.000000000000000E+000
+z =  0.000000000000000E+000
+reading physicalTag
+reading elemNumber
+maxElemNum = 23
+minElemNum = 21
+reading connectivity
+maxNptrs = 18
+minNptrs = 1
+tNodes = 4
+reading InternalNptrs
+reading boundingEntity
+Setting reference element
+Setting facetElements
+
+[💚 INFORMATION ✅]
+  [🚀 Module ] Mesh_Class
+  [🎇 Method ] mesh_Import
+  [🔊 Message] [END] Import()
+
+
+[💚 INFORMATION ✅]
+  [🚀 Module ] Mesh_Class
+  [🎇 Method ] mesh_initiate
+  [🔊 Message] Mesh imported
+
+
+[💚 INFORMATION ✅]
+  [🚀 Module ] Mesh_Class
+  [🎇 Method ] mesh_initiate
+  [🔊 Message] [END] Importing mesh [OK!]
+
+Adding mesh entity xidim=1 entry number=6
+
+[💚 INFORMATION ✅]
+  [🚀 Module ] Mesh_Class
+  [🎇 Method ] mesh_initiate
+  [🔊 Message] [START] Importing mesh
+
+
+[💚 INFORMATION ✅]
+  [🚀 Module ] Mesh_Class
+  [🎇 Method ] mesh_Import
+  [🔊 Message] [START] Import()
+
+Making dsetname
+dsetname = /curveEntities_6
+uid = 6
+xidim = 1
+elemType = 1
+nsd = 1
+tIntNodes = 2
+tElements = 3
+minX =  0.100000000000000E+001
+minY =  0.000000000000000E+000
+minZ =  0.000000000000000E+000
+maxX =  0.100000000000000E+001
+maxY =  0.100000000000000E+001
+maxZ =  0.000000000000000E+000
+x =  0.000000000000000E+000
+y =  0.000000000000000E+000
+z =  0.000000000000000E+000
+reading physicalTag
+reading elemNumber
+maxElemNum = 26
+minElemNum = 24
+reading connectivity
+maxNptrs = 20
+minNptrs = 2
+tNodes = 4
+reading InternalNptrs
+reading boundingEntity
+Setting reference element
+Setting facetElements
+
+[💚 INFORMATION ✅]
+  [🚀 Module ] Mesh_Class
+  [🎇 Method ] mesh_Import
+  [🔊 Message] [END] Import()
+
+
+[💚 INFORMATION ✅]
+  [🚀 Module ] Mesh_Class
+  [🎇 Method ] mesh_initiate
+  [🔊 Message] Mesh imported
+
+
+[💚 INFORMATION ✅]
+  [🚀 Module ] Mesh_Class
+  [🎇 Method ] mesh_initiate
+  [🔊 Message] [END] Importing mesh [OK!]
+
+Adding mesh entity xidim=1 entry number=7
+
+[💚 INFORMATION ✅]
+  [🚀 Module ] Mesh_Class
+  [🎇 Method ] mesh_initiate
+  [🔊 Message] [START] Importing mesh
+
+
+[💚 INFORMATION ✅]
+  [🚀 Module ] Mesh_Class
+  [🎇 Method ] mesh_Import
+  [🔊 Message] [START] Import()
+
+Making dsetname
+dsetname = /curveEntities_7
+uid = 7
+xidim = 1
+elemType = 1
+nsd = 1
+tIntNodes = 2
+tElements = 3
+minX =  0.000000000000000E+000
+minY =  0.000000000000000E+000
+minZ =  0.100000000000000E+001
+maxX =  0.000000000000000E+000
+maxY =  0.100000000000000E+001
+maxZ =  0.000000000000000E+000
+x =  0.000000000000000E+000
+y =  0.000000000000000E+000
+z =  0.000000000000000E+000
+reading physicalTag
+reading elemNumber
+maxElemNum = 29
+minElemNum = 27
+reading connectivity
+maxNptrs = 22
+minNptrs = 5
+tNodes = 4
+reading InternalNptrs
+reading boundingEntity
+Setting reference element
+Setting facetElements
+
+[💚 INFORMATION ✅]
+  [🚀 Module ] Mesh_Class
+  [🎇 Method ] mesh_Import
+  [🔊 Message] [END] Import()
+
+
+[💚 INFORMATION ✅]
+  [🚀 Module ] Mesh_Class
+  [🎇 Method ] mesh_initiate
+  [🔊 Message] Mesh imported
+
+
+[💚 INFORMATION ✅]
+  [🚀 Module ] Mesh_Class
+  [🎇 Method ] mesh_initiate
+  [🔊 Message] [END] Importing mesh [OK!]
+
+Adding mesh entity xidim=1 entry number=8
+
+[💚 INFORMATION ✅]
+  [🚀 Module ] Mesh_Class
+  [🎇 Method ] mesh_initiate
+  [🔊 Message] [START] Importing mesh
+
+
+[💚 INFORMATION ✅]
+  [🚀 Module ] Mesh_Class
+  [🎇 Method ] mesh_Import
+  [🔊 Message] [START] Import()
+
+Making dsetname
+dsetname = /curveEntities_8
+uid = 8
+xidim = 1
+elemType = 1
+nsd = 1
+tIntNodes = 2
+tElements = 3
+minX =  0.100000000000000E+001
+minY =  0.000000000000000E+000
+minZ =  0.100000000000000E+001
+maxX =  0.100000000000000E+001
+maxY =  0.100000000000000E+001
+maxZ =  0.000000000000000E+000
+x =  0.000000000000000E+000
+y =  0.000000000000000E+000
+z =  0.000000000000000E+000
+reading physicalTag
+reading elemNumber
+maxElemNum = 32
+minElemNum = 30
+reading connectivity
+maxNptrs = 24
+minNptrs = 6
+tNodes = 4
+reading InternalNptrs
+reading boundingEntity
+Setting reference element
+Setting facetElements
+
+[💚 INFORMATION ✅]
+  [🚀 Module ] Mesh_Class
+  [🎇 Method ] mesh_Import
+  [🔊 Message] [END] Import()
+
+
+[💚 INFORMATION ✅]
+  [🚀 Module ] Mesh_Class
+  [🎇 Method ] mesh_initiate
+  [🔊 Message] Mesh imported
+
+
+[💚 INFORMATION ✅]
+  [🚀 Module ] Mesh_Class
+  [🎇 Method ] mesh_initiate
+  [🔊 Message] [END] Importing mesh [OK!]
+
+Adding mesh entity xidim=1 entry number=9
+
+[💚 INFORMATION ✅]
+  [🚀 Module ] Mesh_Class
+  [🎇 Method ] mesh_initiate
+  [🔊 Message] [START] Importing mesh
+
+
+[💚 INFORMATION ✅]
+  [🚀 Module ] Mesh_Class
+  [🎇 Method ] mesh_Import
+  [🔊 Message] [START] Import()
+
+Making dsetname
+dsetname = /curveEntities_9
+uid = 9
+xidim = 1
+elemType = 1
+nsd = 1
+tIntNodes = 2
+tElements = 3
+minX =  0.000000000000000E+000
+minY =  0.000000000000000E+000
+minZ =  0.000000000000000E+000
+maxX =  0.000000000000000E+000
+maxY =  0.000000000000000E+000
+maxZ =  0.000000000000000E+000
+x =  0.000000000000000E+000
+y =  0.000000000000000E+000
+z =  0.000000000000000E+000
+reading physicalTag
+reading elemNumber
+maxElemNum = 35
+minElemNum = 33
+reading connectivity
+maxNptrs = 26
+minNptrs = 1
+tNodes = 4
+reading InternalNptrs
+reading boundingEntity
+Setting reference element
+Setting facetElements
+
+[💚 INFORMATION ✅]
+  [🚀 Module ] Mesh_Class
+  [🎇 Method ] mesh_Import
+  [🔊 Message] [END] Import()
+
+
+[💚 INFORMATION ✅]
+  [🚀 Module ] Mesh_Class
+  [🎇 Method ] mesh_initiate
+  [🔊 Message] Mesh imported
+
+
+[💚 INFORMATION ✅]
+  [🚀 Module ] Mesh_Class
+  [🎇 Method ] mesh_initiate
+  [🔊 Message] [END] Importing mesh [OK!]
+
+Adding mesh entity xidim=1 entry number=10
+
+[💚 INFORMATION ✅]
+  [🚀 Module ] Mesh_Class
+  [🎇 Method ] mesh_initiate
+  [🔊 Message] [START] Importing mesh
+
+
+[💚 INFORMATION ✅]
+  [🚀 Module ] Mesh_Class
+  [🎇 Method ] mesh_Import
+  [🔊 Message] [START] Import()
+
+Making dsetname
+dsetname = /curveEntities_10
+uid = 10
+xidim = 1
+elemType = 1
+nsd = 1
+tIntNodes = 2
+tElements = 3
+minX =  0.100000000000000E+001
+minY =  0.000000000000000E+000
+minZ =  0.000000000000000E+000
+maxX =  0.100000000000000E+001
+maxY =  0.000000000000000E+000
+maxZ =  0.000000000000000E+000
+x =  0.000000000000000E+000
+y =  0.000000000000000E+000
+z =  0.000000000000000E+000
+reading physicalTag
+reading elemNumber
+maxElemNum = 38
+minElemNum = 36
+reading connectivity
+maxNptrs = 28
+minNptrs = 2
+tNodes = 4
+reading InternalNptrs
+reading boundingEntity
+Setting reference element
+Setting facetElements
+
+[💚 INFORMATION ✅]
+  [🚀 Module ] Mesh_Class
+  [🎇 Method ] mesh_Import
+  [🔊 Message] [END] Import()
+
+
+[💚 INFORMATION ✅]
+  [🚀 Module ] Mesh_Class
+  [🎇 Method ] mesh_initiate
+  [🔊 Message] Mesh imported
+
+
+[💚 INFORMATION ✅]
+  [🚀 Module ] Mesh_Class
+  [🎇 Method ] mesh_initiate
+  [🔊 Message] [END] Importing mesh [OK!]
+
+Adding mesh entity xidim=1 entry number=11
+
+[💚 INFORMATION ✅]
+  [🚀 Module ] Mesh_Class
+  [🎇 Method ] mesh_initiate
+  [🔊 Message] [START] Importing mesh
+
+
+[💚 INFORMATION ✅]
+  [🚀 Module ] Mesh_Class
+  [🎇 Method ] mesh_Import
+  [🔊 Message] [START] Import()
+
+Making dsetname
+dsetname = /curveEntities_11
+uid = 11
+xidim = 1
+elemType = 1
+nsd = 1
+tIntNodes = 2
+tElements = 3
+minX =  0.000000000000000E+000
+minY =  0.100000000000000E+001
+minZ =  0.000000000000000E+000
+maxX =  0.000000000000000E+000
+maxY =  0.100000000000000E+001
+maxZ =  0.000000000000000E+000
+x =  0.000000000000000E+000
+y =  0.000000000000000E+000
+z =  0.000000000000000E+000
+reading physicalTag
+reading elemNumber
+maxElemNum = 41
+minElemNum = 39
+reading connectivity
+maxNptrs = 30
+minNptrs = 3
+tNodes = 4
+reading InternalNptrs
+reading boundingEntity
+Setting reference element
+Setting facetElements
+
+[💚 INFORMATION ✅]
+  [🚀 Module ] Mesh_Class
+  [🎇 Method ] mesh_Import
+  [🔊 Message] [END] Import()
+
+
+[💚 INFORMATION ✅]
+  [🚀 Module ] Mesh_Class
+  [🎇 Method ] mesh_initiate
+  [🔊 Message] Mesh imported
+
+
+[💚 INFORMATION ✅]
+  [🚀 Module ] Mesh_Class
+  [🎇 Method ] mesh_initiate
+  [🔊 Message] [END] Importing mesh [OK!]
+
+Adding mesh entity xidim=1 entry number=12
+
+[💚 INFORMATION ✅]
+  [🚀 Module ] Mesh_Class
+  [🎇 Method ] mesh_initiate
+  [🔊 Message] [START] Importing mesh
+
+
+[💚 INFORMATION ✅]
+  [🚀 Module ] Mesh_Class
+  [🎇 Method ] mesh_Import
+  [🔊 Message] [START] Import()
+
+Making dsetname
+dsetname = /curveEntities_12
+uid = 12
+xidim = 1
+elemType = 1
+nsd = 1
+tIntNodes = 2
+tElements = 3
+minX =  0.100000000000000E+001
+minY =  0.100000000000000E+001
+minZ =  0.000000000000000E+000
+maxX =  0.100000000000000E+001
+maxY =  0.100000000000000E+001
+maxZ =  0.000000000000000E+000
+x =  0.000000000000000E+000
+y =  0.000000000000000E+000
+z =  0.000000000000000E+000
+reading physicalTag
+reading elemNumber
+maxElemNum = 44
+minElemNum = 42
+reading connectivity
+maxNptrs = 32
+minNptrs = 4
+tNodes = 4
+reading InternalNptrs
+reading boundingEntity
+Setting reference element
+Setting facetElements
+
+[💚 INFORMATION ✅]
+  [🚀 Module ] Mesh_Class
+  [🎇 Method ] mesh_Import
+  [🔊 Message] [END] Import()
+
+
+[💚 INFORMATION ✅]
+  [🚀 Module ] Mesh_Class
+  [🎇 Method ] mesh_initiate
+  [🔊 Message] Mesh imported
+
+
+[💚 INFORMATION ✅]
+  [🚀 Module ] Mesh_Class
+  [🎇 Method ] mesh_initiate
+  [🔊 Message] [END] Importing mesh [OK!]
+
+Adding mesh entity xidim=2 entry number=1
+
+[💚 INFORMATION ✅]
+  [🚀 Module ] Mesh_Class
+  [🎇 Method ] mesh_initiate
+  [🔊 Message] [START] Importing mesh
+
+
+[💚 INFORMATION ✅]
+  [🚀 Module ] Mesh_Class
+  [🎇 Method ] mesh_Import
+  [🔊 Message] [START] Import()
+
+Making dsetname
+dsetname = /surfaceEntities_1
+uid = 1
+xidim = 2
+elemType = 3
+nsd = 3
+tIntNodes = 4
+tElements = 9
+minX =  0.000000000000000E+000
+minY =  0.000000000000000E+000
+minZ =  0.000000000000000E+000
+maxX =  0.100000000000000E+001
+maxY =  0.100000000000000E+001
+maxZ =  0.000000000000000E+000
+x =  0.000000000000000E+000
+y =  0.000000000000000E+000
+z =  0.000000000000000E+000
+reading physicalTag
+reading elemNumber
+maxElemNum = 53
+minElemNum = 45
+reading connectivity
+maxNptrs = 36
+minNptrs = 1
+tNodes = 16
+reading InternalNptrs
+reading boundingEntity
+Setting reference element
+Setting facetElements
+
+[💚 INFORMATION ✅]
+  [🚀 Module ] Mesh_Class
+  [🎇 Method ] mesh_Import
+  [🔊 Message] [END] Import()
+
+
+[💚 INFORMATION ✅]
+  [🚀 Module ] Mesh_Class
+  [🎇 Method ] mesh_initiate
+  [🔊 Message] Mesh imported
+
+
+[💚 INFORMATION ✅]
+  [🚀 Module ] Mesh_Class
+  [🎇 Method ] mesh_initiate
+  [🔊 Message] [END] Importing mesh [OK!]
+
+Adding mesh entity xidim=2 entry number=2
+
+[💚 INFORMATION ✅]
+  [🚀 Module ] Mesh_Class
+  [🎇 Method ] mesh_initiate
+  [🔊 Message] [START] Importing mesh
+
+
+[💚 INFORMATION ✅]
+  [🚀 Module ] Mesh_Class
+  [🎇 Method ] mesh_Import
+  [🔊 Message] [START] Import()
+
+Making dsetname
+dsetname = /surfaceEntities_2
+uid = 2
+xidim = 2
+elemType = 3
+nsd = 3
+tIntNodes = 4
+tElements = 9
+minX =  0.000000000000000E+000
+minY =  0.000000000000000E+000
+minZ =  0.100000000000000E+001
+maxX =  0.100000000000000E+001
+maxY =  0.100000000000000E+001
+maxZ =  0.000000000000000E+000
+x =  0.000000000000000E+000
+y =  0.000000000000000E+000
+z =  0.000000000000000E+000
+reading physicalTag
+reading elemNumber
+maxElemNum = 62
+minElemNum = 54
+reading connectivity
+maxNptrs = 40
+minNptrs = 5
+tNodes = 16
+reading InternalNptrs
+reading boundingEntity
+Setting reference element
+Setting facetElements
+
+[💚 INFORMATION ✅]
+  [🚀 Module ] Mesh_Class
+  [🎇 Method ] mesh_Import
+  [🔊 Message] [END] Import()
+
+
+[💚 INFORMATION ✅]
+  [🚀 Module ] Mesh_Class
+  [🎇 Method ] mesh_initiate
+  [🔊 Message] Mesh imported
+
+
+[💚 INFORMATION ✅]
+  [🚀 Module ] Mesh_Class
+  [🎇 Method ] mesh_initiate
+  [🔊 Message] [END] Importing mesh [OK!]
+
+Adding mesh entity xidim=2 entry number=3
+
+[💚 INFORMATION ✅]
+  [🚀 Module ] Mesh_Class
+  [🎇 Method ] mesh_initiate
+  [🔊 Message] [START] Importing mesh
+
+
+[💚 INFORMATION ✅]
+  [🚀 Module ] Mesh_Class
+  [🎇 Method ] mesh_Import
+  [🔊 Message] [START] Import()
+
+Making dsetname
+dsetname = /surfaceEntities_3
+uid = 3
+xidim = 2
+elemType = 3
+nsd = 3
+tIntNodes = 4
+tElements = 9
+minX =  0.000000000000000E+000
+minY =  0.000000000000000E+000
+minZ =  0.000000000000000E+000
+maxX =  0.000000000000000E+000
+maxY =  0.100000000000000E+001
+maxZ =  0.000000000000000E+000
+x =  0.000000000000000E+000
+y =  0.000000000000000E+000
+z =  0.000000000000000E+000
+reading physicalTag
+reading elemNumber
+maxElemNum = 71
+minElemNum = 63
+reading connectivity
+maxNptrs = 44
+minNptrs = 1
+tNodes = 16
+reading InternalNptrs
+reading boundingEntity
+Setting reference element
+Setting facetElements
+
+[💚 INFORMATION ✅]
+  [🚀 Module ] Mesh_Class
+  [🎇 Method ] mesh_Import
+  [🔊 Message] [END] Import()
+
+
+[💚 INFORMATION ✅]
+  [🚀 Module ] Mesh_Class
+  [🎇 Method ] mesh_initiate
+  [🔊 Message] Mesh imported
+
+
+[💚 INFORMATION ✅]
+  [🚀 Module ] Mesh_Class
+  [🎇 Method ] mesh_initiate
+  [🔊 Message] [END] Importing mesh [OK!]
+
+Adding mesh entity xidim=2 entry number=4
+
+[💚 INFORMATION ✅]
+  [🚀 Module ] Mesh_Class
+  [🎇 Method ] mesh_initiate
+  [🔊 Message] [START] Importing mesh
+
+
+[💚 INFORMATION ✅]
+  [🚀 Module ] Mesh_Class
+  [🎇 Method ] mesh_Import
+  [🔊 Message] [START] Import()
+
+Making dsetname
+dsetname = /surfaceEntities_4
+uid = 4
+xidim = 2
+elemType = 3
+nsd = 3
+tIntNodes = 4
+tElements = 9
+minX =  0.100000000000000E+001
+minY =  0.000000000000000E+000
+minZ =  0.000000000000000E+000
+maxX =  0.100000000000000E+001
+maxY =  0.100000000000000E+001
+maxZ =  0.000000000000000E+000
+x =  0.000000000000000E+000
+y =  0.000000000000000E+000
+z =  0.000000000000000E+000
+reading physicalTag
+reading elemNumber
+maxElemNum = 80
+minElemNum = 72
+reading connectivity
+maxNptrs = 48
+minNptrs = 2
+tNodes = 16
+reading InternalNptrs
+reading boundingEntity
+Setting reference element
+Setting facetElements
+
+[💚 INFORMATION ✅]
+  [🚀 Module ] Mesh_Class
+  [🎇 Method ] mesh_Import
+  [🔊 Message] [END] Import()
+
+
+[💚 INFORMATION ✅]
+  [🚀 Module ] Mesh_Class
+  [🎇 Method ] mesh_initiate
+  [🔊 Message] Mesh imported
+
+
+[💚 INFORMATION ✅]
+  [🚀 Module ] Mesh_Class
+  [🎇 Method ] mesh_initiate
+  [🔊 Message] [END] Importing mesh [OK!]
+
+Adding mesh entity xidim=2 entry number=5
+
+[💚 INFORMATION ✅]
+  [🚀 Module ] Mesh_Class
+  [🎇 Method ] mesh_initiate
+  [🔊 Message] [START] Importing mesh
+
+
+[💚 INFORMATION ✅]
+  [🚀 Module ] Mesh_Class
+  [🎇 Method ] mesh_Import
+  [🔊 Message] [START] Import()
+
+Making dsetname
+dsetname = /surfaceEntities_5
+uid = 5
+xidim = 2
+elemType = 3
+nsd = 3
+tIntNodes = 4
+tElements = 9
+minX =  0.000000000000000E+000
+minY =  0.000000000000000E+000
+minZ =  0.000000000000000E+000
+maxX =  0.100000000000000E+001
+maxY =  0.000000000000000E+000
+maxZ =  0.000000000000000E+000
+x =  0.000000000000000E+000
+y =  0.000000000000000E+000
+z =  0.000000000000000E+000
+reading physicalTag
+reading elemNumber
+maxElemNum = 89
+minElemNum = 81
+reading connectivity
+maxNptrs = 52
+minNptrs = 1
+tNodes = 16
+reading InternalNptrs
+reading boundingEntity
+Setting reference element
+Setting facetElements
+
+[💚 INFORMATION ✅]
+  [🚀 Module ] Mesh_Class
+  [🎇 Method ] mesh_Import
+  [🔊 Message] [END] Import()
+
+
+[💚 INFORMATION ✅]
+  [🚀 Module ] Mesh_Class
+  [🎇 Method ] mesh_initiate
+  [🔊 Message] Mesh imported
+
+
+[💚 INFORMATION ✅]
+  [🚀 Module ] Mesh_Class
+  [🎇 Method ] mesh_initiate
+  [🔊 Message] [END] Importing mesh [OK!]
+
+Adding mesh entity xidim=2 entry number=6
+
+[💚 INFORMATION ✅]
+  [🚀 Module ] Mesh_Class
+  [🎇 Method ] mesh_initiate
+  [🔊 Message] [START] Importing mesh
+
+
+[💚 INFORMATION ✅]
+  [🚀 Module ] Mesh_Class
+  [🎇 Method ] mesh_Import
+  [🔊 Message] [START] Import()
+
+Making dsetname
+dsetname = /surfaceEntities_6
+uid = 6
+xidim = 2
+elemType = 3
+nsd = 3
+tIntNodes = 4
+tElements = 9
+minX =  0.000000000000000E+000
+minY =  0.100000000000000E+001
+minZ =  0.000000000000000E+000
+maxX =  0.100000000000000E+001
+maxY =  0.100000000000000E+001
+maxZ =  0.000000000000000E+000
+x =  0.000000000000000E+000
+y =  0.000000000000000E+000
+z =  0.000000000000000E+000
+reading physicalTag
+reading elemNumber
+maxElemNum = 98
+minElemNum = 90
+reading connectivity
+maxNptrs = 56
+minNptrs = 3
+tNodes = 16
+reading InternalNptrs
+reading boundingEntity
+Setting reference element
+Setting facetElements
+
+[💚 INFORMATION ✅]
+  [🚀 Module ] Mesh_Class
+  [🎇 Method ] mesh_Import
+  [🔊 Message] [END] Import()
+
+
+[💚 INFORMATION ✅]
+  [🚀 Module ] Mesh_Class
+  [🎇 Method ] mesh_initiate
+  [🔊 Message] Mesh imported
+
+
+[💚 INFORMATION ✅]
+  [🚀 Module ] Mesh_Class
+  [🎇 Method ] mesh_initiate
+  [🔊 Message] [END] Importing mesh [OK!]
+
+
+[💚 INFORMATION ✅]
+  [🚀 Module ] Domain_Class
+  [🎇 Method ] Domain_Import
+  [🔊 Message] [END] Import()
+
+
+[💚 INFORMATION ✅]
+  [🚀 Module ] Domain_Class
+  [🎇 Method ] Domain_Initiate
+  [🔊 Message] MESH-FILE IS READ & DOMAIN HAS BEEN CREATED
+
+
+[💚 INFORMATION ✅]
+  [🚀 Module ] AbstractBC_Class
+  [🎇 Method ] bc_ImportFromToml2()
+  [🔊 Message] [START] ImportFromToml()
+
+
+[💚 INFORMATION ✅]
+  [🚀 Module ] AbstractBC_Class
+  [🎇 Method ] meshSelect_ImportFromToml1()
+  [🔊 Message] [START] ImportFromToml()
+
+
+[💚 INFORMATION ✅]
+  [🚀 Module ] AbstractBC_Class
+  [🎇 Method ] bc_ImportParamFromToml()
+  [🔊 Message] [START] ImportParamFromToml()
+
+
+[💚 INFORMATION ✅]
+  [🚀 Module ] AbstractBC_Class
+  [🎇 Method ] bc_ImportParamFromToml()
+  [🔊 Message] [END] ImportParamFromToml()
+
+
+[💚 INFORMATION ✅]
+  [🚀 Module ] MeshSelection_Class
+  [🎇 Method ] meshSelect_ImportFromToml1()
+  [🔊 Message] [START] ImportFromToml()
+
+
+[💚 INFORMATION ✅]
+  [🚀 Module ] MeshSelection_Class
+  [🎇 Method ] meshSelect_ImportParamFromToml()
+  [🔊 Message] [START] ImportParamFromToml()
+
+
+[💚 INFORMATION ✅]
+  [🚀 Module ] MeshSelection_Class
+  [🎇 Method ] meshSelect_ImportParamFromToml()
+  [🔊 Message] [END] ImportParamFromToml()
+
+
+[💚 INFORMATION ✅]
+  [🚀 Module ] MeshSelection_Class
+  [🎇 Method ] meshSelect_Initiate2()
+  [🔊 Message] [START] meshSelect_Initiate2()
+
+
+[💚 INFORMATION ✅]
+  [🚀 Module ] MeshSelection_Class
+  [🎇 Method ] meshSelect_Initiate2()
+  [🔊 Message] [END] meshSelect_Initiate2()
+
+
+[💚 INFORMATION ✅]
+  [🚀 Module ] MeshSelection_Class
+  [🎇 Method ] meshSelect_Add
+  [🔊 Message] [START] Add()
+
+
+[💚 INFORMATION ✅]
+  [🚀 Module ] MeshSelection_Class
+  [🎇 Method ] meshSelect_Add
+  [🔊 Message] [END] Add()
+
+
+[💚 INFORMATION ✅]
+  [🚀 Module ] MeshSelection_Class
+  [🎇 Method ] meshSelect_ImportFromToml1()
+  [🔊 Message] [END] ImportFromToml()
+
+
+[💚 INFORMATION ✅]
+  [🚀 Module ] AbstractBC_Class
+  [🎇 Method ] bc_Initiate()
+  [🔊 Message] [START] Initiate()
+
+
+[💚 INFORMATION ✅]
+  [🚀 Module ] AbstractBC_Class
+  [🎇 Method ] bc_Initiate()
+  [🔊 Message] [END] AbstractBCInitiate()
+
+
+[💚 INFORMATION ✅]
+  [🚀 Module ] UserFunction_Class
+  [🎇 Method ] auf_ImportFromToml1()
+  [🔊 Message] [START] ImportFromToml()
+
+
+[💚 INFORMATION ✅]
+  [🚀 Module ] UserFunction_Class
+  [🎇 Method ] auf_ImportParamFromToml()
+  [🔊 Message] [START] ImportParamFromToml()
+
+
+[💚 INFORMATION ✅]
+  [🚀 Module ] UserFunction_Class
+  [🎇 Method ] auf_ImportParamFromToml()
+  [🔊 Message] If numArgs should not present, the default values are used
+
+
+[💚 INFORMATION ✅]
+  [🚀 Module ] UserFunction_Class
+  [🎇 Method ] auf_ImportParamFromToml()
+  [🔊 Message] numReturns should is not present, and using default value for numReturns.
+
+
+[💚 INFORMATION ✅]
+  [🚀 Module ] UserFunction_Class
+  [🎇 Method ] auf_ImportParamFromToml()
+  [🔊 Message] [END] ImportParamFromToml()
+
+
+[💚 INFORMATION ✅]
+  [🚀 Module ] UserFunction_Class
+  [🎇 Method ] auf_ImportFromToml1()
+  [🔊 Message] [END] ImportFromToml()
+
+
+[💚 INFORMATION ✅]
+  [🚀 Module ] AbstractBC_Class
+  [🎇 Method ] bc_ImportFromToml2()
+  [🔊 Message] [END] ImportParamFromToml()
+
+
+[💚 INFORMATION ✅]
+  [🚀 Module ] AbstractBC_Class
+  [🎇 Method ] bc_Get()
+  [🔊 Message] [START] Get()
+
+
+[💚 INFORMATION ✅]
+  [🚀 Module ] MeshSelection_Class
+  [🎇 Method ] meshSelect_GetnodeNum3
+  [🔊 Message] [START] GetnodeNum()
+
+
+[💚 INFORMATION ✅]
+  [🚀 Module ] MeshSelection_Class
+  [🎇 Method ] meshSelect_GetnodeNum3
+  [🔊 Message] [END] GetnodeNum()
+
+nodeNum
+1
+2
+3
+4
+.
+.
+.
+33,  nodalValue
+34,  ----------
+35,   0.00000  
+36,   1.00000  
+  ,   1.00000  
+  ,   2.00000  
+  ,   0.33333  
+  ,   0.66667  
+  ,   1.33333  
+  ,   1.66667  
+  ,   0.33333  
+  ,   0.66667  
+  ,   1.33333  
+  ,   1.66667  
+  ,   0.66667  
+  ,   1.00000  
+  ,   1.00000  
+  ,   1.33333  
+size = 16
+
+[❓ DEBUG 🐛]
+  [🚀 Module ] Domain_Class
+  [🎇 Method ] Domain_Deallocate
+  [🔊 Message] There should be better way to deallocate obj%meshList...
+
+
+test ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╺━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
