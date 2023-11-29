@@ -1,13 +1,5 @@
 # Deallocate
 
-Deallocate the [DirichletBC_](DirichletBC_.md).
+import EXAMPLE3 from "@site/docs/docs-api/AbstractBC/Deallocate.md";
 
-## Interface
-
-```fortran
-INTERFACE
-  MODULE SUBROUTINE Deallocate(obj)
-    CLASS(DirichletBC_), INTENT(INOUT) :: obj
-  END SUBROUTINE Deallocate
-END INTERFACE
-```
+<EXAMPLE3 />

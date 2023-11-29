@@ -2,6 +2,8 @@
 
 Get mesh-ids of boundary condition.
 
+<span class="badge badge--secondary"> @GetMethods </span>
+
 This method calls [GetMeshID](../MeshSelection/GetMeshID.md) method on `boundary`, which is an instance of [MeshSelection_](../MeshSelection/MeshSelection_.md).
 
 ## Interface

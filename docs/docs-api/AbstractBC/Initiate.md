@@ -2,7 +2,12 @@
 
 Initiate the [AbstractBC](./AbstractBC_.md)
 
+<span class="badge badge--secondary"> @ConstructorMethods </span>
+
 ## Interface
+
+<Tabs>
+<TabItem value="interface" label="܀ Interface" default>
 
 ```fortran
 ABSTRACT INTERFACE
@@ -15,3 +20,18 @@ ABSTRACT INTERFACE
   END SUBROUTINE Initiate
 END INTERFACE
 ```
+
+</TabItem>
+
+<TabItem value="example" label="️܀ See example">
+
+import EXAMPLE9 from "./_Initiate_test_1.md";
+
+<EXAMPLE9 />
+
+</TabItem>
+
+<TabItem value="close" label="↢ ">
+
+</TabItem>
+</Tabs>

@@ -1,60 +1,59 @@
 // require('dotenv').config();
 // const math = require('remark-math');
 // const katex = require('rehype-katex');
-import math from 'remark-math';
-import katex from 'rehype-katex';
+import katex from "rehype-katex";
+import math from "remark-math";
 
 /** @type {import('@docusaurus/types').Config} */
 const meta = {
-  title: 'EASIFEM',
-  tagline:
-    'Expandable And Scalable Infrastructure for Finite Element Methods 🚀',
-  url: 'https://www.easifem.com',
-  baseUrl: '/',
-  favicon: '/favicon.ico',
-  organizationName: 'vickysharma0812',
+  title: "EASIFEM",
+  tagline: "Expandable And Scalable Infrastructure for Finite Element Methods 🚀",
+  url: "https://www.easifem.com",
+  baseUrl: "/",
+  favicon: "/favicon.ico",
+  organizationName: "vickysharma0812",
   // The GitHub user or organization that owns the deployment repository.
-  projectName: 'vickysharma0812.github.io',
+  projectName: "vickysharma0812.github.io",
   // The name of the deployment repository.
-  deploymentBranch: 'gh-pages',
-  // The name of the deployment branch. 
-  // It defaults to 'gh-pages' for non-organization GitHub Pages repos 
-  // (projectName not ending in .github.io). 
-  // Otherwise, it needs to be explicit as a 
+  deploymentBranch: "gh-pages",
+  // The name of the deployment branch.
+  // It defaults to 'gh-pages' for non-organization GitHub Pages repos
+  // (projectName not ending in .github.io).
+  // Otherwise, it needs to be explicit as a
   // config field or environment variable.
   trailingSlash: false,
-  onBrokenLinks: 'throw',
-  onBrokenMarkdownLinks: 'throw',
+  onBrokenLinks: "throw",
+  onBrokenMarkdownLinks: "throw",
   i18n: {
-    defaultLocale: 'en',
-    locales: ['en'],
+    defaultLocale: "en",
+    locales: ["en"],
   },
 };
 
 /** @type {import('@docusaurus/plugin-content-docs').Options[]} */
 const docs = [
   {
-    id: 'cli',
-    path: 'docs/cli',
-    routeBasePath: '/cli',
+    id: "cli",
+    path: "docs/cli",
+    routeBasePath: "/cli",
   },
   {
-    id: 'about',
-    path: 'docs/about',
-    routeBasePath: '/about',
+    id: "about",
+    path: "docs/about",
+    routeBasePath: "/about",
     versions: {
       current: {
-        label: '23.10.0',
+        label: "23.10.0",
       },
     },
   },
   {
-    id: 'docs-api',
-    path: 'docs/docs-api',
-    routeBasePath: '/docs-api',
+    id: "docs-api",
+    path: "docs/docs-api",
+    routeBasePath: "/docs-api",
     versions: {
       current: {
-        label: '23.10.0',
+        label: "23.10.0",
       },
     },
   },
@@ -63,10 +62,9 @@ const docs = [
 /** @type {import('@docusaurus/plugin-content-docs').Options} */
 const defaultSettings = {
   breadcrumbs: true,
-  editUrl:
-    'https://github.com/vickysharma0812/vickysharma0812.github.io/tree/main/',
+  editUrl: "https://github.com/vickysharma0812/vickysharma0812.github.io/tree/main/",
   showLastUpdateTime: true,
-  sidebarPath: require.resolve('./sidebars-default.js'),
+  sidebarPath: require.resolve("./sidebars-default.js"),
   remarkPlugins: [math],
   rehypePlugins: [katex],
 };
@@ -76,11 +74,11 @@ const defaultSettings = {
  * @param {import('@docusaurus/plugin-content-docs').Options} options
  */
 function create_doc_plugin({
-  sidebarPath = require.resolve('./sidebars-default.js'),
+  sidebarPath = require.resolve("./sidebars-default.js"),
   ...options
 }) {
   return [
-    '@docusaurus/plugin-content-docs',
+    "@docusaurus/plugin-content-docs",
     /** @type {import('@docusaurus/plugin-content-docs').Options} */
     ({
       ...defaultSettings,
@@ -90,15 +88,15 @@ function create_doc_plugin({
   ];
 }
 
-const { webpackPlugin } = require('./plugins/webpack-plugin.cjs');
-const tailwindPlugin = require('./plugins/tailwind-plugin.cjs');
+const { webpackPlugin } = require("./plugins/webpack-plugin.cjs");
+const tailwindPlugin = require("./plugins/tailwind-plugin.cjs");
 const docs_plugins = docs.map((doc) => create_doc_plugin(doc));
 
 const plugins = [
   tailwindPlugin,
   ...docs_plugins,
   webpackPlugin,
-  ['drawio', {}],
+  ["drawio", {}],
   // [
   //   'docusaurus-plugin-content-gists',
   //   {
@@ -118,24 +116,24 @@ const config = {
   presets: [
     [
       // 'classic',
-      '@docusaurus/preset-classic',
+      "@docusaurus/preset-classic",
       /** @type {import('@docusaurus/preset-classic').Options} */
       ({
         docs: {
-          path: 'docs/guides',
-          id: 'guides',
-          routeBasePath: '/guides',
+          path: "docs/guides",
+          id: "guides",
+          routeBasePath: "/guides",
           ...defaultSettings,
         },
         blog: false,
         theme: {
           customCss: [
-            require.resolve('./src/css/custom.css'),
-            require.resolve('./src/css/api-reference.css'),
+            require.resolve("./src/css/custom.css"),
+            require.resolve("./src/css/api-reference.css"),
           ],
         },
         sitemap: {
-          ignorePatterns: ['/tags/**'],
+          ignorePatterns: ["/tags/**"],
         },
         // googleTagManager: {
         //   containerId: 'GTM-5FDFFSS',
@@ -147,20 +145,19 @@ const config = {
   // math-support
   stylesheets: [
     {
-      href: 'https://cdn.jsdelivr.net/npm/katex@0.13.24/dist/katex.min.css',
-      type: 'text/css',
-      integrity:
-        'sha384-odtC+0UGzzFL/6PNoE8rX/SPcQDXBJ+uRepguP4QkPCm2LBxH3FA3y+fKSiJ+AmM',
-      crossorigin: 'anonymous',
+      href: "https://cdn.jsdelivr.net/npm/katex@0.13.24/dist/katex.min.css",
+      type: "text/css",
+      integrity: "sha384-odtC+0UGzzFL/6PNoE8rX/SPcQDXBJ+uRepguP4QkPCm2LBxH3FA3y+fKSiJ+AmM",
+      crossorigin: "anonymous",
     },
   ],
 
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
-      image: '/img/dyte-docs-card.png',
+      image: "/img/dyte-docs-card.png",
       colorMode: {
-        defaultMode: 'light',
+        defaultMode: "light",
       },
       docs: {
         sidebar: {
@@ -169,25 +166,25 @@ const config = {
       },
       navbar: {
         logo: {
-          href: '/',
-          src: '/logo/light.svg',
-          srcDark: '/logo/dark.svg',
-          alt: 'EASIFEM docs',
-          height: '40px',
-          width: '101px',
+          href: "/",
+          src: "/logo/light.svg",
+          srcDark: "/logo/dark.svg",
+          alt: "EASIFEM docs",
+          height: "40px",
+          width: "101px",
         },
         items: [
           {
-            label: 'About',
-            to: 'about',
+            label: "About",
+            to: "about",
           },
           {
-            label: 'Guides',
-            to: 'guides',
+            label: "Guides",
+            to: "guides",
           },
           {
-            label: 'Docs',
-            to: 'docs-api',
+            label: "Docs",
+            to: "docs-api",
           },
           // {
           //   to: '/gists',
@@ -195,119 +192,122 @@ const config = {
           //   position: 'left',
           // },
           {
-            type: 'search',
-            position: 'right',
+            type: "search",
+            position: "right",
           },
         ],
       },
       footer: {
         logo: {
-          href: '/',
-          src: '/logo/light.svg',
-          srcDark: '/logo/dark.svg',
-          alt: 'EASIFEM Docs',
-          height: '36px',
+          href: "/",
+          src: "/logo/light.svg",
+          srcDark: "/logo/dark.svg",
+          alt: "EASIFEM Docs",
+          height: "36px",
         },
         links: [
           {
-            title: 'Product',
+            title: "Product",
             items: [
               {
-                label: 'easifemBase',
-                href: 'https://www.easifem.com/guides/getting-started/easifemBase',
+                label: "easifemBase",
+                href: "https://www.easifem.com/guides/getting-started/easifemBase",
               },
               {
-                label: 'easifemClasses',
-                href: 'https://www.easifem.com/guides/getting-started/easifemClasses',
+                label: "easifemClasses",
+                href: "https://www.easifem.com/guides/getting-started/easifemClasses",
               },
               {
-                label: 'easifemMaterials',
-                href: 'https://www.easifem.com/guides/getting-started/easifemMaterials',
+                label: "easifemMaterials",
+                href: "https://www.easifem.com/guides/getting-started/easifemMaterials",
               },
               {
-                label: 'easifemKernels',
-                href: 'https://www.easifem.com/guides/getting-started/easifemKernels',
+                label: "easifemKernels",
+                href: "https://www.easifem.com/guides/getting-started/easifemKernels",
               },
             ],
           },
           {
-            title: 'Resources',
+            title: "Resources",
             items: [
               {
-                label: 'Installation',
-                href: 'https://www.easifem.com/guides/install',
+                label: "Installation",
+                href: "https://www.easifem.com/guides/install",
               },
               {
-                label: 'Docs for dev',
-                href: 'https://www.easifem.com/docs-api',
+                label: "Docs for dev",
+                href: "https://www.easifem.com/docs-api",
               },
               {
-                label: 'Docs for users',
-                href: 'https://www.easifem.com/guides/programming-fem',
+                label: "Docs for users",
+                href: "https://www.easifem.com/guides/programming-fem",
               },
               {
-                label: 'Examples',
-                href: 'https://www.easifem.com/guides/learn-by-examples',
+                label: "Examples",
+                href: "https://www.easifem.com/guides/learn-by-examples",
               },
             ],
           },
           {
-            title: 'Company',
+            title: "Company",
             items: [
               {
-                label: 'About Us',
-                href: 'https://www.easifem.com/about',
+                label: "About Us",
+                href: "https://www.easifem.com/about",
               },
               {
-                label: 'Contact Us',
-                href: 'https://www.easifem.com/contact',
+                label: "Contact Us",
+                href: "https://www.easifem.com/contact",
               },
             ],
           },
           {
-            title: 'EASIFEM Community',
+            title: "EASIFEM Community",
             items: [
               {
-                label: 'GitHub',
-                href: 'https://github.com/vickysharma0812/easifem',
+                label: "GitHub",
+                href: "https://github.com/vickysharma0812/easifem",
               },
               {
-                label: 'Join Slack Community',
-                href: 'https://join.slack.com/t/easifem/shared_invite/zt-27juumyaa-Cg0uty_UJDNp81Gq5HdFRA',
+                label: "Join Slack Community",
+                href: "https://join.slack.com/t/easifem/shared_invite/zt-27juumyaa-Cg0uty_UJDNp81Gq5HdFRA",
               },
             ],
           },
         ],
-        copyright: 'Copyright © Vikas Sharma since 2023. All rights reserved.',
+        copyright: "Copyright © Vikas Sharma since 2023. All rights reserved.",
       },
       prism: {
-        additionalLanguages: ['fortran', 'bash', 'python'],
-        theme: require('./src/plugins/prism_themes/github'),
-        darkTheme: require('./src/plugins/prism_themes/tokyonight_night'),
+        additionalLanguages: ["fortran", "bash", "python", "toml"],
+        theme: require("./src/plugins/prism_themes/github"),
+        darkTheme: require("./src/plugins/prism_themes/tokyonight_night"),
         magicComments: [
           {
-            className: 'theme-code-block-highlighted-line',
-            line: 'highlight-next-line',
-            block: { start: 'highlight-start', end: 'highlight-end' },
+            className: "theme-code-block-highlighted-line",
+            line: "highlight-next-line",
+            block: { start: "highlight-start", end: "highlight-end" },
           },
           {
-            className: 'code-block-error-line',
-            line: 'highlight-next-line-error',
+            className: "code-block-error-line",
+            line: "highlight-next-line-error",
           },
         ],
       },
       algolia: {
-        appId: 'VNHYRJ8XLW',
-        apiKey: 'e3deb013d45dd81a76a3667b76994b5f',
-        indexName: 'easifem',
-        contextualSearch: true,
-        // Optional: Algolia search parameters
-        searchParameters: {},
-        // Optional: path for search page that enabled by default (`false` to disable it)
-        searchPagePath: 'search',
+        // appId: "HL0HSV62RK",
+        // apiKey: "72ebf02146698733b7114c7b36da0945",
+        // indexName: "docs",
+        appId: "VNHYRJ8XLW",
+        apiKey: "13b757db568c6f27fd8399306e681bdc",
+        indexName: "easifem",
+        // Optional: Replace parts of the item URLs from Algolia.
+        // Useful when using the same search index for multiple deployments
+        // using a different baseUrl. You can use regexp or string in the `from` param.
+        // For example: localhost:3000 vs myCompany.com/docs
+        //
+        contextualSearch: false,
       },
     }),
-
   // webpack: {
   //   jsLoader: (isServer) => ({
   //     loader: require.resolve('swc-loader'),

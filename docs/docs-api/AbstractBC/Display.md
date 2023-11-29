@@ -2,6 +2,8 @@
 
 Display the content of [AbstractBC_](AbstractBC_.md).
 
+<span class="badge badge--secondary"> @IOMethods </span>
+
 ## Interface
 
 ```fortran

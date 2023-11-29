@@ -2,6 +2,8 @@
 
 Export [AbstractBC_](AbstractBC_.md) to hdf5 file.
 
+<span class="badge badge--secondary"> @ConstructorMethods </span>
+
 ## Interface
 
 ```fortran

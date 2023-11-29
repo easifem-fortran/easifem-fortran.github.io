@@ -1,15 +1,5 @@
 # Export
 
-Export [DirichletBC_](DirichletBC_.md) to hdf5 file.
+import EXAMPLE3 from "@site/docs/docs-api/AbstractBC/Export.md";
 
-## Interface
-
-```fortran
-INTERFACE
-  SUBROUTINE Export(obj, hdf5, group)
-    CLASS(DirichletBC_), INTENT(IN) :: obj
-    TYPE(HDF5File_), INTENT(INOUT) :: hdf5
-    CHARACTER(*), INTENT(IN) :: group
-  END SUBROUTINE Export
-END INTERFACE
-```
+<EXAMPLE3 />
