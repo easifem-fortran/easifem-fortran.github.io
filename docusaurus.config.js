@@ -66,7 +66,7 @@ const defaultSettings = {
   showLastUpdateTime: true,
   sidebarPath: require.resolve("./sidebars-default.js"),
   remarkPlugins: [math],
-  rehypePlugins: [katex, { strict: false }],
+  rehypePlugins: [katex],
 };
 
 /**
@@ -298,7 +298,7 @@ const config = {
         // apiKey: "72ebf02146698733b7114c7b36da0945",
         // indexName: "docs",
         appId: "VNHYRJ8XLW",
-        apiKey: "d52eed214e3a2099fe1026d1c2774466",
+        apiKey: "13b757db568c6f27fd8399306e681bdc",
         indexName: "easifem",
         // Optional: Replace parts of the item URLs from Algolia.
         // Useful when using the same search index for multiple deployments
