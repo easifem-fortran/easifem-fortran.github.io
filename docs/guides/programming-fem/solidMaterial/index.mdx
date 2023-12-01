@@ -1,0 +1,172 @@
+---
+sidebar_position: 1
+date: 2023-08-05 
+update: 2023-08-05 
+status: stable
+docs: done
+extpkgs: none
+category: 
+  - SolidMechanics
+  - Models
+  - MaterialModels
+tags: 
+  - materials
+  - materialModels
+  - models
+  - solidMechanics
+  - easifemClasses
+---
+
+# Solid material
+
+[SolidMaterial_](/docs-api/SolidMaterial/SolidMaterial_) is a subclass of [AbstractMaterial](/docs-api/AbstractMaterial) class. Its purpose is to handle solid materials, like steel, brass, copper, among others.
+
+`SolidMaterial_` also encapsulates the abstract model for defining the material constitutive behavior. The structure of `SolidMaterial_` is given below.
+
+```fortran
+TYPE, EXTENDS(AbstractMaterial_) :: SolidMaterial_
+  CLASS(AbstractSolidMechanicsModel_), POINTER :: stressStrainModel => NULL()
+    !! Pointer to stress strain material behavior of solids
+END TYPE
+```
+
+## How to initiate?
+
+There are three ways to initiate an instance of `SolidMaterial_`. In this section we will cover constructing the instance by using [Initiate](/docs-api/SolidMaterial/Initiate).
+
+:::info 
+We will consider the following example to learn about the `SolidMaterial_`.
+:::
+
+<details>
+<summary>Click here to see example</summary>
+<div>
+
+```fortran
+PROGRAM main
+USE easifemBase
+USE easifemClasses
+USE easifemMaterials
+
+CHARACTER(*), PARAMETER :: myName = "main"
+CHARACTER(*), PARAMETER :: modName = "main"
+TYPE(SolidMaterial_) :: obj
+TYPE(ParameterList_) :: param
+CLASS(UserFunction_), POINTER :: func => NULL()
+INTEGER(I4B) :: ierr
+
+CALL FPL_Init(); CALL param%Initiate()
+
+! Set parameter
+CALL SetSolidMaterialParam(param=param, name="SolidMaterial")
+
+! Initiate an instance of `SolidMaterial_`
+CALL obj%Initiate(param)
+
+! Adding a material property
+CALL obj%AddMaterial("massDensity")
+
+func => obj%GetMaterialPointer("massDensity")
+
+IF (.NOT. ASSOCIATED(func)) THEN
+  CALL e%RaiseError(modName//'::'//myName//' - '// &
+    & '[error 1]')
+END IF
+
+CALL SetUserFunctionParam(param=param, name="massDensity",  &
+  & returnType=Scalar, argType=Constant)
+CALL func%Initiate(param)
+CALL func%Set(scalarValue=1.0_DFP)
+
+CALL obj%Display(msg="SolidMaterial")
+
+CALL FPL_FINALIZE; CALL param%DEALLOCATE()
+END PROGRAM main
+```
+
+</div>
+</details>
+
+To initiate an instance of `SolidMaterial_` follow the steps give below.
+
+### Step 1: Set parameter
+
+First, we call [SetSolidMaterialParam](/docs-api/SolidMaterial/SetSolidMaterialParam) method.
+
+```fortran
+CALL SetSolidMaterialParam(param=param, name="SolidMaterial")
+```
+
+### Step 2: Initiate
+
+Then, we will call [Initiate](/docs-api/SolidMaterial/Initiate) method.
+
+```fortran
+CALL obj%Initiate(param)
+```
+
+### Step 3: Add material
+
+After we have initiated an instance of `AbstractMaterial_`, we will ADD material to it by calling [AddMaterial](/docs-api/AbstractMaterial/AddMaterial). 
+
+```fortran
+CALL obj%AddMaterial("massDensity")
+```
+
+:::note
+This routine just register a material name and allocate space for defining materal as a `UserFunction`.
+:::
+
+### Step 4: Get material pointer
+
+After registering a material, we can get the pointer of [UserFunction](/docs-api/UserFunction) by calling the method [GetMaterialPointer](/docs-api/AbstractMaterial/GetMaterialPointer).
+We should initiate this pointer as described in the documentation of [UserFunction](/docs-api/UserFunction).
+
+```fortran
+! Adding a material property
+CALL obj%AddMaterial("massDensity")
+
+func => obj%GetMaterialPointer("massDensity")
+
+IF (.NOT. ASSOCIATED(func)) THEN
+  CALL e%RaiseError(modName//'::'//myName//' - '// &
+    & '[error 1]')
+END IF
+
+CALL SetUserFunctionParam(param=param, name="massDensity",  &
+  & returnType=Scalar, argType=Constant)
+CALL func%Initiate(param)
+CALL func%Set(scalarValue=1.0_DFP)
+```
+
+## Further reading
+
+There is more to `SolidMaterial_`, and you can learn about them from following pages. 
+
+<CardSection id="quadraturePoints">
+  <Card
+    title="Construct by HDF5 file"
+    to="/guides/programming-fem/solidMaterial/import_hdf_1"
+    description="This example shows how to initiate SolidMaterial by using reading data from HDF5 file."
+  />
+  <Card
+    title="Construct by toml file"
+    to="/guides/programming-fem/solidMaterial/import_toml_1"
+    description="This example shows how to initiate SolidMaterial by using toml-file."
+  />
+  <Card
+    title="Toml file constant value"
+    to="/guides/programming-fem/dirichletBC/dbc_toml_const"
+    description="This example shows how to initiate DBC by reading a toml-file. Constant boundary condition, $u=\alpha$"
+  />
+  <Card
+    title="Toml file constant function"
+    to="/guides/programming-fem/dirichletBC/dbc_toml_userfunc_const"
+    description="This example shows how to initiate DBC by reading a toml-file. Constant boundary condition, $u=\alpha$"
+  />
+  <Card
+    title="Toml file space function"
+    to="/guides/programming-fem/dirichletBC/dbc_toml_userfunc_const"
+    description="This example shows how to initiate DBC by reading a toml-file. Space boundary condition, $u=g(x,y,z)$"
+  />
+</CardSection>

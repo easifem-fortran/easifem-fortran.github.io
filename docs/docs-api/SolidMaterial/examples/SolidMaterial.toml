@@ -1,0 +1,17 @@
+[[solid]]
+name = "massDensity"
+returnType = "Scalar"
+argType = "Constant"
+value = 1.0
+
+[[solid]]
+name = "poissonRatio"
+returnType = "Scalar"
+argType = "Constant"
+value = 2.0
+
+[[solid]]
+name = "youngsModulus"
+returnType = "Scalar"
+argType = "Constant"
+value = 3.0

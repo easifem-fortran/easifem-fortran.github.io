@@ -66,7 +66,7 @@ const defaultSettings = {
   showLastUpdateTime: true,
   sidebarPath: require.resolve("./sidebars-default.js"),
   remarkPlugins: [math],
-  rehypePlugins: [katex],
+  rehypePlugins: [[katex, { strict: false }]],
 };
 
 /**

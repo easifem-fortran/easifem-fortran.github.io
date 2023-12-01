@@ -18,6 +18,12 @@ tags:
 
 # LinearElasticModel
 
+import EXAMPLE21 from "@site/docs/guides/programming-fem/linearElasticity/index.mdx";
+
+<EXAMPLE21 />
+
+## Methods
+
 import DocCardList from '@theme/DocCardList';
 
 <DocCardList />

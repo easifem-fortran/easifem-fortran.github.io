@@ -1,6 +1,6 @@
 # AbstractMaterialModel
 
-`AbstractMatrialModel_` is an abstract class for modelling the behaviour of solids, fluids, porous materials, etc.
+`AbstractMatrialModel_` is an abstract class for modeling the behavior of solids, fluids, porous materials, etc.
 
 ## Structure
 
@@ -12,9 +12,15 @@ TYPE, ABSTRACT :: AbstractMaterialModel_
   TYPE(String) :: name
 ```
 
+`AbstractMaterialModel_` has following subclasses.
+
+- `AbstractSolidMechanicsModel_`
+- `AbstractPoroMechanicsModel_`
+- `AbstractFluidMechanicsModel_`
+
 ## Methods
 
-For a concrete implementation of  `AbstractMaterialModel_` one has to implement the following methods.
+For a concrete implementation of `AbstractMaterialModel_` one has to implement the following methods.
 
 ### CheckEssentialParam
 
