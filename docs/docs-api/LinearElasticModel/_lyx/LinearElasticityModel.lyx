@@ -82,6 +82,39 @@ Theory of linear elasticity for isotropic material
 \begin_layout Standard
 \begin_inset Formula 
 \[
+C_{ijkl}=\lambda\delta_{ij}\delta_{kl}+\mu\left(\delta_{ik}\delta_{jl}+\delta_{il}\delta_{jk}\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\sigma_{ij}=\lambda\varepsilon_{kk}\delta_{ij}+2\mu\varepsilon_{ij}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\sigma_{ij}=\left(\lambda+\frac{2\mu}{3}\right)\varepsilon_{kk}\delta_{ij}+2\mu\text{dev}\left(\varepsilon_{ij}\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
 \left\{ \begin{array}{c}
 \sigma_{11}\\
 \sigma_{22}\\
@@ -224,6 +257,112 @@ Plane strain
 \sigma_{22}\\
 \sigma_{12}
 \end{bmatrix}}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Orthotropic material 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+{\displaystyle C=\begin{bmatrix}C_{11} & C_{12} & C_{13} & 0 & 0 & 0\\
+C_{12} & C_{22} & C_{23} & 0 & 0 & 0\\
+C_{13} & C_{23} & C_{33} & 0 & 0 & 0\\
+0 & 0 & 0 & C_{44} & 0 & 0\\
+0 & 0 & 0 & 0 & C_{55} & 0\\
+0 & 0 & 0 & 0 & 0 & C_{66}
+\end{bmatrix}}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\left\{ \begin{array}{c}
+\varepsilon_{11}\\
+\varepsilon_{22}\\
+\varepsilon_{33}\\
+2\varepsilon_{12}\\
+2\varepsilon_{23}\\
+2\varepsilon_{13}
+\end{array}\right\} =\left[\begin{array}{cccccc}
+\frac{1}{E_{11}} & -\frac{\nu_{12}}{E_{22}} & -\frac{\nu_{13}}{E_{33}}\\
+-\frac{\nu_{21}}{E_{11}} & \frac{1}{E_{22}} & -\frac{\nu_{23}}{E_{33}}\\
+-\frac{\nu_{31}}{E_{11}} & -\frac{\nu_{32}}{E_{22}} & \frac{1}{E_{33}}\\
+ &  &  & \frac{1}{G_{12}}\\
+ &  &  &  & \frac{1}{G_{23}}\\
+ &  &  &  &  & \frac{1}{G_{13}}
+\end{array}\right]\left\{ \begin{array}{c}
+\sigma_{11}\\
+\sigma_{22}\\
+\sigma_{33}\\
+\sigma_{12}\\
+\sigma_{23}\\
+\sigma_{13}
+\end{array}\right\} 
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Transversely isotropic material 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+{\displaystyle C=\begin{bmatrix}C_{11} & C_{12} & C_{13} & 0 & 0 & 0\\
+C_{12} & C_{11} & C_{13} & 0 & 0 & 0\\
+C_{13} & C_{13} & C_{33} & 0 & 0 & 0\\
+0 & 0 & 0 & \frac{C_{11}-C_{12}}{2} & 0 & 0\\
+0 & 0 & 0 & 0 & C_{44} & 0\\
+0 & 0 & 0 & 0 & 0 & C_{44}
+\end{bmatrix}}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\left\{ \begin{array}{c}
+\varepsilon_{11}\\
+\varepsilon_{22}\\
+\varepsilon_{33}\\
+2\varepsilon_{12}\\
+2\varepsilon_{23}\\
+2\varepsilon_{13}
+\end{array}\right\} =\left[\begin{array}{cccccc}
+\frac{1}{E_{11}} & -\frac{\nu_{12}}{E_{22}} & -\frac{\nu_{13}}{E_{33}}\\
+-\frac{\nu_{21}}{E_{11}} & \frac{1}{E_{22}} & -\frac{\nu_{23}}{E_{33}}\\
+-\frac{\nu_{31}}{E_{11}} & -\frac{\nu_{32}}{E_{22}} & \frac{1}{E_{33}}\\
+ &  &  & \frac{1}{G_{12}}\\
+ &  &  &  & \frac{1}{G_{23}}\\
+ &  &  &  &  & \frac{1}{G_{13}}
+\end{array}\right]\left\{ \begin{array}{c}
+\sigma_{11}\\
+\sigma_{22}\\
+\sigma_{33}\\
+\sigma_{12}\\
+\sigma_{23}\\
+\sigma_{13}
+\end{array}\right\} 
 \]
 
 \end_inset

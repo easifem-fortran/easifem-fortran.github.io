@@ -1,0 +1,126 @@
+---
+sidebar_position: 1
+date: 2023-11-28 
+update: 2023-11-28 
+status: stable
+docs: done
+extpkgs: none
+category: 
+  - MaterialModels
+  - Materials
+  - Guides
+tags: 
+  - materialModels
+  - models
+  - materials
+  - easifemClasses
+---
+
+# Linear elastic model
+
+[LinearElasticModel_](/docs-api/LinearElasticModel/LinearElasticModel_)  is the class for modeling linear elastic material behavior. It is a subclass of [AbstractSolidMechanicsModel_](/docs-api/AbstractSolidMechanicsModel/AbstractSolidMechanicsModel_).
+
+Linear elasticity is a simplification of the more general nonlinear theory of elasticity and a branch of continuum mechanics. In linear elasticity we assume that: 
+- the strains are small 
+- the relation between stress and strain tensor is linear.
+
+These assumptions are reasonable for many engineering materials and engineering design scenarios. Linear elasticity is therefore used extensively in structural analysis and engineering design, often with the aid of finite element analysis.
+
+In the case of linear elasticity the relation between stress and strain is given by:
+
+$$
+\sigma_{ij} = C_{ijkl} \varepsilon_{kl}
+$$
+
+where $\sigma_{ij}$ and $\varepsilon_{ij}$ are the second order symmetric tensors denoting the stress and strain tensor, respectively.
+
+$C$ is the fourth-order stiffness tensor, which has both major and minor symmetries: 
+
+Major symmetries:
+
+$$
+C_{abcd} = C_{cdab}
+$$
+
+Minor symmetries:
+
+$$
+C_{abcd} = C_{bacd}; C_{abcd}=C_{abdc}
+$$
+
+In this way, $C$ has a total 21 number of independent elements.
+
+## Voigt notation
+
+The Voigt notation for stress tensor is given by following:
+
+$$
+\sigma = 
+\left\{ \begin{array}{c}
+\sigma_{11}\\
+\sigma_{22}\\
+\sigma_{33}\\
+\sigma_{12}\\
+\sigma_{23}\\
+\sigma_{13}
+\end{array}\right\} 
+$$
+
+The Voigt notation for strain tensor is given by following:
+
+$$
+\varepsilon = \left\{ \begin{array}{c}
+\varepsilon_{11}\\
+\varepsilon_{22}\\
+\varepsilon_{33}\\
+2\varepsilon_{12}\\
+2\varepsilon_{23}\\
+2\varepsilon_{13}
+\end{array}\right\}
+$$
+
+The fourth-order tensor $C$ is given by a symmetric $6 \times 6$ matrix.
+
+<CardSection id="isotropic-elasticity-theory">
+
+  <Card
+    title="Theory of isotropic elasticity"
+    to="/guides/programming-fem/linearElasticity/theory_isotropic"
+    description="Read about the theory of isotropic linear elasticity."
+  />
+  <Card
+    title="Theory of orthotropic elasticity"
+    to="/guides/programming-fem/linearElasticity/theory_orthotropic"
+    description="Read about the theory of orthotropic linear elasticity."
+  />
+  <Card
+    title="Theory of transversely isotropic elasticity"
+    to="/guides/programming-fem/linearElasticity/theory_trans_isotropic"
+    description="Read about the theory of transversely isotropic linear elasticity."
+  />
+  <Card
+    title="Theory of anisotropic elasticity"
+    to="/guides/programming-fem/linearElasticity/theory_anisotropic"
+    description="Read about the theory of anisotropic linear elasticity."
+  />
+</CardSection>
+
+## Learn from example
+
+## Further reading
+
+There is more to `DirichletBC_`, and you can learn about them from following pages. (Here `DBC` stands for `DirichletBC_`)
+
+<CardSection id="quadraturePoints">
+
+  <Card
+    title="Constant user function"
+    to="/guides/programming-fem/dirichletBC/dbc_userfunc_const"
+    description="This example shows how to initiate DBC by using a constant UserFunction $u=\alpha$"
+  />
+  <Card
+    title="Spatial user function"
+    to="/guides/programming-fem/dirichletBC/dbc_userfunc_space"
+    description="This example shows how to initiate DBC by using a space dependent UserFunction, $u=g(x, y, z)$"
+  />
+</CardSection>
