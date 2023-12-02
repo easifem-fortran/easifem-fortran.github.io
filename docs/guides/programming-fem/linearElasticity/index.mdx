@@ -107,20 +107,79 @@ The fourth-order tensor $C$ is given by a symmetric $6 \times 6$ matrix.
 
 ## Learn from example
 
+We will consider the following example to learn about the [LinearElasticModel](/docs-api/LinearElasticModel).
+
+<details>
+<summary>Click here to see the example</summary>
+<div>
+
+```fortran
+PROGRAM main
+USE easifemBase
+USE easifemClasses
+USE easifemMaterials
+IMPLICIT NONE
+TYPE(LinearElasticModel_) :: obj
+TYPE(ParameterList_) :: param
+
+CALL FPL_INIT; CALL param%initiate()
+
+CALL SetLinearElasticModelParam( &
+  & param=param,  &
+  & ElasticityType=TypeElasticity%Isotropic, &
+  & PoissonRatio=0.3_DFP, &
+  & YoungsModulus=1.0D+6)
+
+CALL obj%Initiate(param)
+CALL obj%Display(msg="ISOTROPIC | PLANE-STRAIN |:")
+
+CALL param%DEALLOCATE(); CALL FPL_FINALIZE
+END PROGRAM main
+```
+
+</div>
+</details>
+
+### Step 1 (configure)
+
+In the above example, first we configure the `LinearElasticModel` by calling the [SetLinearElasticModelParam](/docs-api/LinearElasticModel/SetLinearElasticModelParam) method.
+
+```fortran
+CALL SetLinearElasticModelParam( &
+  & param=param,  &
+  & ElasticityType=TypeElasticity%Isotropic, &
+  & PoissonRatio=0.3_DFP, &
+  & YoungsModulus=1.0D+6)
+```
+
+### Step 2 (initiate)
+
+Now we will pass `param` to [Initiate](/docs-api/LinearElasticModel/Initiate) method to construct an instance of `LinearElasticModel_`. 
+
+```fortran
+CALL obj%Initiate(param)
+```
+
+### Step 3 (display)
+
+You can display the content of `LinearElasticModel` by calling the [Display](/docs-api/LinearElasticModel/Display) method.
+
+```fortran
+CALL obj%Display(msg="ISOTROPIC | PLANE-STRAIN |:")
+```
+
 ## Further reading
 
-There is more to `DirichletBC_`, and you can learn about them from following pages. (Here `DBC` stands for `DirichletBC_`)
-
-<CardSection id="quadraturePoints">
+<CardSection id="linearElasticity-guide">
 
   <Card
-    title="Constant user function"
-    to="/guides/programming-fem/dirichletBC/dbc_userfunc_const"
-    description="This example shows how to initiate DBC by using a constant UserFunction $u=\alpha$"
+    title="Export data to HDF5File"
+    to="/guides/programming-fem/linearElasticity/export_hdf5"
+    description="This example shows how to export data stored inside the LinearElasticModel to HDF5File."
   />
   <Card
-    title="Spatial user function"
-    to="/guides/programming-fem/dirichletBC/dbc_userfunc_space"
-    description="This example shows how to initiate DBC by using a space dependent UserFunction, $u=g(x, y, z)$"
+    title="Construct by using import"
+    to="/guides/programming-fem/linearElasticity/import_hdf5"
+    description="This example shows how to initiate LinearElasticModel by importing data from HDF5File"
   />
 </CardSection>

@@ -1,8 +1,12 @@
+---
+sidebar_position: 2
+---
+
 # Structure
 
 `LinearElasticModel_` is the class for modeling linear elastic material behavior.
 
-`LinearElasticModel_` is a subclass of [AbstractSolidMechanicsModel](../AbstractSolidMechanicsModel).
+`LinearElasticModel_` is a subclass of [AbstractSolidMechanicsModel](/docs-api/AbstractSolidMechanicsModel).
 
 ```fortran
 TYPE, EXTENDS(AbstractSolidMechanicsModel_) :: LinearElasticModel_

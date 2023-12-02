@@ -1,14 +1,12 @@
 ---
-sidebar_position: 7
+sidebar_position: 6
 ---
 
-# Construct by using import
+# Export data to HDF5File
 
-In this section you can learn how construct an instance of `LinearElasticModel_` by reading data from the HDF5File and `Import` command. You can learn more about the [Import here](/docs-api/LinearElasticModel/Import).
+We can export data stored inside `LinearElasticModel_` to HDF5File by using the method called [Export](/docs-api/LinearElasticModel/Export).
 
-We need following data in the `HDF5File`.
-
-**Template of HDF5File**
+Following data is exported in the HDF5File.
 
 | Variable name    | Data type |              Value               |                                                         Comment |
 | ---------------- | :-------: | :------------------------------: | --------------------------------------------------------------: |
@@ -23,25 +21,22 @@ We need following data in the `HDF5File`.
 | `C`              | REAL(6,6) |                                  |              This is necessary when `ANISO` option is selected. |
 | `invC`           | REAL(6,6) |                                  |              This is necessary when `ANISO` option is selected. |
 
-:::caution
-Before using these examples, make sure to export the data as shown [here](/guides/programming-fem/LinearElasticity/export_hdf5).
-
-:::
+Following examples covers this topic.
 
 ## Example 1
 
-import EXAMPLE13 from "@site/docs/docs-api/LinearElasticModel/examples/_Import_test_1.md";
+import EXAMPLE13 from "@site/docs/docs-api/LinearElasticModel/examples/_Export_test_1.md";
 
 <EXAMPLE13 />
 
 ## Example 2
 
-import EXAMPLE14 from "@site/docs/docs-api/LinearElasticModel/examples/_Import_test_2.md";
+import EXAMPLE14 from "@site/docs/docs-api/LinearElasticModel/examples/_Export_test_2.md";
 
 <EXAMPLE14 />
 
 ## Example 3
 
-import EXAMPLE15 from "@site/docs/docs-api/LinearElasticModel/examples/_Import_test_3.md";
+import EXAMPLE15 from "@site/docs/docs-api/LinearElasticModel/examples/_Export_test_3.md";
 
 <EXAMPLE15 />
