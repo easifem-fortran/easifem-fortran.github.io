@@ -1,0 +1,147 @@
+---
+id: "index"
+aliases:
+  - "AbstractKernel"
+tags:
+  - "kernel"
+  - "abstractKernel"
+  - "easifemKernels"
+category:
+  - "Kernel"
+date: 2023-09-08 
+docs: "done"
+extpkgs: "none"
+sidebar_position: 1
+status: "stable"
+update: 2023-09-08 
+---
+
+# AbstractKernel
+
+`AbstractKernel_` class is an abstract class for designing kernels. You can see the structure of the `AbstractKernel` [here](./AbstractKernel_.md).
+
+## Methods
+
+### Constructor Methods
+
+<CardSection id="abstract-kernel-constructor-methods">
+  <Card
+    title="Set Parameter"
+    to="/docs-api/AbstractKernel/SetAbstractKernelParam"
+    description="Set the parameters for constructing the abstract kernel."
+  />
+  <Card
+    title="Check essential parameters"
+    to="/docs-api/AbstractKernel/CheckEssentialParam"
+    description="Check the essential parameters."
+  />
+  <Card
+    title="Initite Kernel"
+    to="/docs-api/AbstractKernel/Initiate"
+    description="Initiate the kernels by using parameters."
+  />
+  <Card
+    title="Initite fields"
+    to="/docs-api/AbstractKernel/InitiateFields"
+    description="Initiate the vector and matrix fields of kernels."
+  />
+  <Card
+    title="Deallocate kernel"
+    to="/docs-api/AbstractKernel/Deallocate"
+    description="Deallocate the data stored inside the Kernel."
+  />
+</CardSection>
+
+### Set Methods
+
+<CardSection id="abstract-kernel-set-methods">
+  <Card
+    title="Set"
+    to="/docs-api/AbstractKernel/Set"
+    description="Set method should be called after configuring the kernel."
+  />
+  <Card
+    title="Set Current Time Step"
+    to="/docs-api/AbstractKernel/SetCurrentTimeStep"
+    description="This method sets the current time step of simulation."
+  />
+  <Card
+    title="Set Iteration Number"
+    to="/docs-api/AbstractKernel/SetIterationNumber"
+    description="This method sets the current iteration number in kernel."
+  />
+  <Card
+    title="Set Mesh Data"
+    to="/docs-api/AbstractKernel/SetMeshData"
+    description="This method sets mesh data in the kernel."
+  />
+  <Card
+    title="Set Finite Element"
+    to="/docs-api/AbstractKernel/SetFiniteElement"
+    description="This method sets the finite element."
+  />
+  <Card
+    title="Set Facet Finite Element"
+    to="/docs-api/AbstractKernel/SetFacetFiniteElement"
+    description="This method sets the facet finite element."
+  />
+  <Card
+    title="Set Quadrature Points in Space"
+    to="/docs-api/AbstractKernel/SetQuadPointsInSpace"
+    description="This method sets the quadrature points in space."
+  />
+  <Card
+    title="Set Quadrature Points in Time"
+    to="/docs-api/AbstractKernel/SetQuadPointsInTime"
+    description="This method sets the quadrature points in time."
+  />
+  <Card
+    title="Set Local Shape Data in Space"
+    to="/docs-api/AbstractKernel/SetLocalElemShapeDataInSpace"
+    description="This method sets the local shape function data in space."
+  />
+  <Card
+    title="Set Local Shape Data in Time"
+    to="/docs-api/AbstractKernel/SetLocalElemShapeDataInTime"
+    description="This method sets the local shape function data in time."
+  />
+</CardSection>
+
+
+### Get methods
+
+<CardSection id="abstract-kernel-get-methods">
+  <Card
+    title="Get Prefix"
+    to="/docs-api/AbstractKernel/GetPrefix"
+    description="Get the prefix of the kernel."
+  />
+  <Card
+    title="Get Coordinate System Name"
+    to="/docs-api/AbstractKernel/KernelGetCoordinateSystemName"
+    description="Get the name of coordinate system from integer id."
+  />
+  <Card
+    title="Get Coordinate System ID"
+    to="/docs-api/AbstractKernel/KernelGetCoordinateSystemID"
+    description="Get the integer id of coordinate system from its name."
+  />
+  <Card
+    title="Get NSD from ID"
+    to="/docs-api/AbstractKernel/KernelGetNSDFromID"
+    description="Get the number of spatial dimension from the coordinate system id."
+  />
+  <Card
+    title="Get NSD from Name"
+    to="/docs-api/AbstractKernel/KernelGetNSDFromName"
+    description="Get the number of spatial dimension from the coordinate system name."
+  />
+</CardSection>
+
+
+
+## All methods 
+
+import DocCardList from '@theme/DocCardList';
+
+<DocCardList />

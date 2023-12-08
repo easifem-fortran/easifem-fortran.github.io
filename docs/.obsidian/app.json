@@ -3,5 +3,6 @@
   "useMarkdownLinks": true,
   "newFileLocation": "current",
   "newLinkFormat": "relative",
-  "vimMode": true
+  "vimMode": true,
+  "tabSize": 2
 }
