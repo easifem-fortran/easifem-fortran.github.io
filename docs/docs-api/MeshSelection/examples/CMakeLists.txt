@@ -19,7 +19,7 @@
 #
 CMAKE_MINIMUM_REQUIRED(VERSION 3.20.0 FATAL_ERROR)
 SET(PROJECT_NAME "easifemApp")
-SET(PROJECT_SRC_PATH "/home/easifem/Dropbox/easifem/easifem-tests/MeshSelection")
+SET(PROJECT_SRC_PATH "/Users/easifem/Documents/vickysharma0812.github.io/docs/docs-api/MeshSelection/examples")
 PROJECT(${PROJECT_NAME})
 ENABLE_LANGUAGE(Fortran)
 SET(TARGET_NAME "test")

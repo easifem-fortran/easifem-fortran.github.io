@@ -15,7 +15,7 @@ import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
 
 <Tabs>
-<TabItem value="interface" label="܀ Interface" default>
+<TabItem value="interface" label="Interface" default>
 
 ```fortran
 INTERFACE
@@ -34,9 +34,9 @@ END INTERFACE
 
 </TabItem>
 
-<TabItem value="example" label="️܀ See example">
+<TabItem value="example" label="️See example">
 
-import EXAMPLE6 from "./_MeshSelection_test_1.md";
+import EXAMPLE6 from "./examples/_Initiate_test_1.md";
 
 <EXAMPLE6 />
 
