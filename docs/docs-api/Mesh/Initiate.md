@@ -23,7 +23,11 @@ END INTERFACE
 
 ## Examples
 
-### Converting mesh from gmsh to easifem format
+In the following examples we have used the mesh given below.
+
+![](./figures/small_mesh.svg)
+
+### Converting mesh from Gmsh to easifem format
 
 <details>
 <summary>Click here to see example</summary>

@@ -10,7 +10,7 @@ PROGRAM main
   TYPE( Mesh_ ) :: obj
   TYPE( HDF5File_ ) :: meshfile
 
-  CALL meshfile%Initiate( FileName="./mesh.h5", MODE="READ" )
+  CALL meshfile%Initiate( FileName="./meshdata/small_mesh.h5", MODE="READ" )
   CALL meshfile%Open()
 
   CALL obj%Initiate(hdf5=meshfile, group="/curveEntities_2" )
