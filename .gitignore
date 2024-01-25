@@ -136,3 +136,17 @@ dist
 
 build
 build/*
+
+*.mtx
+*.eps 
+*.pdf 
+*.msh 
+*.geo
+*.F90
+*.txt
+*.gp
+*.ps
+*.py
+*.h5
+*.vtu
+

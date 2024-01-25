@@ -1,3 +1,7 @@
+---
+sidebar_position: 2
+---
+
 # SetSolidMaterialParam
 
 Set the parameters to initiate an instance of `SolidMaterial_`.

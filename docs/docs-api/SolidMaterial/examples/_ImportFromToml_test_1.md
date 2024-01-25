@@ -5,19 +5,21 @@ In this example we initiate `SolidMaterial_` by reading the `toml` file.
 <div>
 
 ```fortran
-[[solid]]
+[solid]
+
+[[solid.property]]
 name = "massDensity"
 returnType = "Scalar"
 argType = "Constant"
 value = 1.0
 
-[[solid]]
+[[solid.property]]
 name = "poissonRatio"
 returnType = "Scalar"
 argType = "Constant"
 value = 2.0
 
-[[solid]]
+[[solid.property]]
 name = "youngsModulus"
 returnType = "Scalar"
 argType = "Constant"

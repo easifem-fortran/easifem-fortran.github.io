@@ -14,6 +14,14 @@ tags:
 
 # UserFunction
 
+`UserFunction` is defined to handle user defined functions in fortran. User defied function can define following functions:
+
+- Scalar valued (constant, space dependent, time dependent, and space-time dependent) function
+- Vector valued (constant, space dependent, time dependent, and space-time dependent) function
+- Matrix valued (constant, space dependent, time dependent, and space-time dependent) function
+
+## Methods
+
 import DocCardList from '@theme/DocCardList';
 
 <DocCardList />

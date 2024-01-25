@@ -19,6 +19,12 @@ tags:
 
 # SolidMaterial
 
+import EXAMPLE22 from "@site/docs/guides/programming-fem/solidMaterial/index.mdx";
+
+<EXAMPLE22 />
+
+## Methods
+
 import DocCardList from '@theme/DocCardList';
 
 <DocCardList />

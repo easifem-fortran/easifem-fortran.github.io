@@ -1,3 +1,7 @@
+---
+sidebar_position: 2
+---
+
 # Structure
 
 `CSRSparsity_` is data type for handling `CSRMatrix_` in EASIFEM.

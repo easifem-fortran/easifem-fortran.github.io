@@ -1,10 +1,14 @@
 ---
-sidebar_position: 5
+sidebar_position: 7
 ---
 
 # Construct by using import
 
-**Template**
+In this section you can learn how construct an instance of `LinearElasticModel_` by reading data from the HDF5File and `Import` command. You can learn more about the [Import here](/docs-api/LinearElasticModel/Import).
+
+We need following data in the `HDF5File`.
+
+**Template of HDF5File**
 
 | Variable name    | Data type |              Value               |                                                         Comment |
 | ---------------- | :-------: | :------------------------------: | --------------------------------------------------------------: |
@@ -19,43 +23,25 @@ sidebar_position: 5
 | `C`              | REAL(6,6) |                                  |              This is necessary when `ANISO` option is selected. |
 | `invC`           | REAL(6,6) |                                  |              This is necessary when `ANISO` option is selected. |
 
-Following code demonstrates the construction of linear elastic model using `Import` command.
+:::caution
+Before using these examples, make sure to export the data as shown [here](/guides/programming-fem/LinearElasticity/export_hdf5).
 
-First we `export` the `hdf5` file using following code.
+:::
 
-```fortran
-type( LinearElasticModel_ ) :: obj
-type( ParameterList_ ) :: param
-type( hdf5File_ ) :: hdf5
-call FPL_INIT; call param%initiate()
-call setLinearElasticModelParam( &
-  & param = param,  &
-  & ElasticityType = IsoLinearElasticModel, &
-  & isPlaneStress = .FALSE., &
-  & isPlaneStrain = .FALSE., &
-  & PoissonRatio = 0.3_DFP, &
-  & YoungsModulus = 1.0D+6 )
-call obj%initiate( param )
-call hdf5%initiate( "./TemplateLinearElasticModel1.hdf5", &
-  & mode="NEW" )
-call hdf5%open()
-call obj%export( hdf5, "" )
-call hdf5%close
-call hdf5%Deallocate()
-call param%Deallocate(); call FPL_FINALIZE
-```
+## Example 1
 
-Now we create an instance of `LinearElasticModel_` by importing the `hdf5` file.
+import EXAMPLE13 from "@site/docs/docs-api/LinearElasticModel/examples/_Import_test_1.md";
 
-```fortran
-type( LinearElasticModel_ ) :: obj
-type( hdf5File_ ) :: hdf5
-type( ParameterList_ ) :: param
-call FPL_INIT; call param%initiate()
-call hdf5%initiate( "./TemplateLinearElasticModel1.hdf5", &
-  & mode="READ" ); call hdf5%open()
-call obj%import( hdf5, "" )
-call obj%display(msg="")
-call hdf5%close(); call hdf5%Deallocate()
-call param%Deallocate(); call FPL_FINALIZE
-```
+<EXAMPLE13 />
+
+## Example 2
+
+import EXAMPLE14 from "@site/docs/docs-api/LinearElasticModel/examples/_Import_test_2.md";
+
+<EXAMPLE14 />
+
+## Example 3
+
+import EXAMPLE15 from "@site/docs/docs-api/LinearElasticModel/examples/_Import_test_3.md";
+
+<EXAMPLE15 />

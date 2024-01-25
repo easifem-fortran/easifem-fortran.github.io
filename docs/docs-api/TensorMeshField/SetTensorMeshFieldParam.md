@@ -10,7 +10,7 @@ import TabItem from '@theme/TabItem';
 
 ```fortran
 INTERFACE
-  MODULE SUBROUTINE setTensorMeshFieldParam(param, name, &
+  MODULE SUBROUTINE SetTensorMeshFieldParam(param, name, &
     & fieldType, varType, engine, defineOn, dim1, dim2, nns)
     TYPE(ParameterList_), INTENT(INOUT) :: param
     CHARACTER(*), INTENT(IN) :: name
@@ -29,9 +29,9 @@ END INTERFACE
 
 </TabItem>
 
-<TabItem value="example" label="️܀ See example">
+<TabItem value="example" label="example">
 
-import EXAMPLE6 from "./_SetTensorMeshFieldParam_test_1.md";
+import EXAMPLE6 from "./examples/_Initiate_test_1.md";
 
 <EXAMPLE6 />
 

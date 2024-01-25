@@ -24,17 +24,18 @@ INTEGER(I4B) :: ierr
 CALL FPL_Init(); CALL param%Initiate()
 
 ! Call `SetSolidMaterialParam` to set the material properties.
-CALL SetSolidMaterialParam(param=param, name="SolidMaterial", &
-  & massDensity=5000.0_DFP, stressStrainModel="LinearElasticModel")
+CALL SetSolidMaterialParam(param=param, name="SolidMaterial",  &
+  & stressStrainModel="LinearElasticModel")
 
-! Call `SetLinearElasticModelParam` to set the properties of LinearElasticModel
+! Call `SetLinearElasticModelParam` to set the properties of
+! LinearElasticModel
 CALL SetLinearElasticModelParam( &
   & param=param,  &
-  & ElasticityType=IsoLinearElasticModel, &
+  & elasticityType=TypeElasticity%Isotropic, &
   & isPlaneStress=.FALSE., &
   & isPlaneStrain=.TRUE., &
-  & PoissonRatio=0.3_DFP, &
-  & YoungsModulus=1.0D+6)
+  & poissonRatio=0.3_DFP, &
+  & youngsModulus=1.0D+6)
 
 ! Initiate an instance of `SolidMaterial_`
 CALL obj%Initiate(param)

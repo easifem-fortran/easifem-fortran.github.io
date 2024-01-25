@@ -16,6 +16,10 @@ tags:
 
 # TxtFile
 
+`TxtFile` is designed to handle the text-based file (ASCII format files). These files can be read and edited by humans.
+
+## Methods
+
 import DocCardList from '@theme/DocCardList';
 
 <DocCardList />

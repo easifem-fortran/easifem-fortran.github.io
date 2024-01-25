@@ -1,6 +1,8 @@
 # Structure
 
-[FortranFile_](../FortranFile/FortranFile_.md) is extended to create a txtfile. The content is in ASCII.
+`TxtFile_` is a subclass of [FortranFile_](/docs-api/FortranFile).
+
+It contains the content is in ASCII format.
 
 ```fortran
 TYPE, EXTENDS(FortranFile_) :: TxtFile_

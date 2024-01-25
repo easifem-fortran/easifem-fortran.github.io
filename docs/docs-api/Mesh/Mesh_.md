@@ -3,8 +3,6 @@ title: Structure
 sidebar_position: 2
 ---
 
-# Structure
-
 Mesh datatype is simply a collection of mesh elements.
 
 In EASIFEM mesh is a homogeneous collection of reference elements. All elements in mesh should be of same type (i.e., triangle, quadrangle, tetrahedron, etc.). Two mesh can have different types of elements. For example, we can define a mesh of triangle element or a mesh of tetrahedron element.
@@ -245,8 +243,8 @@ END TYPE Mesh_
 Following variables are required during for time shape functions in space-time finite elements.
 
 - `quadForTime`, quadrature point for time domain
-- `linTimeElemSD` Element shape data on linear time element 
-- `timeElemSD` Element shape data on time element 
+- `linTimeElemSD` Element shape data on linear time element
+- `timeElemSD` Element shape data on time element
 - `quadTypeForTime` quadrature type for time
 - `continuityTypeForTime` continuity of base function for time
 - `interpolTypeForTime` interpolation of base function for time

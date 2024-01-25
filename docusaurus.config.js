@@ -11,9 +11,9 @@ const meta = {
   url: "https://www.easifem.com",
   baseUrl: "/",
   favicon: "/favicon.ico",
-  organizationName: "vickysharma0812",
+  organizationName: "easifem-fortran",
   // The GitHub user or organization that owns the deployment repository.
-  projectName: "vickysharma0812.github.io",
+  projectName: "easifem-fortran.github.io",
   // The name of the deployment repository.
   deploymentBranch: "gh-pages",
   // The name of the deployment branch.
@@ -32,11 +32,6 @@ const meta = {
 
 /** @type {import('@docusaurus/plugin-content-docs').Options[]} */
 const docs = [
-  {
-    id: "cli",
-    path: "docs/cli",
-    routeBasePath: "/cli",
-  },
   {
     id: "about",
     path: "docs/about",
@@ -62,7 +57,7 @@ const docs = [
 /** @type {import('@docusaurus/plugin-content-docs').Options} */
 const defaultSettings = {
   breadcrumbs: true,
-  editUrl: "https://github.com/vickysharma0812/vickysharma0812.github.io/tree/main/",
+  editUrl: "https://github.com/easifem-fortran/easifem-fortran.github.io/tree/main/",
   showLastUpdateTime: true,
   sidebarPath: require.resolve("./sidebars-default.js"),
   remarkPlugins: [math],
@@ -155,7 +150,7 @@ const config = {
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
-      image: "/img/dyte-docs-card.png",
+      image: "/img/easifem-docs-card.png",
       colorMode: {
         defaultMode: "light",
       },

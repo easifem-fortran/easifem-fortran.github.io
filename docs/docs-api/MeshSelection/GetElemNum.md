@@ -18,13 +18,13 @@ END INTERFACE
 
 The following interface returns element number when
 
-- `isSelectionByElemNum` is true
-- or when `isSelectionByMeshID` is true
+- `IsSelectionByElemNum` is true
+- or when `IsSelectionByMeshID` is true
 
 TODO
 
-- `isSelectionByNodeNum`
-- `isSelectionByBox`
+- `IsSelectionByNodeNum`
+- `IsSelectionByBox`
 
 ```fortran
 INTERFACE
@@ -57,3 +57,16 @@ INTERFACE
   END FUNCTION meshSelect_getElemNum4
 END INTERFACE
 ```
+
+## Example 1
+
+<details>
+<summary>Click here to see the example</summary>
+<div>
+
+import EXAMPLE67 from "./examples/_GetElemNum_test_1.md";
+
+<EXAMPLE67 />
+
+</div>
+</details>

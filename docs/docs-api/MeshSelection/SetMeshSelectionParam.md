@@ -1,3 +1,7 @@
+---
+sidebar_position: 1
+---
+
 # SetMeshSelectionParam
 
 Set the parameters to initiate an instance of `MeshSelection_`.
