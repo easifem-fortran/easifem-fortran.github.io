@@ -1,28 +1,11 @@
-# Mesh example 14
-
-!!! example ""
-    This example shows how to obtain the [[ReferenceElement_]] of an internal facet element.
+This example shows how to obtain the `ReferenceElement_` of an internal facet element.
 
 - First we obtain the local facet ID of the internal facet element in the masterCell
 - Then we use this localFacetID to get the reference element stored in the mesh object.
 
 We can also follow this procedure for slaveCell number.
 
-The mesh is given below
-
-![[figures/mesh.png]]
-
-## Modules and classes
-
-- [[Mesh_]]
-- [[HDF5File_]]
-
-## Usage
-
-!!! note ""
-    Import modules and declare variables
-
-``` fortran
+```fortran
 PROGRAM main
   USE easifemBase
   USE easifemClasses
@@ -30,72 +13,48 @@ PROGRAM main
   TYPE( Mesh_ ) :: obj
   TYPE( HDF5File_ ) :: meshfile
   INTEGER( I4B ) :: iel, ii, masterCell, slaveCell
-  CHARACTER( LEN=* ), PARAMETER :: filename="./mesh.h5"
-```
+  CHARACTER(*), PARAMETER :: filename="./mesh.h5"
 
-!!! note ""
-    Initiate and open the mesh file which is in [[HDF5File_]] format. Then, create an instance of mesh.
+  ! Initiate and open the mesh file which is in [[HDF5File_]] format. 
+  ! Then, create an instance of mesh.
 
-```fortran
   CALL meshfile%Initiate( FileName=filename, MODE="READ" )
   CALL meshfile%Open()
   CALL obj%Initiate(hdf5=meshfile, group="/surfaceEntities_1" )
-```
 
-!!! note ""
-    Getting the [[ReferenceElement_]] of an internal facet element.
+  ! Getting the [[ReferenceElement_]] of an internal facet element.
 
-```fortran
   iel = 1
   CALL Display( "facetElement="//tostring(iel) )
-```
 
-Getting the master and slave cell number of the facet element.
-
-```fortran
+  ! Getting the master and slave cell number of the facet element.
   CALL Display( obj%getCellNumber( facetElement=iel, &
     & elementType=INTERNAL_ELEMENT ), &
     & "master and slave cell number = " )
-```
 
-Getting the connectivity information of facet element.
-
-```fortran
+  ! Getting the connectivity information of facet element.
   CALL Display( obj%getFacetConnectivity( facetElement=iel, &
     & elementType=INTERNAL_ELEMENT, &
     & isMaster=.TRUE. ), &
     & "facet connectivity=" )
-```
 
-Obtaining the local facet number of given facet element.
-
-```fortran
+  ! Obtaining the local facet number of given facet element.
   ii = obj%getLocalFacetID( facetElement=iel, &
     & elementType=INTERNAL_ELEMENT, &
     & isMaster = .TRUE. )
   CALL Display( ii, "localFacetID=" )
-```
 
-Accessing the reference facet element by using localFacetID.
-
-```fortran
+  ! Accessing the reference facet element by using localFacetID.
   CALL Display( obj%facetElements( ii ), "refElem=" )
-```
 
-!!! note ""
-    If we know the cell number and the localFacetID then we can get the connectivity of that facet element by using the following.
-
-```fortran
+  ! If we know the cell number and the localFacetID then we can get the connectivity 
+  ! of that facet element by using the following.
   masterCell = obj%getMasterCellNumber( facetElement=iel, &
     & elementType=INTERNAL_ELEMENT )
   CALL Display( obj%getFacetConnectivity( globalElement=masterCell, &
     & iface=ii ), "connectivity of iface=" )
-```
 
-!!! note ""
-    Now let us repeat this process for slave Cell number.
-
-```fortran
+  ! Now let us repeat this process for slave Cell number.
   iel = 1
   CALL Display( "== slave cell number ==")
   CALL Display( "facetElement="//tostring(iel) )
@@ -112,11 +71,7 @@ Accessing the reference facet element by using localFacetID.
     & elementType=INTERNAL_ELEMENT )
   CALL Display( obj%getFacetConnectivity( globalElement=slaveCell, &
     & iface=ii ), "connectivity of iface=" )
-```
 
-!!! note "cleanup"
-
-```fortran
   CALL obj%Deallocate()
   CALL meshfile%Deallocate()
 END PROGRAM main
