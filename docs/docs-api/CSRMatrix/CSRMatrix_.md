@@ -1,3 +1,7 @@
+---
+sidebar_position: 2
+---
+
 # Structure
 
 `CSRMatrix_` data type defines a sparse matrix in the CSR format. EASIFEM uses Sparsekit library for handling `CSRMatrix_`.
