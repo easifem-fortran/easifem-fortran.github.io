@@ -38,5 +38,13 @@ BLOCK
   CALL obj%DEALLOCATE()
 END BLOCK
 
+BLOCK
+  CALL SetLinearElasticModelParam(param=param,  &
+    & ElasticityType=TypeElasticity%Isotropic)
+  CALL obj%Initiate(param)
+  CALL obj%Display(msg="Isotropic | No options |:")
+  CALL obj%DEALLOCATE()
+END BLOCK
+
 CALL param%DEALLOCATE(); CALL FPL_FINALIZE
 END PROGRAM main
