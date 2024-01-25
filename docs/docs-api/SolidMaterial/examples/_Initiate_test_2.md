@@ -1,16 +1,13 @@
-!> author: Vikas Sharma, Ph. D.
-! date:  2023-11-29
-! summary:  Testing SolidMaterial
-!
-!# Introduction
-!
-! In this example we test following methods.
-!
-! - SetSolidMaterialParam
-! - SetLinearElasticModelParam
-! - Initiate
-! - Display
+# Introduction
 
+In this example we test following methods.
+
+- SetSolidMaterialParam
+- SetLinearElasticModelParam
+- Initiate
+- Display
+
+```fortran
 PROGRAM main
 USE easifemBase
 USE easifemClasses
@@ -24,18 +21,18 @@ INTEGER(I4B) :: ierr
 CALL FPL_Init(); CALL param%Initiate()
 
 ! Call `SetSolidMaterialParam` to set the material properties.
-CALL SetSolidMaterialParam(param=param, name="SolidMaterial",  &
-  & stressStrainModel="LinearElasticModel")
+CALL SetSolidMaterialParam(param=param, name="SolidMaterial", &
+& stressStrainModel="LinearElasticModel")
 
 ! Call `SetLinearElasticModelParam` to set the properties of
 ! LinearElasticModel
 CALL SetLinearElasticModelParam( &
-  & param=param,  &
-  & elasticityType=TypeElasticity%Isotropic, &
-  & isPlaneStress=.FALSE., &
-  & isPlaneStrain=.TRUE., &
-  & poissonRatio=0.3_DFP, &
-  & youngsModulus=1.0D+6)
+& param=param, &
+& elasticityType=TypeElasticity%Isotropic, &
+& isPlaneStress=.FALSE., &
+& isPlaneStrain=.TRUE., &
+& poissonRatio=0.3_DFP, &
+& youngsModulus=1.0D+6)
 
 ! Initiate an instance of `SolidMaterial_`
 CALL obj%Initiate(param)
@@ -46,3 +43,4 @@ CALL obj%Display(msg="Testing setSolidMaterialParam")
 CALL obj%DEALLOCATE()
 CALL FPL_FINALIZE; CALL param%DEALLOCATE()
 END PROGRAM main
+```
