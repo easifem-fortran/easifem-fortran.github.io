@@ -1,28 +1,8 @@
----
-authors: Vikas Sharma, Ph. D.
-date: 2021-11-08
-update: 2021-11-08
-title: TxtFile Example 9
-tags:
-    - TxtFile/Initiate
-    - TxtFile/GetTotalRecords
-    - TxtFile/Write
----
-
-# TxtFile Example 9
-
 This example shows the usage of `Write` methods to write a vector.
-
-## Modules and classes
-
-- [[TxtFile_]]
-- [[String]]
-
-## Usage
 
 Importing modules and defining variables
 
-``` fortran
+```fortran
 program main
   use easifemBase
   use easifemClasses
@@ -37,16 +17,16 @@ program main
 Initiate an instance of [[TxtFile_]], and then Open the [[TxtFile_]] file. We use comma separated values.
 
 ```fortran
-  call obj%initiate(filename=filename, status='NEW', &
-    & action='WRITE', separator=",")
-  call obj%open()
+call obj%initiate(filename=filename, status='NEW', &
+  & action='WRITE', separator=",")
+call obj%open()
 ```
 
 Write the value of integer vector. By default a vector is treated as a column.
 
 ```fortran
-  int_r0 = [10, 20, 30]
-  call obj%write(val=int_r0)
+int_r0 = [10, 20, 30]
+call obj%write(val=int_r0)
 ```
 
 The result is given below.
@@ -61,7 +41,7 @@ The result is given below.
 We can write the results as a row by setting `orient=ROW`. Note that by default `advance="YES"`.
 
 ```fortran
-  call obj%write(val=int_r0, orient="ROW")
+call obj%write(val=int_r0, orient="ROW")
 ```
 
 ```txt
@@ -72,8 +52,8 @@ We can write the results as a row by setting `orient=ROW`. Note that by default 
 Write the value of real vector.
 
 ```fortran
-  real_r0 = arange(0.0, 1.0, 0.5)
-  call obj%write(val=real_r0)
+real_r0 = arange(0.0, 1.0, 0.5)
+call obj%write(val=real_r0)
 ```
 
 The result is given below
@@ -89,9 +69,9 @@ We can set `advance="NO"` to obtain the following.
 Note that if want to advance to next line, then you should make an empty call to write.
 
 ```fortran
-  call obj%write(val=real_r0, advance="NO")
-  !! now advancing
-  call obj%write()
+call obj%write(val=real_r0, advance="NO")
+!! now advancing
+call obj%write()
 ```
 
 The result is given below:
@@ -105,7 +85,7 @@ We can also obtain the above result by usign `orient=ROW`.
 In this case `advance=YES` by default.
 
 ```fortran
-  call obj%write(val=real_r0, orient="ROW")
+call obj%write(val=real_r0, orient="ROW")
 ```
 
 The results is given below
@@ -118,8 +98,8 @@ The results is given below
 Following code shows how you can write many rows in a single line. Remember to set advance="YES" for the last call, or make a call to `obj%write()` without any arguments.
 
 ```fortran
-  call obj%write(val=10*real_r0, orient="ROW", advance="NO")
-  call obj%write(val=20*real_r0, orient="ROW", advance="YES")
+call obj%write(val=10*real_r0, orient="ROW", advance="NO")
+call obj%write(val=20*real_r0, orient="ROW", advance="YES")
 ```
 
 ```txt

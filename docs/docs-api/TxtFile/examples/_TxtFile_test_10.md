@@ -1,28 +1,8 @@
----
-authors: Vikas Sharma, Ph. D.
-date: 2021-11-08
-update: 2021-11-08
-title: TxtFile Example 10
-tags:
-    - TxtFile/Initiate
-    - TxtFile/GetTotalRecords
-    - TxtFile/Write
----
-
-# TxtFile Example 10
-
 This example shows the usage of `Write` methods to write a matrix.
-
-## Modules and classes
-
-- [[TxtFile_]]
-- [[String]]
-
-## Usage
 
 Importing modules and defining variables
 
-``` fortran
+```fortran
 program main
   use easifemBase
   use easifemClasses
@@ -37,16 +17,16 @@ program main
 Initiate an instance of [[TxtFile_]], and then Open the [[TxtFile_]] file
 
 ```fortran
-  call obj%initiate(filename=filename, status='NEW', &
-    & action='WRITE', separator=",")
-  call obj%open()
+call obj%initiate(filename=filename, status='NEW', &
+  & action='WRITE', separator=",")
+call obj%open()
 ```
 
 Write the value of integer.
 
 ```fortran
-  int_r0 = arange(1,3,1) .COLCONCAT. arange(4,6,1)
-  call obj%write(val=int_r0)
+int_r0 = arange(1,3,1) .COLCONCAT. arange(4,6,1)
+call obj%write(val=int_r0)
 ```
 
 The result is given below. Note that the cols separated by a space.
@@ -61,7 +41,7 @@ The result is given below. Note that the cols separated by a space.
 We can also write the transpose by setting `orient=COL`. In the above call by default `orient="ROW"`.
 
 ```fortran
-  call obj%write(val=int_r0, orient="COL")
+call obj%write(val=int_r0, orient="COL")
 ```
 
 ```txt
