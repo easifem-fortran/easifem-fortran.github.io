@@ -43,7 +43,7 @@ import EXAMPLE35 from "./examples/_Initiate_test_1.md";
 
 1. To construct an instance of `MeshSelection` first we set the parameters in `ParameterList_` by calling the method called [SetMeshSelectionParam](/docs-api/MeshSelection/SetMeshSelectionParam).
 
-2. After setting the parameters you should call [Initiate](/docs-ap/MeshSelection/Initiate) method.
+2. After setting the parameters you should call [Initiate](/docs-api/MeshSelection/Initiate) method.
 
 3. Now we will add mesh region to `MeshSelection_`. See [Add](/docs-api/MeshSelection/Add) method.
 
