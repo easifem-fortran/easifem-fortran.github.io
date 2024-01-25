@@ -33,11 +33,6 @@ const meta = {
 /** @type {import('@docusaurus/plugin-content-docs').Options[]} */
 const docs = [
   {
-    id: "cli",
-    path: "docs/cli",
-    routeBasePath: "/cli",
-  },
-  {
     id: "about",
     path: "docs/about",
     routeBasePath: "/about",
@@ -155,7 +150,7 @@ const config = {
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
-      image: "/img/dyte-docs-card.png",
+      image: "/img/easifem-docs-card.png",
       colorMode: {
         defaultMode: "light",
       },
