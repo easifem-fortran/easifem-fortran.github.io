@@ -8,9 +8,6 @@ Calling example:
 CALL GetSym(CSRSparsity_::obj, CSRSparsity_::symObj, char(1)::from)
 ```
 
-import Tabs from '@theme/Tabs';
-import TabItem from '@theme/TabItem';
-
 <Tabs>
 <TabItem value="1" label="܀ GetSym(obj, symobj, from)" default>
 
@@ -31,7 +28,7 @@ END INTERFACE
 
 <TabItem value="2" label="܀ See Example">
 
-import EXAMPLE34 from "./_GetSym_test_1.md";
+import EXAMPLE34 from "./examples/_GetSym_test_1.md";
 
 <EXAMPLE34 />
 

@@ -1,22 +1,25 @@
 # Initiate
 
-## Interface
+Initiate an instance of `CSRSparsity_`.
+
+## Interface 1
+
+<Tabs>
+<TabItem value="interface" label="Interface" default>
 
 ```fortran
-  MODULE SUBROUTINE initiate( obj, ncol, nrow, idof, jdof )
-    TYPE( CSRSparsity_ ), INTENT( INOUT ) :: obj
-    INTEGER( I4B ), INTENT( IN ) :: ncol, nrow
-    TYPE( DOF_ ), OPTIONAL, INTENT( IN ) ::  idof
-    TYPE( DOF_ ), OPTIONAL, INTENT( IN ) ::  jdof
-  END SUBROUTINE initiate
-```
-
-## Getting started
-
-In order to construct an instance of `CSRSparsity` we need to specify `nrow` `ncol` and [DOF](../DOF/DOF_.md) object. By using [DOF](../DOF/DOF_.md) object we can specify the degrees of freedom structure inside `CSRMatrix_`. Then one can use the #CSRSparsity/Initiate method as shown below.
-
-```fortran
-CALL Initiate( CSRSparisty_::obj, INT::nrow, INT::ncol, DOF_::dof )
+INTERFACE Initiate
+  MODULE SUBROUTINE Initiate1(obj, ncol, nrow, idof, jdof, nnz)
+    TYPE(CSRSparsity_), INTENT(INOUT) :: obj
+    INTEGER(I4B), INTENT(IN) :: ncol, nrow
+    TYPE(DOF_), OPTIONAL, INTENT(IN) :: idof
+    !! DOF for row
+    TYPE(DOF_), OPTIONAL, INTENT(IN) :: jdof
+    !! DOF for column
+    INTEGER(I4B), OPTIONAL, INTENT(IN) :: nnz
+    !! number of nonzeros
+  END SUBROUTINE Initiate1
+END INTERFACE Initiate
 ```
 
 Here, `dof` is optional, if this argument is absent then DOF object has the following structure:
@@ -26,55 +29,88 @@ Here, `dof` is optional, if this argument is absent then DOF object has the foll
 - `spaceCompo`=[1]
 - `timeCompo`=[1].
 
-Working example is given below based on this concept.
+</TabItem>
+
+<TabItem value="example" label="example">
+
+import EXAMPLE8 from "./examples/_Initiate_test_1.md";
+
+<EXAMPLE8 />
+
+</TabItem>
+
+<TabItem value="close" label="↢ close">
+
+</TabItem>
+</Tabs>
+
+## Assignment operator
 
 ```fortran
-PROGRAM main
-USE easifemBase
-IMPLICIT NONE
-TYPE( CSRSparsity_ ) :: obj
-TYPE( DOF_ ) :: dofobj
-INTEGER( I4B ) :: i
-CALL Initiate( obj=dofobj, tNodes=[12], names=['K'], &
-    & spaceCompo=[1], timeCompo=[1], storageFMT=NODES_FMT )
-CALL Initiate( obj, ncol=12, nrow=12, dof=dofobj )
-CALL Display( obj, "CSRSparsity : " )
-CALL Deallocate( obj )
-END PROGRAM main
+INTERFACE Initiate
+  MODULE SUBROUTINE obj_initiate2(obj, obj2)
+    TYPE(CSRSparsity_), INTENT(INOUT) :: obj
+    TYPE(CSRSparsity_), INTENT(IN) :: obj2
+  END SUBROUTINE obj_initiate2
+END INTERFACE Initiate
 ```
 
-For multi-physics applications following example will be helpful.
+## Initiate by raw data
 
 ```fortran
-PROGRAM main
-USE easifemBase
-IMPLICIT NONE
-TYPE( CSRSparsity_ ) :: obj
-TYPE( DOF_ ) :: dofobj
-INTEGER( I4B ) :: i
-CALL Initiate( obj=dofobj, tNodes=[20, 10], names=['V', 'P'], &
-  & spaceCompo=[3, 1], timeCompo=[1, 1], storageFMT=FMT_DOF )
-CALL Initiate( obj, ncol=(.tnodes. dofobj), nrow=(.tNodes. dofobj),  &
-  & dof=dofobj )
-CALL Display( obj, "CSRSparsity : " )
-CALL Deallocate( obj )
-END PROGRAM main
+INTERFACE Initiate
+  MODULE SUBROUTINE obj_initiate3(obj, IA, JA)
+    TYPE(CSRSparsity_), INTENT(INOUT) :: obj
+    INTEGER(I4B), INTENT(IN) :: IA(:), JA(:)
+  END SUBROUTINE obj_initiate3
+END INTERFACE Initiate
 ```
 
-EASIFEM also has an assignment operator (=) to initiate an instance of `CSRSparsity_`.
+- This routine constructs `CSRSparsity_` instance by using the
+  indices `IA` and `JA`
+- This routine is helpful in reading data from files.
+- This routine calls `Initiate` method
+  without `dof` argument. So this type of initiation does not contain
+  useful information about the degree of freedoms.
+
+## Initiate by `CSRSparsity` function
+
+EASIFEM also has `CSRSparsity` and `CSRSparsityPointer` functions. They can be used to create an instance of `CSRSparsity_`. The later returns the pointer to the newly created instance of `CSRSparsity_` object. The usage are given below.
 
 ```fortran
-MODULE SUBROUTINE initiate( obj, obj2 )
-  TYPE( CSRSparsity_ ), INTENT( INOUT ) :: obj
-  TYPE( CSRSparsity_ ), INTENT( IN ) :: obj2
-END SUBROUTINE initiate
+MODULE FUNCTION CSRSparsity( nrow, ncol, dof ) RESULT( Ans )
+  INTEGER( I4B ), INTENT( IN ) :: nrow
+  INTEGER( I4B ), INTENT( IN ) :: ncol
+  TYPE( DOF_ ), OPTIONAL, INTENT( IN ) :: dof
+  TYPE( CSRSparsity_ ) :: ans
+END FUNCTION CSRSparsity
 ```
 
-However, if you have `IA` and`JA` indices, then you can initiate the `CSRSparsity_` object using the following command.
+```fortran
+MODULE FUNCTION CSRSparsity( IA, JA ) RESULT( Ans )
+  INTEGER( I4B ), INTENT( IN ) :: IA(:)
+  INTEGER( I4B ), INTENT( IN ) :: JA(:)
+  TYPE( CSRSparsity_ ) :: ans
+END FUNCTION CSRSparsity
+```
+
+## Getting the pointer
+
+By using CSRSparsityPointer method we can get the pointer to `CSRSparsity_`.
 
 ```fortran
-MODULE SUBROUTINE initiate( obj, IA, JA )
-  TYPE( CSRSparsity_ ), INTENT( INOUT ) :: obj
-  INTEGER( I4B ), INTENT( IN ) :: IA( : ), JA( : )
-END SUBROUTINE initiate
+MODULE FUNCTION CSRSparsityPointer( nrow, ncol, dof ) RESULT( Ans )
+  INTEGER( I4B ), INTENT( IN ) :: nrow
+  INTEGER( I4B ), INTENT( IN ) :: ncol
+  TYPE( DOF_ ), OPTIONAL, INTENT( IN ) :: dof
+  TYPE( CSRSparsity_ ), POINTER :: ans
+END FUNCTION CSRSparsityPointer
+```
+
+```fortran
+MODULE FUNCTION CSRSparsityPointer( IA, JA ) RESULT( Ans )
+  INTEGER( I4B ), INTENT( IN ) :: IA(:)
+  INTEGER( I4B ), INTENT( IN ) :: JA(:)
+  TYPE( CSRSparsity_ ), POINTER :: ans
+END FUNCTION CSRSparsityPointer
 ```

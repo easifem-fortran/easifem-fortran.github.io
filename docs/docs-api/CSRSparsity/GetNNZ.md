@@ -14,9 +14,6 @@ This routine has three interfaces as shown below.
 
 ## Interface
 
-import Tabs from '@theme/Tabs';
-import TabItem from '@theme/TabItem';
-
 <Tabs>
 
 <TabItem value="interface" label="܀ GetNNZ( obj )" default>
@@ -28,7 +25,7 @@ MODULE PURE FUNCTION GetNNZ( obj ) RESULT( Ans )
 END FUNCTION GetNNZ
 ```
 
-In this case we get all the number of nonzeros in the sparse matrix.
+In this case we get all the number of non-zeros in the sparse matrix.
 
 </TabItem>
 
@@ -44,7 +41,7 @@ INTERFACE
 END INTERFACE
 ```
 
-In this case we can get number of nonzeros in upper triangular, lowertriangular, diagonal part of the sparse matrix.
+In this case we can get number of non-zeros in upper triangular, lower-triangular, diagonal part of the sparse matrix.
 
 - "U" nnz in upper triangular part, j > i.
 - "L" nnz in lower triangular part, i > j.
@@ -63,10 +60,9 @@ INTERFACE
     INTEGER(I4B) :: Ans(3)
   END FUNCTION GetNNZ
 END INTERFACE
-
 ```
 
-This function can return number of nonzeros in upper triangular, lowertriangular, diagonal part of the sparse matrix.
+This function can return number of non-zeros in upper triangular, lower-triangular, diagonal part of the sparse matrix.
 
 - ans(1) nnz in U.
 - ans(2) nnz in L.

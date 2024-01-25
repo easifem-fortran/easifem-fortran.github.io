@@ -1,28 +1,6 @@
----
-date: 2022-5-20
-update: 2022-5-20
-status: stable
-docs: none
-extpkgs: none
-category:
-  - Example
-tags:
-  - example
-  - CSRSparsity/Initiate
-  - CSRSparsity/SetSparsity
-  - CSRSparsity/Display
-  - CSRSparsity/Deallocate
----
-
-# CSRSparsity example 8
+### example 8
 
 This example shows how to set sparsity pattern by using a graph matrix. A graph matrix is a two-d array of true and false. if graph( i, j ) is true then row-i and row-j are connected.
-
-## Modules and classes
-
-- [[CSRSparsity_]]
-
-## Usage
 
 ```fortran
 PROGRAM main
@@ -32,32 +10,20 @@ TYPE( CSRSparsity_) :: obj
 INTEGER( I4B ), PARAMETER :: nrow=5, ncol=5
 INTEGER( I4B ) :: i
 LOGICAL( LGT ) :: graph( nrow, ncol )
-```
 
-```fortran
 graph = .FALSE.
 graph( 1,2 ) = .TRUE.
 graph( 2,3 ) = .TRUE.
 graph( 2,4 ) = .TRUE.
 graph( 2,5 ) = .TRUE.
-```
 
-```fortran
 CALL Initiate( obj=obj, nrow=nrow, ncol=ncol )
-```
 
-```fortran
 CALL SetSparsity(obj, graph=graph)
 CALL SetSparsity(obj)
-```
 
-Display the content of [[CSRSparsity_]]
-
-```fortran
 CALL Display( obj, "obj" )
-```
 
-```fortran
 CALL Deallocate( obj )
 END PROGRAM main
 ```

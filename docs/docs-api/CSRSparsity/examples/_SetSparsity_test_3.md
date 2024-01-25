@@ -1,30 +1,13 @@
----
-date: 2022-5-20
-update: 2022-5-20
-status: stable
-docs: none
-extpkgs: none
-category:
-  - Example
-tags:
-  - example
-  - CSRSparsity/Initiate
-  - CSRSparsity/SetSparsity
-  - CSRSparsity/Display
-  - CSRSparsity/Deallocate
-  - DOF/Initiate
----
+### Example 5
 
-# CSRSparsity example 5
+This example shows how to set sparsity pattern in an instance of `CSRSparsity_`.
 
-This example shows how to set sparsity pattern in an instance of [[CSRSparsity_]]. The storage pattern is `FMT_DOF`, and matrix is not a block matrix.
+The storage pattern is `FMT_DOF`, and matrix is not a block matrix.
 
-## Modules and classes
+:::info `SetSparsity`
+Setting sparsity pattern. The `row` and `col` are the row and column number of the matrix.
 
-- [[CSRSparsity_]]
-- [[DOF_]]
-
-## Usage
+:::
 
 ```fortran
 PROGRAM main
@@ -33,12 +16,7 @@ IMPLICIT NONE
 TYPE( CSRSparsity_ ) :: obj
 TYPE( DOF_ ) :: dofobj
 INTEGER( i4b ) :: i
-```
 
-!!! note ""
-    Make an instance of [[DOF_]]. This object contains the storage pattern.
-
-```fortran
 CALL Initiate( &
   & obj=dofobj, &
   & tNodes=[12], &
@@ -46,17 +24,10 @@ CALL Initiate( &
   & spaceCompo=[3], &
   & timeCompo=[2], &
   & storageFMT=DOF_FMT )
-```
 
-```fortran
 CALL Initiate( obj, ncol=.tNodes. dofobj, nrow=.tNodes. dofobj, idof=dofobj, &
     & jdof=dofobj )
-```
 
-!!! note "setSparsity"
-    Setting sparsity pattern. The `row` and `col` are the row and column number of the matrix.
-
-```fortran
 CALL SetSparsity( obj, 1, [1,2,6,5] )
 CALL SetSparsity( obj, 2, [2,1,3,5,6,7] )
 CALL SetSparsity( obj, 3, [3,2,4,6,7,8] )
@@ -69,21 +40,11 @@ CALL SetSparsity( obj, 9, [9,5,6,10] )
 CALL SetSparsity( obj, 10, [10,9,11,5,6,7] )
 CALL SetSparsity( obj, 11, [11,10,12,6,7,8] )
 CALL SetSparsity( obj, 12, [12,7,8,11] )
-```
 
-```fortran
 CALL SetSparsity(obj)
-```
 
-Display the content of [[CSRSparsity_]]
-
-```fortran
 CALL Display( obj, "obj=" )
-```
 
-!!! note "cleanup"
-
-```fortran
 CALL Deallocate( dofobj )
 CALL Deallocate( obj )
 END PROGRAM main
