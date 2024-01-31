@@ -12,7 +12,7 @@ PROGRAM main
 Initiate an instance of `MSHFile_` which is created by Gmsh
 
 ```fortran
-CALL mshFile%Initiate( filename="./mesh.msh", STATUS="OLD", ACTION="READ" )
+CALL mshFile%Initiate( filename="./meshdata/small_mesh.msh", STATUS="OLD", ACTION="READ" )
 ```
 
 Open the mesh file.
@@ -30,7 +30,7 @@ CALL mshFile%Read()
 Initiate an instance of `HDF5File_`. We will save mesh data in this file.
 
 ```fortran
-CALL hdf5file%Initiate( "./mesh.h5", MODE="NEW" )
+CALL hdf5file%Initiate( "./meshdata/small_mesh.h5", MODE="NEW" )
 ```
 
 Open the `HDF5File_` file so that we can write mesh data in this file.

@@ -7,7 +7,7 @@ PROGRAM main
   IMPLICIT NONE
   TYPE( Mesh_ ) :: obj
   TYPE( HDF5File_ ) :: meshfile
-  CHARACTER( LEN = *), PARAMETER :: filename="./mesh.h5"
+  CHARACTER( LEN = *), PARAMETER :: filename="./meshdata/small_mesh.h5"
 ```
 
 Initiate and open the mesh file which is in `HDF5File_` format.

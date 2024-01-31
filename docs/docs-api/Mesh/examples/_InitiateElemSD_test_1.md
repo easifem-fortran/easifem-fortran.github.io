@@ -9,7 +9,7 @@ PROGRAM main
   TYPE( HDF5File_ ) :: meshfile
   INTEGER( I4B ), ALLOCATABLE :: nptrs( : )
   INTEGER( I4B ) :: iel, ii
-  CHARACTER( LEN=* ), PARAMETER :: filename="./mesh.h5"
+  CHARACTER( LEN=* ), PARAMETER :: filename="./meshdata/small_mesh.h5"
 
   CALL meshfile%Initiate( FileName=filename, MODE="READ" )
   CALL meshfile%Open()

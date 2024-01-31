@@ -10,9 +10,9 @@ PROGRAM main
 
   ! Open multiple mesh files which art in [[HDF5File_]] format.
   ALLOCATE( HDF5File_::meshfiles(1)%ptr )
-  CALL meshfiles(1)%ptr%Initiate( FileName="./mesh_tri6.h5", MODE="READ" )
+  CALL meshfiles(1)%ptr%Initiate( FileName="./meshdata/mesh_tri6.h5", MODE="READ" )
   ALLOCATE( HDF5File_::meshfiles(2)%ptr )
-  CALL meshfiles(2)%ptr%Initiate( FileName="./mesh_tri3.h5", MODE="READ" )
+  CALL meshfiles(2)%ptr%Initiate( FileName="./meshdata/mesh_tri3.h5", MODE="READ" )
   CALL meshfiles(1)%ptr%Open()
   CALL meshfiles(2)%ptr%Open()
 
