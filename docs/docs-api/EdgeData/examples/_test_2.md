@@ -1,30 +1,14 @@
-! This program is a part of EASIFEM library
-! Copyright (C) 2020-2021  Vikas Sharma, Ph.D
-!
-! This program is free software: you can redistribute it and/or modify
-! it under the terms of the GNU General Public License as published by
-! the Free Software Foundation, either version 3 of the License, or
-! (at your option) any later version.
-!
-! This program is distributed in the hope that it will be useful,
-! but WITHOUT ANY WARRANTY; without even the implied warranty of
-! MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-! GNU General Public License for more details.
-!
-! You should have received a copy of the GNU General Public License
-! along with this program.  If not, see <https: //www.gnu.org/licenses/>
-!
-
+```fortran
 PROGRAM main
 USE easifemBase
 USE easifemClasses
-USE EdgeBinaryTree_Class
-USE EdgeTreeData_Class
+USE EdgeDataBinaryTree_Class
+USE EdgeData_Class
 IMPLICIT NONE
 
-TYPE(EdgeTreeData_) :: VALUE
-TYPE(EdgeTreeData_), POINTER :: value_ptr
-TYPE(EdgeBinaryTree_) :: obj, anode
+TYPE(EdgeData_) :: VALUE
+TYPE(EdgeData_), POINTER :: value_ptr
+TYPE(EdgeDataBinaryTree_) :: obj, anode
 INTEGER(I4B), ALLOCATABLE :: node_connectivity(:, :)
 INTEGER(I4B) :: localEdges(2, 4), nptrs(4), edge(2), sorted_edge(2)
 INTEGER(I4B) :: iel, iedge
@@ -48,7 +32,7 @@ DO iel = 1, SIZE(node_connectivity, 2)
   DO iedge = 1, SIZE(localEdges, 2)
     edge = nptrs(localEdges(:, iedge))
     sorted_edge = SORT(edge)
-    value_ptr => EdgeTreeData_Pointer(sorted_edge)
+    value_ptr => EdgeData_Pointer(sorted_edge)
     CALL obj%Insert(value_ptr)
   END DO
 
@@ -72,3 +56,4 @@ CALL obj%SetID()
 CALL obj%Display("after renumbering")
 
 END PROGRAM main
+```

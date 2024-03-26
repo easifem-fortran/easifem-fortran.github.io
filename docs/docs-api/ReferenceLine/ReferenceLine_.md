@@ -2,6 +2,7 @@
 sidebar_position: 2
 ---
 
-# ReferenceLine
+# Structure
 
-Datatype for reference line element. It is a child of ReferenceElement_.
+This is a data type for reference line element.
+It is a child of `ReferenceElement_`.

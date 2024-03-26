@@ -15,6 +15,13 @@ tags:
 
 # ReferenceTetrahedron
 
+`ReferenceTetrahedron_` is defined in `BaseType` module. It denotes the reference
+element domain for tetrahedron.
+
+It is reference element for tetrahedron, and a child of `ReferenceElement_`.
+
+## All methods
+
 import DocCardList from '@theme/DocCardList';
 
 <DocCardList />

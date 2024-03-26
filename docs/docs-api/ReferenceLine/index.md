@@ -15,7 +15,8 @@ tags:
 
 # ReferenceLine
 
-`ReferenceLine` data type is a child of `ReferenceElement`. It defines the reference line element.
+`ReferenceLine_` data type is a child of `ReferenceElement_`.
+It defines the reference line element.
 
 ## Methods
 

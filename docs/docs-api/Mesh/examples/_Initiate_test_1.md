@@ -1,4 +1,5 @@
-This example shows how to convert the mesh generated from Gmsh, `MSHFile_` format into the `HDF5File_` format.
+This example shows how to convert the mesh generated from `Gmsh`
+`MSHFile_` format into the `HDF5File_` format.
 
 ```fortran
 PROGRAM main
@@ -12,7 +13,8 @@ PROGRAM main
 Initiate an instance of `MSHFile_` which is created by Gmsh
 
 ```fortran
-CALL mshFile%Initiate( filename="./meshdata/small_mesh.msh", STATUS="OLD", ACTION="READ" )
+CALL mshFile%Initiate( filename="./meshdata/small_mesh.msh",  &
+& STATUS="OLD", ACTION="READ" )
 ```
 
 Open the mesh file.
@@ -39,7 +41,7 @@ Open the `HDF5File_` file so that we can write mesh data in this file.
 CALL hdf5file%Open()
 ```
 
-exporting mesh from `MSHFile` file to `HDF5File`.
+Exporting mesh from `MSHFile` file to `HDF5File`.
 
 ```fortran
 CALL mshFile%Export( hdf5=hdf5file, group="" )

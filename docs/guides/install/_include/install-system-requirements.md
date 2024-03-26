@@ -25,10 +25,10 @@ First install `yay` on Arch Linux by following process.
 
 ```bash
 sudo pacman -Syu
-sudo pacman -S base-devel
-sudo pacman -S git
+sudo pacman -Sy base-devel
+sudo pacman -Sy git
 mkdir -pv ~/temp
-sudo git clone https://aur.archlinux.org/yay.git ~/temp/yay
+git clone https://aur.archlinux.org/yay.git ~/temp/yay
 cd ~/temp/yay
 makepkg -si
 cd ~ && rm -rf ~/temp/yay
@@ -38,7 +38,17 @@ yay --version
 After successfully installing `yay` we can install the system dependencies by using following command.
 
 ```bash
-yay -S gcc gcc-fortran openmp curl git python3 cmake ninja lapack openblas hdf5 plplot gnuplot doxygen gtk4 lua
+yay -Sy gcc gcc-fortran openmp curl git python3 cmake ninja lapack openblas hdf5 plplot gnuplot doxygen gtk4 lua
+```
+
+If you face any problem installing plplot with fortran binding, then follow the instruction given below.
+
+```bash 
+mkdir -pv ~/temp 
+cd ~/temp 
+git clone https://github.com/easifem/archlinux-plplot-fortran.git
+cd archlinux-plplot-fortran
+makepkg -si
 ```
 
 </TabItem>

@@ -1,10 +1,12 @@
-This example shows how to initiate an instance of `Mesh_` by reading data from mesh file, which is in `HDF5File_` format.
+---
+title: Mesh Initiate Example 3
+---
 
-This example is same as the previous example (example 2), but in this example we construct `surfaceEntities_2`.
+This example shows how to initiate an instance of `Mesh_`
+by reading data from mesh file, which is in `HDF5File_` format.
 
-The mesh is given below
-
-![](../figures/mesh.png)
+This example is same as the previous example (example 2),
+but in this example we construct `surfaceEntities_2`.
 
 ```fortran
 PROGRAM main
@@ -14,7 +16,7 @@ PROGRAM main
   TYPE( Mesh_ ) :: obj
   TYPE( HDF5File_ ) :: meshfile
 
-  CALL meshfile%Initiate( FileName="./meshdata/small_mesh.h5", MODE="READ" )
+  CALL meshfile%Initiate( fileName="./meshdata/small_mesh_two_region.h5", MODE="READ" )
   CALL meshfile%Open()
 
   CALL obj%Initiate(hdf5=meshfile, group="/surfaceEntities_2" )

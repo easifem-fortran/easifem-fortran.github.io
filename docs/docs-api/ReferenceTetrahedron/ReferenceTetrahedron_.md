@@ -1,12 +1,6 @@
 ---
-title: ReferenceTetrahedron
+title: ReferenceTetrahedron Methods
 ---
-
-# ReferenceTetrahedron
-
-## Introduction
-
-It is reference element for tetrahedron, and a child of [[ReferenceElement_]]
 
 ## Methods
 

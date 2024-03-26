@@ -1,3 +1,7 @@
+---
+sidebar_position: 3
+---
+
 # Initiate
 
 This subroutine initiate an instance of ReferenceHexahedron.
@@ -8,7 +12,7 @@ import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
 
 <Tabs>
-<TabItem value="interface" label="܀ Interface" default>
+<TabItem value="interface" label="Interface" default>
 
 ```fortran
 INTERFACE Initiate
@@ -26,16 +30,16 @@ number of spatial dimension, it should be 3.
 
 :::info `xij`
 xij is the nodal coordinate of hexahedron.
+
 - total number of rows in xij should be 3 as each row denotes a spatial dimension.
 - total number of columns in xij should be 8 as each column denotes the node number.
-:::
-
+  :::
 
 </TabItem>
 
 <TabItem value="example" label="️܀ See example">
 
-import EXAMPLE10 from "./_Initiate_test_1.md";
+import EXAMPLE10 from "./examples/_Initiate_test_1.md";
 
 <EXAMPLE10 />
 
@@ -46,13 +50,12 @@ import EXAMPLE10 from "./_Initiate_test_1.md";
 </TabItem>
 </Tabs>
 
-
 ## Interface 2 (ReferenceHexahedron)
 
 We can use `ReferenceHexahedron` function to construct an instance of ReferenceHexahedron.
 
 <Tabs>
-<TabItem value="interface" label="܀ Interface" default>
+<TabItem value="interface" label="Interface" default>
 
 ```fortran
 INTERFACE ReferenceHexahedron
@@ -68,7 +71,7 @@ END INTERFACE ReferenceHexahedron
 
 <TabItem value="example" label="️܀ See example">
 
-import EXAMPLE54 from "./_Initiate_test_2.md";
+import EXAMPLE54 from "./examples/_Initiate_test_2.md";
 
 <EXAMPLE54 />
 
@@ -79,13 +82,12 @@ import EXAMPLE54 from "./_Initiate_test_2.md";
 </TabItem>
 </Tabs>
 
-
 ## Interface 3 (ReferenceHexahedron_Pointer)
 
 The function `ReferenceHexahedron_Pointer` returns the pointer to newly created instance of ReferenceHexahedron.
 
 <Tabs>
-<TabItem value="interface" label="܀ Interface" default>
+<TabItem value="interface" label="Interface" default>
 
 ```fortran
 INTERFACE ReferenceHexahedron_Pointer
@@ -101,7 +103,7 @@ END INTERFACE ReferenceHexahedron_Pointer
 
 <TabItem value="example" label="️܀ See example">
 
-import EXAMPLE87 from "./_Initiate_test_3.md";
+import EXAMPLE87 from "./examples/_Initiate_test_3.md";
 
 <EXAMPLE87 />
 
@@ -111,4 +113,3 @@ import EXAMPLE87 from "./_Initiate_test_3.md";
 
 </TabItem>
 </Tabs>
-

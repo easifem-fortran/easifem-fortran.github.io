@@ -24,7 +24,7 @@ END INTERFACE Initiate
 
 <TabItem value="example" label="️܀ See example">
 
-import EXAMPLE10 from "./_Initiate_test_1.md";
+import EXAMPLE10 from "./examples/_Initiate_test_1.md";
 
 <EXAMPLE10 />
 
@@ -56,7 +56,7 @@ This function retuns an instance of linear quadrangle element.
 
 <TabItem value="example" label="️܀ See example">
 
-import EXAMPLE40 from "./_Initiate_test_2.md";
+import EXAMPLE40 from "./examples/_Initiate_test_2.md";
 
 <EXAMPLE40 />
 
@@ -88,7 +88,7 @@ This function returns pointer to newly created linear quadrangle elements.
 
 <TabItem value="example" label="️܀ See example">
 
-import EXAMPLE72 from "./_Initiate_test_3.md";
+import EXAMPLE72 from "./examples/_Initiate_test_3.md";
 
 <EXAMPLE72 />
 
@@ -130,13 +130,13 @@ Interpolation point type. It can take following values:
 - GaussChebyshev
 - GaussUltrasphericalLobatto
 - GaussJacobi
-:::
+  :::
 
 </TabItem>
 
 <TabItem value="example" label="️܀ See example">
 
-import EXAMPLE105 from "./_Initiate_test_4.md";
+import EXAMPLE105 from "./examples/_Initiate_test_4.md";
 
 <EXAMPLE105 />
 

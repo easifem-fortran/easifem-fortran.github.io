@@ -1,13 +1,13 @@
 ---
 sidebar_position: 1
-date: 2023-07-07 
-update: 2023-07-07 
+date: 2023-07-07
+update: 2023-07-07
 status: stable
 docs: done
 extpkgs: none
-category: 
+category:
   - Geometry
-tags: 
+tags:
   - easifemBase
   - geometry
   - referenceElement
@@ -15,9 +15,12 @@ tags:
 
 # ReferenceQuadrangle
 
-`ReferenceQuadrangle` is a user-data type for quadrangle element.
+`ReferenceQuadrangle_` is defined in `BaseType` module. It denotes the reference
+element domain for tetrahedron.
 
-## Methods
+It is reference element for quadrangle and a child of `ReferenceElement_`.
+
+## All methods
 
 import DocCardList from '@theme/DocCardList';
 
