@@ -1,7 +1,3 @@
----
-title:  FEMesh GetMaxNNE Example 1
----
-
 This example tests the `GetMaxNNE` method, which returns the total number of
 nodes in an element.
 

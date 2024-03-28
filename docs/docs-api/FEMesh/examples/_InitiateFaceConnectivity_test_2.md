@@ -1,7 +1,3 @@
----
-title: InitiateFaceConnectivity example 2
----
-
 In this example we show the usage of `InitiateFaceConnectivity` method. We test its accuracy also.
 
 ```fortran

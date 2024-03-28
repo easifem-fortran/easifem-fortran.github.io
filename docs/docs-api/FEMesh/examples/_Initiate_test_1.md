@@ -1,7 +1,3 @@
----
-title: Mesh Initiate Example 2
----
-
 This example shows how to initiate an instance of `Mesh_` by reading data
 from mesh file, which is in `HDF5File_` format.
 

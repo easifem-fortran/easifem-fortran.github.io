@@ -1,7 +1,3 @@
----
-title: InitiateFaceConnectivity example 1
----
-
 In this example we show the usage of `InitiateFaceConnectivity` method.
 
 ```fortran

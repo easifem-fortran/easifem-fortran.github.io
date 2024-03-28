@@ -1,7 +1,3 @@
----
-title: "FEMesh InitiateNodeToElements Example 1"
----
-
 ```fortran
 PROGRAM main
   USE easifemBase

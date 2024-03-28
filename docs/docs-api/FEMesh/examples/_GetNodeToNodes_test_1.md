@@ -1,7 +1,3 @@
----
-title: "FE Mesh GetNodeToNodes example 1"
----
-
 This example shows how to get the node to node connectivity data in the mesh.
 
 ```fortran

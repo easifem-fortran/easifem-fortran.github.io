@@ -16,6 +16,10 @@ tags:
 
 # Domain
 
+`Domain` is a collection of the meshes. It represents the finite element computation domain.
+
+## All methods
+
 import DocCardList from '@theme/DocCardList';
 
 <DocCardList />

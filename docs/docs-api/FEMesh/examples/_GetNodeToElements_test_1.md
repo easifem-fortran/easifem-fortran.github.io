@@ -1,7 +1,3 @@
----
-title: "FEMesh GetNodeToElements Example 1"
----
-
 This example shows how to get the node to element connectivity data in the mesh.
 
 ```fortran

@@ -1,7 +1,3 @@
----
-title: FEMesh GetMaxNNE Example 2
----
-
 Testing `GetMaxNNE` for old style mesh.
 
 ```fortran

@@ -1,7 +1,3 @@
----
-title: FEMesh GetNNE Example 2
----
-
 Testing `GetNNE` for old style mesh.
 
 ```fortran

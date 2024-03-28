@@ -1,7 +1,3 @@
----
-title:  FEMesh GetNNE Example 1
----
-
 This example tests the `GetNNE` method, which returns the total number of nodes in an element.
 
 The element number should be global element number.
